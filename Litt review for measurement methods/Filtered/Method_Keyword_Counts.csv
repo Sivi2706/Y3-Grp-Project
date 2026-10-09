@@ -1,0 +1,15 @@
+Category,Count,Percent,Parent
+Field water/sediment sampling,2886,43.4,Lab_Methods
+FTIR / infrared spectroscopy,1535,23.1,Lab_Methods
+Microscopy / imaging / visual counting,1397,21.0,Lab_Methods
+Filtration / digestion / density separation,1224,18.4,Lab_Methods
+Statistical correlations / regression,1154,17.3,Lab_Methods
+Other instrumental / chemical analysis,838,12.6,Lab_Methods
+Controlled laboratory exposure / experiment,755,11.3,Lab_Methods
+Review / bibliometric synthesis,663,10.0,Lab_Methods
+Raman spectroscopy,569,8.6,Lab_Methods
+Conductivity / pH / dissolved oxygen,429,6.4,Lab_Methods
+Machine learning / prediction,192,2.9,Lab_Methods
+Turbidity / suspended-solids measurement,153,2.3,Lab_Methods
+Remote sensing / drone / GIS,104,1.6,Lab_Methods
+Water-quality sensors / in-situ instruments,25,0.4,Lab_Methods
