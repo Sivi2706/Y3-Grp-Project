@@ -1,0 +1,13 @@
+Category,Count,Percent,Parent
+Field monitoring / repeated surveys,1395,26.2,Data_Trends
+Temporal / seasonal change,947,17.8,Data_Trends
+Correlation / statistical regression,900,16.9,Data_Trends
+Spatial distribution / variability,654,12.3,Data_Trends
+Hydrodynamic / transport models,386,7.3,Data_Trends
+In-situ / real-time sensing,251,4.7,Data_Trends
+Machine learning / AI,222,4.2,Data_Trends
+RGB / image processing,160,3.0,Data_Trends
+Remote sensing / satellites,83,1.6,Data_Trends
+GIS / interpolation / mapping,63,1.2,Data_Trends
+Automated particle detection / counting,48,0.9,Data_Trends
+UAV / drone surveys,18,0.3,Data_Trends

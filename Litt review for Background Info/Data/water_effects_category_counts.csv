@@ -1,0 +1,13 @@
+Category,Count,Percent,Parent
+Feeding / behaviour,1545,20.4,Water_Effects
+Human health / exposure,1454,19.2,Water_Effects
+Toxicity / mortality,1426,18.8,Water_Effects
+Water quality / physicochemical,1023,13.5,Water_Effects
+Microbial / community change,989,13.1,Water_Effects
+Contaminant transport / adsorption,986,13.0,Water_Effects
+Bioaccumulation / trophic transfer,837,11.0,Water_Effects
+Oxidative stress / inflammation,697,9.2,Water_Effects
+Reproduction / endocrine,497,6.6,Water_Effects
+Habitat / ecosystem functioning,437,5.8,Water_Effects
+Growth / development,269,3.6,Water_Effects
+Nutrient cycling / biogeochemistry,235,3.1,Water_Effects
