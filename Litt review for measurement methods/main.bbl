@@ -1,0 +1,997 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Blevins2021}{article}{}{}
+      \name{author}{20}{}{%
+        {{hash=d580c4742bf0d8cb3064da400e31744c}{%
+           family={Blevins},
+           familyi={B\bibinitperiod},
+           given={Morgan\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=0a15136126579418b444eda55ebc288c}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Harry\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=da5cc3e9cd41fdce0d7760ff8eef7396}{%
+           family={Colson},
+           familyi={C\bibinitperiod},
+           given={Beckett\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7e7f0fb96b9903a8894f69f591818f0f}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Anna-Marie},
+           giveni={A\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=612751ba2b28c41cc1c9a98cde113729}{%
+           family={Greenbaum},
+           familyi={G\bibinitperiod},
+           given={Alexandra\bibnamedelima Z.},
+           giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=ae0ba6fa5372d61de56ec486512634ea}{%
+           family={Hemami},
+           familyi={H\bibinitperiod},
+           given={Sheila\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4c072015c7d3923f5df5b26c045ba3aa}{%
+           family={Hollmann},
+           familyi={H\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bee5aeefcd52a56c8fcfdc3102bab745}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Ernest},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fd613a84698f93e4370e99d5fd6e3e47}{%
+           family={Larocca},
+           familyi={L\bibinitperiod},
+           given={Ava\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b53ddd4334b89c0ed2d91d6f2d3dca25}{%
+           family={Markoski},
+           familyi={M\bibinitperiod},
+           given={Kenneth\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=02abc72d68c701ab1ad99e76ec2df7bd}{%
+           family={Miraglia},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=10fc25aceb2bcfc46e3499339e28e0f4}{%
+           family={Mott},
+           familyi={M\bibinitperiod},
+           given={Vienna\bibnamedelima L.},
+           giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=959e7dfd60dcd1dffcc3711814c4b6b5}{%
+           family={Robberson},
+           familyi={R\bibinitperiod},
+           given={William\bibnamedelima M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2475c2b12aa7a5fcc2e4a31fd0b17b67}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Jose\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=da41af5397821975f146733e07367955}{%
+           family={Sprachman},
+           familyi={S\bibinitperiod},
+           given={Melissa\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=53148ee85245157f3e6b7ae5ad1f44fd}{%
+           family={Swierk},
+           familyi={S\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e88bbd6378206d599d98693b8d91bb29}{%
+           family={Tate},
+           familyi={T\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=83e47876124f58db5aa0aa245ae40c2e}{%
+           family={Witinski},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2bfbe2a796934329d8e7f6976d60f979}{%
+           family={Kratchman},
+           familyi={K\bibinitperiod},
+           given={Louis\bibnamedelima B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=303e0028d3233944c1eeba74cf968d20}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Anna\bibnamedelimb P.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cacef0439d63b382578e2c5cb012cf9}
+      \strng{fullhash}{0b6f4cae5b9b2cad1a8cc35d0e3942dd}
+      \strng{fullhashraw}{0b6f4cae5b9b2cad1a8cc35d0e3942dd}
+      \strng{bibnamehash}{7cacef0439d63b382578e2c5cb012cf9}
+      \strng{authorbibnamehash}{7cacef0439d63b382578e2c5cb012cf9}
+      \strng{authornamehash}{7cacef0439d63b382578e2c5cb012cf9}
+      \strng{authorfullhash}{0b6f4cae5b9b2cad1a8cc35d0e3942dd}
+      \strng{authorfullhashraw}{0b6f4cae5b9b2cad1a8cc35d0e3942dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{10}
+      \field{title}{{Field-portable microplastic sensing in aqueous environments: A perspective on emerging techniques}}
+      \field{volume}{21}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/s21103532
+      \endverb
+    \endentry
+    \entry{Kim2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ab98d5d8f00ded4c179683e301bc3423}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Eun-Bi},
+           giveni={E\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=3789df3fc352f4a5879dc529be25dd5a}{%
+           family={Akhtar},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi Shaheer},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=403a352b1cd4c9e344f1f88d60ab794c}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Ing},
+           giveni={I\bibinitperiod}}}%
+        {{hash=95bcdb7a5a340376427d360b0e68d8c8}{%
+           family={Ameen},
+           familyi={A\bibinitperiod},
+           given={Sadia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{67ed601f5832cfb3da42417a5f99e1ac}
+      \strng{fullhash}{6744d820a0e599cad635001d7d4fc4af}
+      \strng{fullhashraw}{6744d820a0e599cad635001d7d4fc4af}
+      \strng{bibnamehash}{6744d820a0e599cad635001d7d4fc4af}
+      \strng{authorbibnamehash}{6744d820a0e599cad635001d7d4fc4af}
+      \strng{authornamehash}{67ed601f5832cfb3da42417a5f99e1ac}
+      \strng{authorfullhash}{6744d820a0e599cad635001d7d4fc4af}
+      \strng{authorfullhashraw}{6744d820a0e599cad635001d7d4fc4af}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemosphere}
+      \field{title}{{Tailoring porous NiMoO4 nanotube via MoO3 nanorod precursor for environmental monitoring: Electrochemical detection of micro-sized polyvinylchloride}}
+      \field{volume}{369}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.chemosphere.2024.143796
+      \endverb
+    \endentry
+    \entry{MXene2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b440e9fd8d9171db1313bace9e5a4077}{%
+           family={Warraich},
+           familyi={W\bibinitperiod},
+           given={Haider},
+           giveni={H\bibinitperiod}}}%
+        {{hash=123e7bf6727d5127479b30d8f66636e8}{%
+           family={Zabihihesari},
+           familyi={Z\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f2038337e40e9a8437d4090a088023ec}{%
+           family={Karimpour},
+           familyi={K\bibinitperiod},
+           given={Shooka},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ed196ffa7abb139030d29f9a3a70aa97}{%
+           family={Rezai},
+           familyi={R\bibinitperiod},
+           given={Pouya},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{06e6915ce2d69321387175f53c2b62b9}
+      \strng{fullhash}{dbc6be3bb64014708d9f93c3841ae448}
+      \strng{fullhashraw}{dbc6be3bb64014708d9f93c3841ae448}
+      \strng{bibnamehash}{dbc6be3bb64014708d9f93c3841ae448}
+      \strng{authorbibnamehash}{dbc6be3bb64014708d9f93c3841ae448}
+      \strng{authornamehash}{06e6915ce2d69321387175f53c2b62b9}
+      \strng{authorfullhash}{dbc6be3bb64014708d9f93c3841ae448}
+      \strng{authorfullhashraw}{dbc6be3bb64014708d9f93c3841ae448}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microchimica Acta}
+      \field{number}{8}
+      \field{title}{{Microplastic detection in saline water utilizing a microfluidic sensor with MXene-coated electrodes and a Wheatstone bridge}}
+      \field{volume}{192}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/s00604-025-07335-2
+      \endverb
+    \endentry
+    \entry{Microwave2025}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=462313574728d7ed18704ff5d6928e35}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Pei},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3f148b2fa2c62583e01445d78a53daf0}{%
+           family={ShafieiDarabi},
+           familyi={S\bibinitperiod},
+           given={Maziar},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bf5ad26141ad59ce45537c19a8840365}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xinyao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=767383120a9986181382f8d104152a16}{%
+           family={Slowinski},
+           familyi={S\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=751564de2e9d01f6f346eca8468eb6f9}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shuhuan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7e04c9d832947c5cb1005c5089b76e37}{%
+           family={Abbasi},
+           familyi={A\bibinitperiod},
+           given={Zahra},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d23eec84879ea5ab56524c2818543375}{%
+           family={Rezanezhad},
+           familyi={R\bibinitperiod},
+           given={Fereidoun},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7618af15cd6c0fa530edf3ba0d0b302d}{%
+           family={Van\bibnamedelima Cappellen},
+           familyi={V\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Phillippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c0c3d1091bbbca1bf1a0331fec193233}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Carolyn\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{de0539482c3b174bcf24d0739f504e5e}
+      \strng{fullhash}{ed3694d541913d0d0642bce4c29dbd21}
+      \strng{fullhashraw}{ed3694d541913d0d0642bce4c29dbd21}
+      \strng{bibnamehash}{de0539482c3b174bcf24d0739f504e5e}
+      \strng{authorbibnamehash}{de0539482c3b174bcf24d0739f504e5e}
+      \strng{authornamehash}{de0539482c3b174bcf24d0739f504e5e}
+      \strng{authorfullhash}{ed3694d541913d0d0642bce4c29dbd21}
+      \strng{authorfullhashraw}{ed3694d541913d0d0642bce4c29dbd21}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors and Actuators A: Physical}
+      \field{title}{{Detection of microplastics by microfluidic microwave sensing: An exploratory study}}
+      \field{volume}{383}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.sna.2024.116154
+      \endverb
+    \endentry
+    \entry{Ohori2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7ec5b9d09b4e7ff4b4d2cdfd2758d06e}{%
+           family={Ohori},
+           familyi={O\bibinitperiod},
+           given={Yuimaru},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e3dadd28f988ee011d1403c6bda8e3f9}{%
+           family={Iwadare},
+           familyi={I\bibinitperiod},
+           given={Yuki},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=90f137de58372f67a8d0e09e35571807}{%
+           family={Nakayama},
+           familyi={N\bibinitperiod},
+           given={Akemi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=39df3964165e1060f98c9a2da49bc901}{%
+           family={Akiyama},
+           familyi={A\bibinitperiod},
+           given={Yoshitake},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{06aa5d2b7629fb8d6ccff707e5bef318}
+      \strng{fullhash}{0866c59e86bcd1213e69b252c9e5d387}
+      \strng{fullhashraw}{0866c59e86bcd1213e69b252c9e5d387}
+      \strng{bibnamehash}{0866c59e86bcd1213e69b252c9e5d387}
+      \strng{authorbibnamehash}{0866c59e86bcd1213e69b252c9e5d387}
+      \strng{authornamehash}{06aa5d2b7629fb8d6ccff707e5bef318}
+      \strng{authorfullhash}{0866c59e86bcd1213e69b252c9e5d387}
+      \strng{authorfullhashraw}{0866c59e86bcd1213e69b252c9e5d387}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Engineering Journal}
+      \field{title}{{High-efficiency and chemical-free microplastic recovery from laundry effluent using parallel and series acoustic focusing systems}}
+      \field{volume}{517}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.cej.2025.164303
+      \endverb
+    \endentry
+    \entry{Grzegorczyk2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5395c4443ad34eb6e6cf3b8b52fb2a07}{%
+           family={Grzegorczyk},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7847841706c7f64fcdd8c609f4857578}{%
+           family={Pogorzelski},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8d68505de39e5cda762488704c7656c1}{%
+           family={Rochowski},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{939610f9936e6999c34b189bcf1e70c4}
+      \strng{fullhash}{32b5167db7173d1f8a439e3a434765a9}
+      \strng{fullhashraw}{32b5167db7173d1f8a439e3a434765a9}
+      \strng{bibnamehash}{32b5167db7173d1f8a439e3a434765a9}
+      \strng{authorbibnamehash}{32b5167db7173d1f8a439e3a434765a9}
+      \strng{authornamehash}{939610f9936e6999c34b189bcf1e70c4}
+      \strng{authorfullhash}{32b5167db7173d1f8a439e3a434765a9}
+      \strng{authorfullhashraw}{32b5167db7173d1f8a439e3a434765a9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Environmental Chemical Engineering}
+      \field{number}{3}
+      \field{title}{{Towards a novel class of photoacoustics-based water contamination sensors}}
+      \field{volume}{10}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1016/j.jece.2022.107983
+      \endverb
+    \endentry
+    \entry{Minor2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=be50d798374c10f02912f2f475e6d414}{%
+           family={Minor},
+           familyi={M\bibinitperiod},
+           given={Elizabeth\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=74c30bb2a6d94c5cf8aa393fba1070d1}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={Uttam\bibnamedelima D.},
+           giveni={U\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=76b6090193909fe1f2e0fec46c976d70}{%
+           family={Schreiner},
+           familyi={S\bibinitperiod},
+           given={Kathryn\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3a8784d70dd36482468242a6325a5aa7}{%
+           family={Poulton},
+           familyi={P\bibinitperiod},
+           given={Nicole\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9e7c7da3baaa636659333667725393f9}{%
+           family={Hendrickson},
+           familyi={H\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c7ed5b691ca42bd6c14556621446d0aa}{%
+           family={Maurer-Jones},
+           familyi={M\bibinithyphendelim J\bibinitperiod},
+           given={Melissa\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c373b137a6d8a310cb2d58d190321fa}
+      \strng{fullhash}{fffefee4c91def082043564aa9b1fbfb}
+      \strng{fullhashraw}{fffefee4c91def082043564aa9b1fbfb}
+      \strng{bibnamehash}{fffefee4c91def082043564aa9b1fbfb}
+      \strng{authorbibnamehash}{fffefee4c91def082043564aa9b1fbfb}
+      \strng{authornamehash}{4c373b137a6d8a310cb2d58d190321fa}
+      \strng{authorfullhash}{fffefee4c91def082043564aa9b1fbfb}
+      \strng{authorfullhashraw}{fffefee4c91def082043564aa9b1fbfb}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Limnology and Oceanography: Methods}
+      \field{number}{12}
+      \field{title}{{Small microplastic particles in Lake Superior: A preliminary study coupling Nile red staining, flow cytometry and pyrolysis gas chromatography--mass spectrometry}}
+      \field{volume}{21}
+      \field{year}{2023}
+      \field{pages}{800\bibrangedash 813}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/lom3.10582
+      \endverb
+    \endentry
+    \entry{FlowCyto2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=02f8bb4579adebfaa8861ba86f1b020f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xinjie},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2af761d9bef859ea29248418adce0dd7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=054b610548bb023755b66a3e8e439db5}{%
+           family={Kroll},
+           familyi={K\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=008e2bf04398663ca5032caf04a887f4}{%
+           family={Mitrano},
+           familyi={M\bibinitperiod},
+           given={Denise\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb4b21e143924c3ed65532b463cc633}
+      \strng{fullhash}{4a380e0ae14a4e3e713b26bb8cdb9ced}
+      \strng{fullhashraw}{4a380e0ae14a4e3e713b26bb8cdb9ced}
+      \strng{bibnamehash}{4a380e0ae14a4e3e713b26bb8cdb9ced}
+      \strng{authorbibnamehash}{4a380e0ae14a4e3e713b26bb8cdb9ced}
+      \strng{authornamehash}{3eb4b21e143924c3ed65532b463cc633}
+      \strng{authorfullhash}{4a380e0ae14a4e3e713b26bb8cdb9ced}
+      \strng{authorfullhashraw}{4a380e0ae14a4e3e713b26bb8cdb9ced}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Science and Technology}
+      \field{number}{23}
+      \field{title}{{Differentiating Microplastics from Natural Particles in Aqueous Suspensions Using Flow Cytometry with Machine Learning}}
+      \field{volume}{58}
+      \field{year}{2024}
+      \field{pages}{10240\bibrangedash 10251}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/acs.est.4c00304
+      \endverb
+    \endentry
+    \entry{DIHM2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=dcb9bbab78c3708cabc48ae2f653c78c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d40e61de3a41995654d5b7ac66832ddf}{%
+           family={Pilechi},
+           familyi={P\bibinitperiod},
+           given={Abolghasem},
+           giveni={A\bibinitperiod}}}%
+        {{hash=48313955dcfd07f8b5f620960c614cfd}{%
+           family={Fok\bibnamedelima Cheung},
+           familyi={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Mailine},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3646cc08dc3eadc9ad65875fe2259933}{%
+           family={Ariya},
+           familyi={A\bibinitperiod},
+           given={Parisa\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{64b4b5311c77d444cb21281e1eab4651}
+      \strng{fullhash}{ed73f82f28d4cf66cf6eb3c513864ae1}
+      \strng{fullhashraw}{ed73f82f28d4cf66cf6eb3c513864ae1}
+      \strng{bibnamehash}{ed73f82f28d4cf66cf6eb3c513864ae1}
+      \strng{authorbibnamehash}{ed73f82f28d4cf66cf6eb3c513864ae1}
+      \strng{authornamehash}{64b4b5311c77d444cb21281e1eab4651}
+      \strng{authorfullhash}{ed73f82f28d4cf66cf6eb3c513864ae1}
+      \strng{authorfullhashraw}{ed73f82f28d4cf66cf6eb3c513864ae1}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water Research}
+      \field{title}{{In-situ and real-time nano/microplastic coatings and dynamics in water using nano-DIHM: A novel capability for the plastic life cycle research}}
+      \field{volume}{235}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1016/j.watres.2023.119898
+      \endverb
+    \endentry
+    \entry{Lopera2026}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=fbef1261d15dbae5a8949223b8307f80}{%
+           family={Lopera},
+           familyi={L\bibinitperiod},
+           given={Maria\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c8610c903467a7d4ef5f1e00af268076}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Yunfeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2f6b49dac2a9b74614b8d4afffa81435}{%
+           family={Trujillo},
+           familyi={T\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b95a7d1daaefe0569852f75d1cb96831}{%
+           family={Ottevaere},
+           familyi={O\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e780ebc7407af9c2554ffe019ad75c87}
+      \strng{fullhash}{baf821c1be7ab93285da0648fb8a221b}
+      \strng{fullhashraw}{baf821c1be7ab93285da0648fb8a221b}
+      \strng{bibnamehash}{baf821c1be7ab93285da0648fb8a221b}
+      \strng{authorbibnamehash}{baf821c1be7ab93285da0648fb8a221b}
+      \strng{authornamehash}{e780ebc7407af9c2554ffe019ad75c87}
+      \strng{authorfullhash}{baf821c1be7ab93285da0648fb8a221b}
+      \strng{authorfullhashraw}{baf821c1be7ab93285da0648fb8a221b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Optics Express}
+      \field{number}{10}
+      \field{title}{{Classification of microplastics in field-collected stream water using a submersible single-shot lensless polarimetric holographic system}}
+      \field{volume}{34}
+      \field{year}{2026}
+      \field{pages}{19094\bibrangedash 19108}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1364/OE.597670
+      \endverb
+    \endentry
+    \entry{Holography2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8000dbb38e616655f041d1ad7c9fab11}{%
+           family={Junior},
+           familyi={J\bibinitperiod},
+           given={Andouglas\bibnamedelimb Goncalves\bibnamedelimb da\bibnamedelima Silva},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ff445dc410e6b20c0bceae36a335ad81}{%
+           family={Distante},
+           familyi={D\bibinitperiod},
+           given={Cosimo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aa1e1563addd65f8d5705ddead75b8d7}{%
+           family={Goncalves},
+           familyi={G\bibinitperiod},
+           given={Luiz\bibnamedelimb Marcos\bibnamedelima Garcia},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{702960fcfaf5d758a28fc81c5017cff9}
+      \strng{fullhash}{9d4890e33d36aeca38c7ef8e3485cdb9}
+      \strng{fullhashraw}{9d4890e33d36aeca38c7ef8e3485cdb9}
+      \strng{bibnamehash}{9d4890e33d36aeca38c7ef8e3485cdb9}
+      \strng{authorbibnamehash}{9d4890e33d36aeca38c7ef8e3485cdb9}
+      \strng{authornamehash}{702960fcfaf5d758a28fc81c5017cff9}
+      \strng{authorfullhash}{9d4890e33d36aeca38c7ef8e3485cdb9}
+      \strng{authorfullhashraw}{9d4890e33d36aeca38c7ef8e3485cdb9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Microscopy}
+      \field{number}{1}
+      \field{title}{{Complete holography-based system for the identification of microparticles in water samples}}
+      \field{volume}{293}
+      \field{year}{2024}
+      \field{pages}{38\bibrangedash 58}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1111/jmi.13249
+      \endverb
+    \endentry
+    \entry{SWIR2021}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=fe5bbc2af496a36d47c902f7a66797e9}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a64e1ff875215a7fcb21786cc9de8789}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Zehao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=447bc9b54e6ffe1e87d95cfaa583f6cf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shuchang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=293f1edad60f574579637c172fcae747}{%
+           family={Di},
+           familyi={D\bibinitperiod},
+           given={Yanan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f05a1c5aec417aa4f04ce2d4fc2a606f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jinzhong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9fbc7eca68e30ad699147fc4df5dffcb}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Caicai},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ca399d64749e2432c4dfeef4a8ec5838}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ren},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d4ec4c12e9e7ae10c469da3d9a5a4990}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7861c13741376a5cfbe45f146360a50c}{%
+           family={Zhan},
+           familyi={Z\bibinitperiod},
+           given={Shuyue},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7d132514a78fa89b28c0999e96c6a6eb}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jiaping},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{31494cdf5fbab7fc1b81be9b75653917}
+      \strng{fullhash}{6a25feb310ccb9cbfd29091349ebafa7}
+      \strng{fullhashraw}{6a25feb310ccb9cbfd29091349ebafa7}
+      \strng{bibnamehash}{31494cdf5fbab7fc1b81be9b75653917}
+      \strng{authorbibnamehash}{31494cdf5fbab7fc1b81be9b75653917}
+      \strng{authornamehash}{31494cdf5fbab7fc1b81be9b75653917}
+      \strng{authorfullhash}{6a25feb310ccb9cbfd29091349ebafa7}
+      \strng{authorfullhashraw}{6a25feb310ccb9cbfd29091349ebafa7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science of the Total Environment}
+      \field{title}{{Underwater hyperspectral imaging for in situ underwater microplastic detection}}
+      \field{volume}{776}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1016/j.scitotenv.2021.145960
+      \endverb
+    \endentry
+    \entry{PoRiver2022}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=e985e5a1a27870af7d483164b76c38b1}{%
+           family={Fiore},
+           familyi={F\bibinitperiod},
+           given={Ludovica},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e23680f5381ac5cfef8c5d960254773c}{%
+           family={Serranti},
+           familyi={S\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d4650d9a653d9d2eb85782e3777f8d44}{%
+           family={Mazziotti},
+           familyi={M\bibinitperiod},
+           given={Cristina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1d73689173955d451c995c0344b2de0a}{%
+           family={Riccardi},
+           familyi={R\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=134190cc9d4d59775eff148167f03a1f}{%
+           family={Benzi},
+           familyi={B\bibinitperiod},
+           given={Margherita},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a7649de086558cf5bade0e55c77d0b33}{%
+           family={Bonifazi},
+           familyi={B\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{13f70b5014af6a9b194c11d80daa8aff}
+      \strng{fullhash}{8fc04e9f556f535744b9aa6bfe6f7445}
+      \strng{fullhashraw}{8fc04e9f556f535744b9aa6bfe6f7445}
+      \strng{bibnamehash}{8fc04e9f556f535744b9aa6bfe6f7445}
+      \strng{authorbibnamehash}{8fc04e9f556f535744b9aa6bfe6f7445}
+      \strng{authornamehash}{13f70b5014af6a9b194c11d80daa8aff}
+      \strng{authorfullhash}{8fc04e9f556f535744b9aa6bfe6f7445}
+      \strng{authorfullhashraw}{8fc04e9f556f535744b9aa6bfe6f7445}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Science and Pollution Research}
+      \field{number}{32}
+      \field{title}{{Classification and distribution of freshwater microplastics along the Italian Po river by hyperspectral imaging}}
+      \field{volume}{29}
+      \field{year}{2022}
+      \field{pages}{48588\bibrangedash 48606}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s11356-022-18501-x
+      \endverb
+    \endentry
+    \entry{Polarized2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=35181f781fca05a86cba5d8bbdde5e00}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Tong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3bb0e654c9713161de3c2cf4054d0df7}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Shijun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=38755d55b51e601ed94680e109629a8e}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaoshan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5a19f679cc98631eb4a2460106de7d1d}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod}}}%
+        {{hash=471defd2aad0f44b9633b4a039b1a4dc}{%
+           family={Zhuo},
+           familyi={Z\bibinitperiod},
+           given={Zepeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d1441bf1e9f6cda95b134ff42226b130}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yanping},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1316104d32302f7b276ad601d3af0821}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{ffe65a462e565083e15d9491080f1d2c}
+      \strng{fullhash}{caac7763e79d70b4e0f324e986979a62}
+      \strng{fullhashraw}{caac7763e79d70b4e0f324e986979a62}
+      \strng{bibnamehash}{ffe65a462e565083e15d9491080f1d2c}
+      \strng{authorbibnamehash}{ffe65a462e565083e15d9491080f1d2c}
+      \strng{authornamehash}{ffe65a462e565083e15d9491080f1d2c}
+      \strng{authorfullhash}{caac7763e79d70b4e0f324e986979a62}
+      \strng{authorfullhashraw}{caac7763e79d70b4e0f324e986979a62}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Marine Science}
+      \field{title}{{In-situ Detection Method for Microplastics in Water by Polarized Light Scattering}}
+      \field{volume}{8}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3389/fmars.2021.739683
+      \endverb
+    \endentry
+    \entry{Microfluidics2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=770b397695ff4137f3692703ee19d4ae}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mengmeng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4c2c66443bd221556bb807196cafa5fa}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaoyang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=803f318b0b18dd0fa1c2b0f11c6e8100}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yajun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8e37a006f4faf23187668546423976ba}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yiqiang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b8ab2a5d318cc8f94c271dc29733cab}
+      \strng{fullhash}{b5998c10908a533db996e97792428b62}
+      \strng{fullhashraw}{b5998c10908a533db996e97792428b62}
+      \strng{bibnamehash}{b5998c10908a533db996e97792428b62}
+      \strng{authorbibnamehash}{b5998c10908a533db996e97792428b62}
+      \strng{authornamehash}{7b8ab2a5d318cc8f94c271dc29733cab}
+      \strng{authorfullhash}{b5998c10908a533db996e97792428b62}
+      \strng{authorfullhashraw}{b5998c10908a533db996e97792428b62}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytica Chimica Acta}
+      \field{title}{{Integrated sample processing and counting microfluidic device for microplastics analysis}}
+      \field{volume}{1261}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1016/j.aca.2023.341237
+      \endverb
+    \endentry
+    \entry{ErniCassola2017}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=935e01ebc0f357e7751f9bcdfaa53079}{%
+           family={Erni-Cassola},
+           familyi={E\bibinithyphendelim C\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3a1bbc9a6dc81e3e5181bd08635a2750}{%
+           family={Gibson},
+           familyi={G\bibinitperiod},
+           given={Matthew\bibnamedelima I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=2b64117b910640897e189f2f0ad7b7a7}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Richard\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f7b849bd3649264e1dda6c63921bc126}{%
+           family={Christie-Oleza},
+           familyi={C\bibinithyphendelim O\bibinitperiod},
+           given={Joseph\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d3cb5ed9bd53da7bd2a8d2d34d13046}
+      \strng{fullhash}{acb4145d84179028c4954c38c0d2d57a}
+      \strng{fullhashraw}{acb4145d84179028c4954c38c0d2d57a}
+      \strng{bibnamehash}{acb4145d84179028c4954c38c0d2d57a}
+      \strng{authorbibnamehash}{acb4145d84179028c4954c38c0d2d57a}
+      \strng{authornamehash}{5d3cb5ed9bd53da7bd2a8d2d34d13046}
+      \strng{authorfullhash}{acb4145d84179028c4954c38c0d2d57a}
+      \strng{authorfullhashraw}{acb4145d84179028c4954c38c0d2d57a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Science and Technology}
+      \field{number}{23}
+      \field{title}{{Lost, but Found with Nile Red: A Novel Method for Detecting and Quantifying Small Microplastics (1 mm to 20 microm) in Environmental Samples}}
+      \field{volume}{51}
+      \field{year}{2017}
+      \field{pages}{13641\bibrangedash 13648}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/acs.est.7b04512
+      \endverb
+    \endentry
+    \entry{Ermolin2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ad98b7046df6412e2c6d18434675a541}{%
+           family={Ermolin},
+           familyi={E\bibinitperiod},
+           given={M.S.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad98b7046df6412e2c6d18434675a541}
+      \strng{fullhash}{ad98b7046df6412e2c6d18434675a541}
+      \strng{fullhashraw}{ad98b7046df6412e2c6d18434675a541}
+      \strng{bibnamehash}{ad98b7046df6412e2c6d18434675a541}
+      \strng{authorbibnamehash}{ad98b7046df6412e2c6d18434675a541}
+      \strng{authornamehash}{ad98b7046df6412e2c6d18434675a541}
+      \strng{authorfullhash}{ad98b7046df6412e2c6d18434675a541}
+      \strng{authorfullhashraw}{ad98b7046df6412e2c6d18434675a541}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Analytical Chemistry}
+      \field{number}{5}
+      \field{title}{{Assessment of the Microplastics Content in Natural Waters and Sediments: Sampling and Sample Preparation}}
+      \field{volume}{79}
+      \field{year}{2024}
+      \field{pages}{500\bibrangedash 519}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1134/S1061934824050058
+      \endverb
+    \endentry
+    \entry{Sefiloglu2024}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=85a210879f2e04060c99034cb0303898}{%
+           family={Sefiloglu},
+           familyi={S\bibinitperiod},
+           given={Feride\bibnamedelima Oyku},
+           giveni={F\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=873c29d4794c8db1ea1c7b304aa73d4b}{%
+           family={Stratmann},
+           familyi={S\bibinitperiod},
+           given={Cleo\bibnamedelima N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=86b20ec9294900d2bc418cacee994b96}{%
+           family={Brits},
+           familyi={B\bibinitperiod},
+           given={Marthinus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1ce68f2a8ce5e65a04cf23323ff1d8b0}{%
+           family={Velzen},
+           familyi={V\bibinitperiod},
+           given={Martin\bibnamedelima J.M.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=a1895ff2bf69aef597ae7b1f87b591b4}{%
+           family={Groenewoud},
+           familyi={G\bibinitperiod},
+           given={Quinn},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=898f86d0a18a8cff34c19545db208433}{%
+           family={Vethaak},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi Dick},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=1e1ace1f83039da3741c098cf36e2118}{%
+           family={Dris},
+           familyi={D\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9b9e1a710bbe56dd6f626acc0189980a}{%
+           family={Gasperi},
+           familyi={G\bibinitperiod},
+           given={Johnny},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5b7fdc6c8ceab85862c151eea8754f87}{%
+           family={Lamoree},
+           familyi={L\bibinitperiod},
+           given={Marja\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c239a0e13886e6845588f3b88cc68e1}
+      \strng{fullhash}{36433145951c63b8df575abf4964f9a2}
+      \strng{fullhashraw}{36433145951c63b8df575abf4964f9a2}
+      \strng{bibnamehash}{1c239a0e13886e6845588f3b88cc68e1}
+      \strng{authorbibnamehash}{1c239a0e13886e6845588f3b88cc68e1}
+      \strng{authornamehash}{1c239a0e13886e6845588f3b88cc68e1}
+      \strng{authorfullhash}{36433145951c63b8df575abf4964f9a2}
+      \strng{authorfullhashraw}{36433145951c63b8df575abf4964f9a2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Pollution}
+      \field{title}{{Comparative microplastic analysis in urban waters using micro-FTIR and Py-GC-MS: A case study in Amsterdam}}
+      \field{volume}{351}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.envpol.2024.124088
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
