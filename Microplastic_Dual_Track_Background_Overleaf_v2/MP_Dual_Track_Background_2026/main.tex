@@ -70,28 +70,63 @@ Figure~\ref{fig:tracks} presents two end-to-end workflows. The diagram is intent
 
 \begin{figure}[H]\centering
 \begin{tikzpicture}[>=Latex, font=\footnotesize,
- flowstep/.style={draw=mpteal!75!black,rounded corners=2pt,fill=mplight,align=center,text width=6.6cm,minimum height=11mm,inner sep=4pt},
- shore/.style={draw=mpgold!80!black,rounded corners=2pt,fill=mpcream,align=center,text width=6.6cm,minimum height=11mm,inner sep=4pt},
+ % ---- styles ----
+ startbox/.style={draw=mpblue,fill=mpblue,text=white,rounded corners=3pt,
+   align=center,text width=16cm,minimum height=9mm,inner sep=4pt},
+ hdrA/.style={draw=mpteal,fill=mpteal,text=white,rounded corners=3pt,
+   align=center,text width=7.6cm,minimum height=7mm,font=\bfseries\small,inner sep=3pt},
+ hdrB/.style={draw=mpgold,fill=mpgold,text=white,rounded corners=3pt,
+   align=center,text width=7.6cm,minimum height=7mm,font=\bfseries\small,inner sep=3pt},
+ stepA/.style={draw=mpteal!80!black,fill=mplight,rounded corners=3pt,
+   align=center,text width=7.6cm,minimum height=12mm,inner sep=4pt},
+ stepB/.style={draw=mpgold!80!black,fill=mpcream,rounded corners=3pt,
+   align=center,text width=7.6cm,minimum height=12mm,inner sep=4pt},
+ endbox/.style={draw=mpblue,fill=mpblue!8,rounded corners=3pt,
+   align=center,text width=16cm,minimum height=13mm,inner sep=5pt},
  arr/.style={-Latex,thick,draw=mpblue}]
- \node[fill=mpblue,rounded corners,text=white,minimum height=8mm,text width=15cm,align=center] (start) at (0,1.2) {Boat survey: mission route + GPS + time + fixed-depth intake or collection station + route log};
- \node[font=\bfseries\small,text=mpteal] at (-3.75,0.35) {TRACK A: LIVE MONITORING};
- \node[font=\bfseries\small,text=mpgold] at (3.75,0.35) {TRACK B: SHORELINE POST-PROCESSING};
- \node[flowstep] (a1) at (-3.75,-0.7) {Water intake and pumping\newline measured flow / residence time};
- \node[flowstep] (a2) at (-3.75,-2.25) {Flow-through or microfluidic chamber\newline stable observation / sensing zone};
- \node[flowstep] (a3) at (-3.75,-3.80) {Candidate sensing method\newline image, optical, electrical, acoustic or hybrid};
- \node[flowstep] (a4) at (-3.75,-5.35) {Wastewater handling, flushing or temporary storage\newline fouling control / repeatability};
- \node[flowstep] (a5) at (-3.75,-6.90) {GPS / time synchronisation + on-board logging\newline data transmission + concentration estimate / QC};
- \node[shore] (b1) at (3.75,-0.7) {Timed / distance-based collection\newline measured volume into clean labelled containers};
- \node[shore] (b2) at (3.75,-2.25) {Record GPS, time, volume and depth\newline seal sample and protect from contamination};
- \node[shore] (b3) at (3.75,-3.80) {Shoreline pre-processing\newline portable filtration / concentration / cassette workflow};
- \node[shore] (b4) at (3.75,-5.35) {Candidate sensing method\newline portable image, optical, electrical or hybrid readout};
- \node[shore] (b5) at (3.75,-6.90) {Waste handling / storage + data linkage\newline join sensing result to sample ID, GPS and time};
- \node[fill=mpblue!8,draw=mpblue,rounded corners,text width=15cm,minimum height=10mm,align=center] (end) at (0,-8.45) {Common output: georeferenced measurement points $\rightarrow$ spatial interpolation / grid $\rightarrow$ 2D map\newline Report uncertainty, gaps and whether values are provisional proxy estimates or suspected / validated particles per litre};
- \foreach \u/\v in {a1/a2,a2/a3,a3/a4,a4/a5,b1/b2,b2/b3,b3/b4,b4/b5} \draw[arr] (\u.south)--(\v.north);
- \draw[arr] (start.south) -- (0,0.77) -| (a1.north);
- \draw[arr] (start.south) -- (0,0.77) -| (b1.north);
- \draw[arr] (a5.south) -- ++(0,-0.45) -| ([xshift=-2.8cm]end.north);
- \draw[arr] (b5.south) -- ++(0,-0.45) -| ([xshift=2.8cm]end.north);
+
+ % ---- top box ----
+ \node[startbox] (start) at (0,0)
+   {\textbf{Boat survey:} mission route + GPS + time + fixed-depth intake or collection station + route log};
+
+ % ---- track headers ----
+ \node[hdrA] (hA) at (-4.2,-1.7) {TRACK A: LIVE MONITORING};
+ \node[hdrB] (hB) at ( 4.2,-1.7) {TRACK B: SHORELINE POST-PROCESSING};
+
+ % ---- Track A steps ----
+ \node[stepA] (a1) at (-4.2,-3.4)  {\textbf{Water intake and pumping}\\ measured flow / residence time};
+ \node[stepA] (a2) at (-4.2,-5.2)  {\textbf{Flow-through or microfluidic chamber}\\ stable observation / sensing zone};
+ \node[stepA] (a3) at (-4.2,-7.0)  {\textbf{Candidate sensing method}\\ image, optical, electrical, acoustic or hybrid};
+ \node[stepA] (a4) at (-4.2,-8.8)  {\textbf{Waste handling, flushing or storage}\\ fouling control / repeatability};
+ \node[stepA] (a5) at (-4.2,-10.6) {\textbf{GPS / time sync + on-board logging}\\ transmission + concentration estimate / QC};
+
+ % ---- Track B steps ----
+ \node[stepB] (b1) at (4.2,-3.4)  {\textbf{Timed / distance-based collection}\\ measured volume into clean labelled containers};
+ \node[stepB] (b2) at (4.2,-5.2)  {\textbf{Record GPS, time, volume and depth}\\ seal sample and protect from contamination};
+ \node[stepB] (b3) at (4.2,-7.0)  {\textbf{Shoreline pre-processing}\\ portable filtration / cassette workflow};
+ \node[stepB] (b4) at (4.2,-8.8)  {\textbf{Candidate sensing method}\\ portable image / optical / electrical readout};
+ \node[stepB] (b5) at (4.2,-10.6) {\textbf{Waste handling + data linkage}\\ join result to sample ID, GPS and time};
+
+ % ---- output box ----
+ \node[endbox] (end) at (0,-12.7)
+   {\textbf{Common output:} georeferenced measurement points $\rightarrow$ spatial interpolation / grid $\rightarrow$ 2D map\\
+    Report uncertainty, gaps and whether values are proxy estimates or suspected / validated particles per litre};
+
+ % ---- arrows: start -> headers (straight, no crossing of text) ----
+ \draw[arr] (start.south -| hA.north) -- (hA.north);
+ \draw[arr] (start.south -| hB.north) -- (hB.north);
+
+ % ---- arrows: headers -> first step ----
+ \draw[arr] (hA.south) -- (a1.north);
+ \draw[arr] (hB.south) -- (b1.north);
+
+ % ---- arrows within tracks ----
+ \foreach \u/\v in {a1/a2,a2/a3,a3/a4,a4/a5,b1/b2,b2/b3,b3/b4,b4/b5}
+   \draw[arr] (\u.south) -- (\v.north);
+
+ % ---- arrows: last step -> output (straight verticals) ----
+ \draw[arr] (a5.south) -- (a5.south |- end.north);
+ \draw[arr] (b5.south) -- (b5.south |- end.north);
 \end{tikzpicture}
 \caption{Two deployable tracks that meet the briefing's mapping goal without assuming a specific sensing technology. The ``candidate sensing method'' box is the screening stage at which methods are filtered against portability, automation, contamination control, throughput, interpretability and map-readiness. Track B is batch/near-real-time after retrieval, not continuous in-situ sensing.}\label{fig:tracks}
 \end{figure}
