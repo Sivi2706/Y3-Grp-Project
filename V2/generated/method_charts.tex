@@ -1,0 +1,26 @@
+\begin{figure}[H]\centering
+\begin{tikzpicture}
+\begin{axis}[xbar,width=.67\linewidth,height=9.3cm,xmin=0,xmax=540,
+ ymin=-.7,ymax=15.7,ytick={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15},yticklabels={{Photoacoustic},{Acoustic focusing},{Ultrasonic detection},{Electrochemical sensor},{Resistive-pulse sensing},{Impedance / EIS},{Hyperspectral imaging},{Digital holography},{Flow cytometry},{Nile Red staining},{Fluorescence imaging},{Laser particle scatter},{Polarised scattering},{Camera + AI counting},{Micro-flow imaging},{Optical / stereo microscopy}},
+ yticklabel style={font=\scriptsize,align=right,text width=4.7cm},tick label style={font=\scriptsize},
+ xmajorgrids=true,grid style={gray!15},bar width=7pt,
+ xlabel={Paper-tag matches in 10,833 candidates; overlapping},xlabel style={font=\scriptsize},
+ nodes near coords,point meta=x,every node near coord/.append style={font=\scriptsize,anchor=west,xshift=2pt}]
+\addplot+[draw=mpteal,fill=mpteal!70] coordinates {(426,15) (2,14) (52,13) (4,12) (1,11) (130,10) (140,9) (35,8) (5,7) (25,6) (5,5) (3,4) (18,3) (2,2) (2,1) (3,0)};
+\end{axis}\end{tikzpicture}
+\caption{Potential optical, electrical and acoustic particle-readout families; ultrasound sample preparation is intentionally excluded from the direct-detector chart.}\label{fig:expanded-sensing}
+\end{figure}
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}
+\begin{axis}[xbar,width=.67\linewidth,height=8.4cm,xmin=0,xmax=1970,
+ ymin=-.7,ymax=13.7,ytick={0,1,2,3,4,5,6,7,8,9,10,11,12,13},yticklabels={{Magnetic separation},{Near IR / SWIR},{Microfluidics},{General machine learning},{Satellite / remote sensing},{pH / oxygen probes},{Conductivity / salinity},{Turbidity / solids},{DLS / NTA},{SEM / TEM},{Py-GC-MS},{SERS},{Raman},{FTIR spectroscopy}},
+ yticklabel style={font=\scriptsize,align=right,text width=4.7cm},tick label style={font=\scriptsize},
+ xmajorgrids=true,grid style={gray!15},bar width=7pt,
+ xlabel={Paper-tag matches in 10,833 candidates; overlapping},xlabel style={font=\scriptsize},
+ nodes near coords,point meta=x,every node near coord/.append style={font=\scriptsize,anchor=west,xshift=2pt}]
+\addplot+[draw=mpgold,fill=mpgold!70] coordinates {(1705,13) (664,12) (61,11) (127,10) (431,9) (29,8) (184,7) (47,6) (142,5) (33,4) (254,3) (22,2) (23,1) (28,0)};
+\end{axis}\end{tikzpicture}
+\caption{Reference techniques, pretreatment, ancillary probes and model/mapping tools: prevalence of terms does not imply field sensing capability.}\label{fig:expanded-support}
+\end{figure}
+
