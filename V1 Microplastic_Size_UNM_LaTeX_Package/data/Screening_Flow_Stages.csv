@@ -1,0 +1,9 @@
+Screening_stage,Records,Interpretation
+Initial bibliometric include candidates,10833,Data provenance; prior deduplication and document-type filter
+Waterbody keyword in title/abstract,7525,Broad query only
+Size keyword in title/abstract,3245,Broad query only
+Waterbody AND size AND microplastic,2085,First-pass candidate pool; not included studies
+Curated reported size evidence examples,17,Purposeful human selection; not exhaustive
+Any Nottingham affiliation mention,33,Includes other campuses / uncertain
+Explicit UNM Semenyih affiliation,9,Strict campus metadata rule in this corpus
+Other / ambiguous Nottingham,24,Audit separately

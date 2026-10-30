@@ -1,0 +1,15 @@
+{
+  "candidate_pool": 10833,
+  "waterbody_keyword": 7525,
+  "size_keyword": 3245,
+  "microplastic_keyword": 9368,
+  "waterbody_AND_size_AND_microplastic": 2085,
+  "curated_size_studies": 17,
+  "nottingham_anycampus": 33,
+  "UNM_explicit_affiliation": 9,
+  "nottingham_other_campus_or_unspecified": 24,
+  "source_csv_sha256": "bce5c660efa3bcc5b7d14ed5da6929f886121f12bb6b69ec1ee7ba4326c9170a",
+  "curation_list_sha256": "1b4bf5629ec4c3dc24b360049fa5038f1bab6ec02d26b730be69be757507be87",
+  "DOI_duplicates_in_manual_list": [],
+  "note": "Curation is a manual example subset, not exhaustive full-text eligibility; UNM completeness only within this export/metadata rule."
+}
