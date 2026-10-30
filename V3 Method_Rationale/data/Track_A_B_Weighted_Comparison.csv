@@ -1,0 +1,20 @@
+﻿Concept,Method_IDs,Working_principle,Track_A_gate,Track_B_gate,A_weighted_score,B_weighted_score,Tag_references,validity,portability,throughput,no_lab,robustness,affordability
+Flow-through camera + AI,"M08,M09","Pumped, measured flow; object recognition; count/volume",P,C,3.62,3.6,M08:2;M09:52,3,4,4,5,2,4
+Portable filtration + microscope / AI,"M03,M07,M09",Collect known V; filter; visual count; optional AI,X,P,3.6,3.8,M03:107;M07:426;M09:52,3,5,2,5,3,5
+Micro-flow imaging particle analyser,M08,Imaging and morphometry within flow cell,C,C,3.14,3.0,M08:2,3,3,4,4,2,2
+Polarised light scattering,M10,Measure material-related polarisation/scattering contrast,C,C,3.44,3.25,M10:4,2,4,5,5,2,3
+Optical particle scattering / counter,M11,"Laser scatter pulses, particle-size proxy",C,C,3.44,3.25,M11:1,2,4,5,5,2,3
+Electrical impedance / EIS,M18,Frequency-dependent electrical response,C,C,3.24,3.15,M18:5,2,4,4,5,2,3
+Resistive-pulse microfluidic,M19,Particle-transit electrical pulses,C,C,3.14,3.0,M19:3,3,3,4,4,2,2
+Nile Red fluorescence + imaging,"M13,M12",Controlled portable stain and microscope,X,C,2.7,2.75,M13:140;M12:130,3,3,2,3,2,3
+Flow cytometry / fluorescence counting,M14,Flow and laser fluorescence/scatter readout,C,C,2.74,2.55,M14:35,3,2,4,3,2,1
+Digital holographic particle imaging,M15,Reconstruct digital holograms and size/categorise,C,C,3.26,3.2,M15:5,3,3,4,5,2,2
+Hyperspectral imaging,M16,Multi-band optical signatures,C,C,2.34,2.35,M16:25,3,2,2,3,2,1
+Acoustic focusing + downstream counting,M24,Enrich suspension; another sensor must count,S,S,2.44,2.5,M24:2,2,2,3,4,2,2
+Ultrasonic direct attenuation,M23,Acoustic losses interpreted as particle-related,C,C,3.12,2.95,M23:2,1,4,5,5,1,4
+Electrochemical functionalised electrode,M20,Electrode binding/redox response,C,C,2.64,2.6,M20:18,2,3,3,4,2,2
+Remote RGB / turbidity proxy,"M34,M37",Predict MPs from surface colour/turbidity,S,S,3.4,3.2,M34:184;M37:6,1,5,5,5,1,5
+Bulk conductivity / resistivity proxy,M35,Predict MPs from ion-dependent water impedance,S,S,3.4,3.2,M35:47,1,5,5,5,1,5
+Micro-FTIR / micro-Raman,"M26,M27",Polymer spectrum and particle ID,X,X,2.5,2.65,M26:1705;M27:664,5,1,1,1,4,1
+Py-GC-MS polymer mass,M29,Destructive laboratory polymer mass quantification,X,X,2.2,2.35,M29:127,4,1,1,1,4,1
+SEM / TEM,M30,Electron morphology imaging,X,X,1.5,1.6,M30:431,2,1,1,1,3,1

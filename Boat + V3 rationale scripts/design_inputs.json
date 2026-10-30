@@ -1,0 +1,69 @@
+{
+  "survey": {
+    "width_m": 20,
+    "height_m": 20,
+    "mission_minutes": 120,
+    "grid_stations": 16,
+    "transect_count": 5,
+    "transect_spacing_m": 5,
+    "track_A_transit_speed_m_s": 0.25,
+    "track_A_sampling_flow_L_min": 0.5,
+    "track_A_sensing_minutes": 60,
+    "track_A_other_minutes": 25,
+    "track_B_volume_L_station": 1.0,
+    "track_B_pump_actual_L_min": 1.5,
+    "track_B_overhead_min_station": 1.2,
+    "track_B_processing_min_station": 3.0,
+    "track_B_other_minutes": 18,
+    "semenyih_lit_concentration_particles_L": 3.12
+  },
+  "boat": {
+    "pontoon_count": 2,
+    "pontoon_length_m": 0.9,
+    "pontoon_diameter_m": 0.2,
+    "max_working_displacement_fraction": 0.6,
+    "battery_voltage_V": 12.8,
+    "battery_capacity_Ah": 20,
+    "battery_usable_fraction": 0.8,
+    "bms_continuous_A": 30
+  },
+  "mass_kg": {
+    "two_pontoons": 2.3,
+    "frame": 1.5,
+    "waterproof_enclosure": 0.8,
+    "two_T200_thrusters": 0.854,
+    "two_ESC": 0.3,
+    "controller_power_GNSS": 0.3,
+    "radios": 0.15,
+    "pump": 0.57,
+    "tubing_flowcell_valves_filters": 0.7,
+    "camera_compute": 0.4,
+    "battery": 2.4,
+    "wiring_fuses_switches": 0.6,
+    "misc_sensors": 0.3,
+    "sample_bottles_empty": 0.8,
+    "retained_sample_water_16x0p5L": 8.0,
+    "reserve_for_build_uncertainty": 2.0
+  },
+  "power_scenarios_W": {
+    "Track B economical": 48,
+    "Track A planned": 88,
+    "Track A difficult water": 125,
+    "High-drive manoeuvres": 180,
+    "Full-throttle dual T200 12V + loads": 430
+  },
+  "power_components_A_W": {
+    "twin_thrusters_cruise_estimate": 50,
+    "Pixhawk_GNSS_and_RC_estimate": 6,
+    "telemetry_logging_estimate": 4,
+    "compute_camera_estimate": 9,
+    "pump_average_estimate": 12,
+    "conversion_and_misc_margin": 7
+  },
+  "power_components_B_W": {
+    "twin_thrusters_cruise_estimate": 30,
+    "Pixhawk_GNSS_RC_telemetry_estimate": 8,
+    "sample_pump_average_estimate": 6,
+    "logging_aux_margin": 4
+  }
+}

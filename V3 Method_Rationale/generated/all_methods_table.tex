@@ -1,0 +1,66 @@
+\small
+\begin{longtable}{@{}p{.8cm}p{6.0cm}rccp{5.4cm}@{}}
+\caption{Expanded method identification across the original 10,833 papers. Matches are title/abstract/keyword terms, may overlap, and are not proof that the authors applied the method.}\label{tab:allmethods}\\
+\toprule ID & Explicitly screened method family & Papers & A & B & Constraint / decision rationale \\\midrule
+\endfirsthead
+\multicolumn{6}{l}{\emph{Table continued: expanded method identification}}\\\toprule
+ID & Method family & Papers & A & B & Main barrier \\\midrule
+\endhead
+\bottomrule\endfoot
+\multicolumn{6}{l}{\textbf{Collection / pretreatment}}\\[2pt]
+M01 & Manual field grab / surface sampling & 1,122 & S & P & volume/contamination control \\
+M02 & Pump / automated water intake & 13 & S & S & flow calibration \& carry-over \\
+M03 & Membrane / vacuum filtration & 107 & C & P & time \& membrane recovery \\
+M04 & Density / flotation separation & 373 & X & C & reagents and waste \\
+M05 & Chemical / enzymatic digestion & 113 & X & C & chemical safety/time \\
+M06 & Ultrasonic sample sonication & 10 & X & C & preparation, not detection \\
+M41 & Microfluidics / lab-on-chip handling & 22 & S & S & microchannels need antifouling/volume control \\
+M46 & Magnetic / electrostatic separation & 28 & X & C & functionalisation / recovery controls \\
+\multicolumn{6}{l}{\textbf{Optical particle readout}}\\[2pt]
+M07 & Brightfield / stereo optical microscopy & 426 & C & P & particle appearance not polymer proof \\
+M08 & Flow-through / micro-flow particle imaging & 2 & P & C & volume/focus \& duplicates \\
+M09 & Camera + AI counting / segmentation & 52 & P & P & MP-like images vs true MPs \\
+M10 & Polarised light scattering / polarimetry & 4 & C & C & sediment/algae discrimination \\
+M11 & Laser / nephelometric particle scattering & 1 & C & C & optical non-specificity \\
+M12 & Fluorescence / laser induced fluorescence & 130 & C & C & photobleaching/matrix \\
+M13 & Nile Red fluorescent staining & 140 & X & C & wet chemistry, false positives \\
+M14 & Flow cytometry / fluorescence cytometry & 35 & C & C & expensive/complex; identity uncertain \\
+M15 & Digital holography / inline holography & 5 & C & C & optical alignment, inference \\
+M16 & Hyperspectral / multispectral laboratory imaging & 25 & C & C & cost/illumination/background \\
+M17 & UV-visible absorbance / colorimetry & 3 & S & S & matrix dependence \\
+M47 & Smartphone / handheld digital microscopy & 0 & C & P & low cost; resolution and repeatability \\
+M49 & Optical coherence tomography (OCT) & 1 & C & C & cost/penetration/selectivity \\
+\multicolumn{6}{l}{\textbf{Electrical / acoustic}}\\[2pt]
+M18 & Electrical impedance spectroscopy (EIS) & 5 & C & C & salt/electrode artefacts \\
+M19 & Resistive pulse / Coulter / microchannel sensing & 3 & C & C & throughput/clogs, size cut-off \\
+M20 & Electrochemical / voltammetric sensing & 18 & C & C & electrode specificity \& fouling \\
+M21 & Dielectrophoresis / capacitive particle sensing & 73 & C & C & field geometry and salinity \\
+M22 & Microwave / RF dielectric resonance & 1 & C & C & water permittivity dominates \\
+M23 & Ultrasonic attenuation / scattering detection & 2 & C & C & particle/background contrast \\
+M24 & Acoustic focusing / acoustophoresis & 2 & C & C & enrichment only, not counting \\
+M25 & Photoacoustic sensing / spectroscopy & 3 & C & C & specialised transducers/lasers \\
+M44 & Nanopore ionic current / pulse sensing & 0 & C & C & pore clogging; selectivity \\
+M48 & QCM / piezoelectric mass sensor & 6 & C & C & selective adhesion / drift \\
+\multicolumn{6}{l}{\textbf{Reference / analytical}}\\[2pt]
+M26 & FTIR / micro-FTIR / ATR-FTIR & 1,705 & X & X & specialist instrument; useful external reference \\
+M27 & Raman / micro-Raman spectroscopy & 664 & X & X & specialist instrument; useful external reference \\
+M28 & Surface-enhanced Raman (SERS) & 61 & X & X & nanostructured substrates/laser \\
+M29 & Py-GC-MS / thermal decomposition & 127 & X & X & polymer mass, destructive/lab \\
+M30 & SEM / TEM electron microscopy & 431 & X & X & fixed equipment; morphology \\
+M31 & Dynamic light scattering / nanoparticle tracking & 29 & X & X & nanoparticle proxy, no polymer proof \\
+M32 & Plasmonics / SPR / LSPR sensing & 5 & C & C & substrates/selectivity/expense \\
+M33 & Fluorescence tagging / immunoassay & 7 & X & C & reagents and field stability \\
+M42 & NIR / SWIR / near infrared spectroscopy & 23 & C & C & spectral sampling \& water interference \\
+M43 & Laser-induced breakdown spectroscopy (LIBS) & 7 & X & X & pulsed laser / target preparation \\
+M45 & AFM atomic force microscopy & 20 & X & X & lab-scale nanoscale morphology \\
+\multicolumn{6}{l}{\textbf{Indirect / geospatial}}\\[2pt]
+M34 & Turbidity / suspended solids & 184 & S & S & not selective for MP \\
+M35 & Conductivity / resistivity / salinity probe & 47 & S & S & ions dominate; auxiliary covariate \\
+M36 & pH / dissolved oxygen / temperature probes & 142 & S & S & environmental covariates only \\
+M37 & RGB / aerial drone imagery & 6 & S & S & water appearance, not individual MPs \\
+M38 & Satellite / remote sensing / spectral indices & 33 & S & S & surface signal, calibration needed \\
+M39 & GIS / geostatistics / spatial interpolation & 13 & S & S & maps points; not sensing \\
+M40 & Machine learning / predictive regression & 254 & S & S & model does not independently establish polymer \\
+\end{longtable}
+ormalsize
+\noindent\textbf{Legend:} \textbf{P} = preferred core candidate; \textbf{C} = conditional feasibility; \textbf{S} = supporting/enabling method, not a stand-alone MP counter; \textbf{X} = excluded as routine core under the no-specialist-lab constraint. These are \emph{engineering triage labels}, not published validation status.\par

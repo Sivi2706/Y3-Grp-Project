@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Mission requirements, operating modes and acceptance criteria}{1}{section.1}%
+\contentsline {section}{\numberline {2}Architecture and critical component list}{2}{section.2}%
+\contentsline {section}{\numberline {3}Radio transmission: RC control versus basic telemetry}{3}{section.3}%
+\contentsline {section}{\numberline {4}Autopilot versus in-house control board}{4}{section.4}%
+\contentsline {section}{\numberline {5}GPS: active antenna, receiver model and mapping implications}{4}{section.5}%
+\contentsline {section}{\numberline {6}Motor comparison: thrust is not hull payload capacity}{4}{section.6}%
+\contentsline {section}{\numberline {7}Hydrostatics and expected payload mass}{5}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Twin-pontoon displacement sizing}{5}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Water-pump selection and operating load}{5}{section.8}%
+\contentsline {section}{\numberline {9}Power architecture, management, charging and endurance}{6}{section.9}%
+\contentsline {section}{\numberline {10}Time budget and survey choices}{7}{section.10}%
+\contentsline {section}{\numberline {11}Risk controls, procurement order and decision}{7}{section.11}%

@@ -1,0 +1,11 @@
+{
+  "wet_mass_kg": 21.974,
+  "theoretical_displacement_kg": 56.54866776461628,
+  "working_displacement_kg": 33.929200658769766,
+  "nominal_energy_Wh": 256.0,
+  "usable_energy_Wh": 204.8,
+  "track_A_minutes": 93.0,
+  "track_B_minutes": 95.86666666666667,
+  "track_A_distance_m": 120,
+  "track_B_expected_particles_per_sample": 3.12
+}

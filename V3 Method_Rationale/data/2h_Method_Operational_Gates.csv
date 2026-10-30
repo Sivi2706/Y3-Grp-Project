@@ -1,0 +1,9 @@
+Concept,Track_A_disposition,Track_B_disposition,Constraint,Track_A_model_minutes,Track_B_model_minutes,Mission_deadline_minutes,Time_model_A_pass,Time_model_B_pass,Evidence_class
+Flow-cell camera + AI,Conditional,Supporting,Observed sensing volume and particle identity,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+Portable filtration and imaging,Not live,Conditional,Processing time and particle recovery,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+Polarised scattering,Conditional,Conditional,Plastic specificity against real suspended solids,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+EIS / impedance cytometry,Conditional,Conditional,Volumetric throughput and electrolyte/particle separation,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+Nile Red plus fluorescence,Not routine live,Conditional,Chemical step and waste handling,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+Turbidity / conductivity / RGB,Auxiliary,Auxiliary,Requires proven site-specific relation to MPs,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+FTIR / Raman,Excluded routine,Excluded routine,Specialist facility and time restriction,93.0,95.87,120,True,True,Engineering screening only; method performance unverified
+Acoustic focusing,Supporting,Supporting,Enrichment requires downstream counting,93.0,95.87,120,True,True,Engineering screening only; method performance unverified

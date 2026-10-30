@@ -1,0 +1,18 @@
+Item,Estimated_mass_kg,Evidence_note
+two_pontoons,2.3,engineering estimate; validate after purchase
+frame,1.5,engineering estimate; validate after purchase
+waterproof_enclosure,0.8,engineering estimate; validate after purchase
+two_T200_thrusters,0.854,engineering estimate; validate after purchase
+two_ESC,0.3,engineering estimate; validate after purchase
+controller_power_GNSS,0.3,engineering estimate; validate after purchase
+radios,0.15,engineering estimate; validate after purchase
+pump,0.57,engineering estimate; validate after purchase
+tubing_flowcell_valves_filters,0.7,engineering estimate; validate after purchase
+camera_compute,0.4,engineering estimate; validate after purchase
+battery,2.4,engineering estimate; validate after purchase
+wiring_fuses_switches,0.6,engineering estimate; validate after purchase
+misc_sensors,0.3,engineering estimate; validate after purchase
+sample_bottles_empty,0.8,engineering estimate; validate after purchase
+retained_sample_water_16x0p5L,8.0,engineering estimate; validate after purchase
+reserve_for_build_uncertainty,2.0,engineering estimate; validate after purchase
+TOTAL,21.974,calculated

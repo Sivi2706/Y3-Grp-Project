@@ -1,0 +1,8 @@
+Screening scope: 10,833 preliminary include candidates; TI+AB+DE+ID; multi-label.
+Frequency reflects terminology, NOT verified instrument use or experimental success.
+Methods and roles overlap; do not add counts as a study total.
+M06 = ultrasound sonication for sample preparation; M23 = explicit ultrasound detection; M24 = acoustic concentration only.
+M18 impedance/EIS; M19 resistive-pulse; M35 bulk conductivity proxy. These are distinct.
+Code output is reproducible. Selection scores/gates are proposed engineering judgments and should be updated after prototyping.
+49 method-tags; 6483 paper-tag assignments; 3974 unique matched papers; 6859 unmatched papers requiring no forced category; 137 technical leads to inspect.
+High counts in the indirect/proxy family are not evidence of MP specificity.

@@ -1,0 +1,6 @@
+Scenario,Usable_Wh,Average_power_W,Endurance_hours,Pass_2h_energy_only,Peak_current_not_checked
+Track B economical,204.8,48,4.27,True,True
+Track A planned,204.8,88,2.33,True,True
+Track A difficult water,204.8,125,1.64,False,True
+High-drive manoeuvres,204.8,180,1.14,False,True
+Full-throttle dual T200 12V + loads,204.8,430,0.48,False,True

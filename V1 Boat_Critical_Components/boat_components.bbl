@@ -1,0 +1,544 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{T200}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f168310fb01a9d93acc69ea086d780cb}{%
+           family={{Blue Robotics}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{fullhash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{fullhashraw}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{bibnamehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authorbibnamehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authornamehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authorfullhash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authorfullhashraw}{f168310fb01a9d93acc69ea086d780cb}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{T200 Thruster Specifications and Performance}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bluerobotics.com/store/thrusters/t100-t200-thrusters/t200-thruster-r2-rp/
+      \endverb
+      \verb{url}
+      \verb https://bluerobotics.com/store/thrusters/t100-t200-thrusters/t200-thruster-r2-rp/
+      \endverb
+    \endentry
+    \entry{Pixhawk6C}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d46501ffe44acace5a42144aac4ae5ca}{%
+           family={{Holybro}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{fullhash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{fullhashraw}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{bibnamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorbibnamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authornamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorfullhash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorfullhashraw}{d46501ffe44acace5a42144aac4ae5ca}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pixhawk 6C Technical Specification}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.holybro.com/autopilot/pixhawk-6c/technical-specification
+      \endverb
+      \verb{url}
+      \verb https://docs.holybro.com/autopilot/pixhawk-6c/technical-specification
+      \endverb
+    \endentry
+    \entry{ArduBoat}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9940ab149ec330994236617a451f3778}{%
+           family={{ArduPilot Project}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9940ab149ec330994236617a451f3778}
+      \strng{fullhash}{9940ab149ec330994236617a451f3778}
+      \strng{fullhashraw}{9940ab149ec330994236617a451f3778}
+      \strng{bibnamehash}{9940ab149ec330994236617a451f3778}
+      \strng{authorbibnamehash}{9940ab149ec330994236617a451f3778}
+      \strng{authornamehash}{9940ab149ec330994236617a451f3778}
+      \strng{authorfullhash}{9940ab149ec330994236617a451f3778}
+      \strng{authorfullhashraw}{9940ab149ec330994236617a451f3778}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Boat Configuration --- Rover Documentation}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ardupilot.org/rover/docs/boat-configuration.html
+      \endverb
+      \verb{url}
+      \verb https://ardupilot.org/rover/docs/boat-configuration.html
+      \endverb
+    \endentry
+    \entry{RadioMaster}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b20b96aa660d380af756b5d8b5aa621c}{%
+           family={{RadioMaster}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{fullhash}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{fullhashraw}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{bibnamehash}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{authorbibnamehash}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{authornamehash}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{authorfullhash}{b20b96aa660d380af756b5d8b5aa621c}
+      \strng{authorfullhashraw}{b20b96aa660d380af756b5d8b5aa621c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pocket Radio Controller (M2), ExpressLRS Specifications}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://radiomasterrc.com/products/pocket-radio-controller-m2
+      \endverb
+      \verb{url}
+      \verb https://radiomasterrc.com/products/pocket-radio-controller-m2
+      \endverb
+    \endentry
+    \entry{SiK}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9940ab149ec330994236617a451f3778}{%
+           family={{ArduPilot Project}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9940ab149ec330994236617a451f3778}
+      \strng{fullhash}{9940ab149ec330994236617a451f3778}
+      \strng{fullhashraw}{9940ab149ec330994236617a451f3778}
+      \strng{bibnamehash}{9940ab149ec330994236617a451f3778}
+      \strng{authorbibnamehash}{9940ab149ec330994236617a451f3778}
+      \strng{authornamehash}{9940ab149ec330994236617a451f3778}
+      \strng{authorfullhash}{9940ab149ec330994236617a451f3778}
+      \strng{authorfullhashraw}{9940ab149ec330994236617a451f3778}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SiK Telemetry Radio --- Rover Documentation}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ardupilot.org/rover/docs/common-sik-telemetry-radio.html
+      \endverb
+      \verb{url}
+      \verb https://ardupilot.org/rover/docs/common-sik-telemetry-radio.html
+      \endverb
+    \endentry
+    \entry{M9N}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1754e5cb767b09c247d1f51b41d4ce5}{%
+           family={{u-blox}},
+           familyi={u\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{fullhash}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{fullhashraw}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{bibnamehash}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{authorbibnamehash}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{authornamehash}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{authorfullhash}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \strng{authorfullhashraw}{b1754e5cb767b09c247d1f51b41d4ce5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NEO-M9N GNSS Module and Antenna Integration}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.u-blox.com/en/product/neo-m9n-module
+      \endverb
+      \verb{url}
+      \verb https://www.u-blox.com/en/product/neo-m9n-module
+      \endverb
+    \endentry
+    \entry{SparkM9N}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=745fa0cbdb15cfd5340d89b422a224ba}{%
+           family={{SparkFun}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{fullhash}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{fullhashraw}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{bibnamehash}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{authorbibnamehash}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{authornamehash}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{authorfullhash}{745fa0cbdb15cfd5340d89b422a224ba}
+      \strng{authorfullhashraw}{745fa0cbdb15cfd5340d89b422a224ba}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NEO-M9N GNSS External Antenna and Breakout Guide}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://learn.sparkfun.com/tutorials/sparkfun-gps-neo-m9n-hookup-guide
+      \endverb
+      \verb{url}
+      \verb https://learn.sparkfun.com/tutorials/sparkfun-gps-neo-m9n-hookup-guide
+      \endverb
+    \endentry
+    \entry{Seaflo21}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=5080fe16628959f06e00dcf0bad09a17}{%
+           family={{SEAFLO USA}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{fullhash}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{fullhashraw}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{bibnamehash}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{authorbibnamehash}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{authornamehash}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{authorfullhash}{5080fe16628959f06e00dcf0bad09a17}
+      \strng{authorfullhashraw}{5080fe16628959f06e00dcf0bad09a17}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{21-Series Diaphragm Water Pumps and Specifications}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.seaflousa.com/product/21-series-diaphragm-water-pumps/
+      \endverb
+      \verb{url}
+      \verb https://www.seaflousa.com/product/21-series-diaphragm-water-pumps/
+      \endverb
+    \endentry
+    \entry{Bioenno}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2afac837f36d536fa1df5ca5ed6fa4e7}{%
+           family={{Bioenno Power}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{fullhash}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{fullhashraw}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{bibnamehash}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{authorbibnamehash}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{authornamehash}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{authorfullhash}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \strng{authorfullhashraw}{2afac837f36d536fa1df5ca5ed6fa4e7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{12 V 20 Ah LiFePO4 Battery, BLF-1220A}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bioennopower.com/products/12v-20ah-lfp-battery
+      \endverb
+      \verb{url}
+      \verb https://www.bioennopower.com/products/12v-20ah-lfp-battery
+      \endverb
+    \endentry
+    \entry{PM02D}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d46501ffe44acace5a42144aac4ae5ca}{%
+           family={{Holybro}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{fullhash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{fullhashraw}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{bibnamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorbibnamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authornamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorfullhash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorfullhashraw}{d46501ffe44acace5a42144aac4ae5ca}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PM02D Digital Power Module, 2S--12S}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://holybro.com/products/pm02d-power-module
+      \endverb
+      \verb{url}
+      \verb https://holybro.com/products/pm02d-power-module
+      \endverb
+    \endentry
+    \entry{MCMC}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=bf75dd1e0185cf79214752c009baeb6d}{%
+           family={{Malaysian Communications and Multimedia Commission}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{fullhash}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{fullhashraw}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{bibnamehash}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{authorbibnamehash}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{authornamehash}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{authorfullhash}{bf75dd1e0185cf79214752c009baeb6d}
+      \strng{authorfullhashraw}{bf75dd1e0185cf79214752c009baeb6d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Class Assignment No. 2 of 2025}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mcmc.gov.my/skmmgovmy/media/General/pdf2/Class-Assignment-No-2-of-2025.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mcmc.gov.my/skmmgovmy/media/General/pdf2/Class-Assignment-No-2-of-2025.pdf
+      \endverb
+    \endentry
+    \entry{PixhawkFirmware}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d46501ffe44acace5a42144aac4ae5ca}{%
+           family={{Holybro}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{fullhash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{fullhashraw}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{bibnamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorbibnamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authornamehash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorfullhash}{d46501ffe44acace5a42144aac4ae5ca}
+      \strng{authorfullhashraw}{d46501ffe44acace5a42144aac4ae5ca}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pixhawk 6C Supported Firmware}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.holybro.com/autopilot/pixhawk-6c/supported-firmware
+      \endverb
+      \verb{url}
+      \verb https://docs.holybro.com/autopilot/pixhawk-6c/supported-firmware
+      \endverb
+    \endentry
+    \entry{T500}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f168310fb01a9d93acc69ea086d780cb}{%
+           family={{Blue Robotics}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{fullhash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{fullhashraw}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{bibnamehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authorbibnamehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authornamehash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authorfullhash}{f168310fb01a9d93acc69ea086d780cb}
+      \strng{authorfullhashraw}{f168310fb01a9d93acc69ea086d780cb}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{T500 Thruster Specifications and Performance}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bluerobotics.com/store/thrusters/t100-t200-thrusters/t500-thruster/
+      \endverb
+      \verb{url}
+      \verb https://bluerobotics.com/store/thrusters/t100-t200-thrusters/t500-thruster/
+      \endverb
+    \endentry
+    \entry{MinnKota}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=5c59f7413d4b2168d105f56f153b6273}{%
+           family={{Minn Kota}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{fullhash}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{fullhashraw}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{bibnamehash}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{authorbibnamehash}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{authornamehash}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{authorfullhash}{5c59f7413d4b2168d105f56f153b6273}
+      \strng{authorfullhashraw}{5c59f7413d4b2168d105f56f153b6273}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Endura C2 Transom-Mount Trolling Motor User Manual}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://productimageserver.com/literature/ownersManual/39729OM.pdf
+      \endverb
+      \verb{url}
+      \verb https://productimageserver.com/literature/ownersManual/39729OM.pdf
+      \endverb
+    \endentry
+    \entry{Adafruit1150}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b65705aa9f138bcc5db4617809413e90}{%
+           family={{Adafruit Industries}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b65705aa9f138bcc5db4617809413e90}
+      \strng{fullhash}{b65705aa9f138bcc5db4617809413e90}
+      \strng{fullhashraw}{b65705aa9f138bcc5db4617809413e90}
+      \strng{bibnamehash}{b65705aa9f138bcc5db4617809413e90}
+      \strng{authorbibnamehash}{b65705aa9f138bcc5db4617809413e90}
+      \strng{authornamehash}{b65705aa9f138bcc5db4617809413e90}
+      \strng{authorfullhash}{b65705aa9f138bcc5db4617809413e90}
+      \strng{authorfullhashraw}{b65705aa9f138bcc5db4617809413e90}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{12 V Peristaltic Liquid Pump, Product 1150}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.adafruit.com/product/1150
+      \endverb
+      \verb{url}
+      \verb https://www.adafruit.com/product/1150
+      \endverb
+    \endentry
+    \entry{SeafloBilge}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2b9b1be08a14423fe0a2241e32e88e2f}{%
+           family={{SEAFLO}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{fullhash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{fullhashraw}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{bibnamehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authorbibnamehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authornamehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authorfullhash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authorfullhashraw}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{01 Series 500 GPH Bilge Pump}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.seaflomarinerv.com/index.php?a=index&aid=505&c=View&m=home
+      \endverb
+      \verb{url}
+      \verb https://www.seaflomarinerv.com/index.php?a=index&aid=505&c=View&m=home
+      \endverb
+    \endentry
+    \entry{Seaflo33}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2b9b1be08a14423fe0a2241e32e88e2f}{%
+           family={{SEAFLO}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{fullhash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{fullhashraw}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{bibnamehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authorbibnamehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authornamehash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authorfullhash}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \strng{authorfullhashraw}{2b9b1be08a14423fe0a2241e32e88e2f}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{33 Series Washdown Water Pump Specification}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.seaflo.com/index.php?a=index&aid=617&c=View&m=home
+      \endverb
+      \verb{url}
+      \verb https://www.seaflo.com/index.php?a=index&aid=617&c=View&m=home
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
