@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}Version 2 procurement scope and evidence rules}{2}{section.1}%
+\contentsline {section}{\numberline {2}Mission requirements, operating modes and acceptance criteria}{2}{section.2}%
+\contentsline {section}{\numberline {3}Architecture and critical component list}{3}{section.3}%
+\contentsline {section}{\numberline {4}Price-backed critical-component comparison (approved suppliers only)}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}MP proxy measurement, water intake and flow verification}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Position, navigation, imaging and manual control}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Power, propulsion and water exclusion}{6}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Radio transmission: RC control versus basic telemetry}{7}{section.5}%
+\contentsline {section}{\numberline {6}Autopilot versus in-house control board}{7}{section.6}%
+\contentsline {section}{\numberline {7}GPS: active antenna, receiver model and mapping implications}{8}{section.7}%
+\contentsline {section}{\numberline {8}Motor comparison: thrust is not hull payload capacity}{8}{section.8}%
+\contentsline {section}{\numberline {9}Hydrostatics and expected payload mass}{8}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Twin-pontoon displacement sizing}{8}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Water-pump selection and operating load}{9}{section.10}%
+\contentsline {section}{\numberline {11}Power architecture, management, charging and endurance}{10}{section.11}%
+\contentsline {section}{\numberline {12}Time budget and survey choices}{11}{section.12}%
+\contentsline {section}{\numberline {13}Risk controls, procurement order and decision}{11}{section.13}%
+\contentsline {section}{\numberline {14}V2 procurement-ready basket and transparent cost gap}{11}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Three staged purchase decisions}{12}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}RFQ form and verification before raising a purchase order}{12}{subsection.14.2}%
+\contentsline {section}{\numberline {15}V2 measurement validity and field-test gates}{13}{section.15}%

@@ -1,0 +1,305 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,tabularx,longtable,array,float,caption,xcolor,enumitem,siunitx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage[colorlinks=true,urlcolor=blue!55!black,citecolor=blue!55!black,linkcolor=blue!55!black]{hyperref}
+\usepackage[backend=biber,style=ieee,sorting=none,doi=true,url=false]{biblatex}
+\addbibresource{boat_references.bib}
+\definecolor{navy}{RGB}{26,57,81}\definecolor{teal}{RGB}{18,118,132}\definecolor{cream}{RGB}{245,250,251}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}\renewcommand{\arraystretch}{1.24}\setlength{\tabcolsep}{4.0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{\color{navy}\bfseries Portable Microplastic Survey Boat -- V2\\[3pt]\large Critical Component Procurement, Comparisons, Payload and Mission Feasibility}
+\author{Year 3 Engineering Group Project --- preliminary systems design}\date{2 November 2026 --- Version 2.0}
+\begin{document}\maketitle
+\tableofcontents
+\begin{abstract}This Version 2 report retains the Version 1 engineering calculations and adds university-approved supplier listings, traceable MYR prices, explicit quotation gaps and a costed preliminary purchase package. It translates the requirement to produce a spatial microplastic concentration heat map across a $20\,\mathrm{m}\times20\,\mathrm{m}$ water area within about two hours into a first-pass hull, propulsion, autonomy, pump, communications, and energy architecture. Manufacturer-rated values are cited separately from illustrative engineering assumptions. It does \emph{not} establish an actual motor payload rating, boat top speed, sensor selectivity or two-hour field performance. The companion methodology review contains the scientific measurement screening.\end{abstract}
+
+\section{Version 2 procurement scope and evidence rules}
+\textbf{Procurement rule.} The approved/registered supplier list was provided by the project team. A website listing is \emph{not} itself proof of the university's purchase-order status: the department must confirm the current account, delivery and quote requirements. Registered suppliers have no minimum purchase value according to the provided purchase instructions. Non-registered buying is a fallback \emph{only} when a registered supplier cannot fulfil the item, and requires prior Procurement Department coordination with \href{mailto:Radha.Sivadasan@nottingham.edu.my}{Radha.Sivadasan@nottingham.edu.my}.
+
+\textbf{Price evidence dated 2 November 2026.} All amounts in the comparison tables are single-unit \textbf{listed MYR prices observed on accessible Malaysian supplier webpages}, not a binding quotation. They may change, and tax, delivery, quantity tiers and compatibility accessories are not included unless a listing explicitly says otherwise. Each compared product has a directly clickable \textcolor{teal}{\textbf{listing}} link, and each item needing a supplier reply is marked \textbf{RFQ} (request for quotation). \textbf{No unauthorised third-party price is substituted for an approved supplier quote.}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Selected approved electronics suppliers and website access. Supplier names and restrictions come from the university project purchase instructions.}
+\begin{tabularx}{\linewidth}{@{}L{3cm}Y L{3.1cm}@{}}\toprule
+Supplier & Verified Malaysian storefront / contact & V2 role \\\midrule
+Cytron & \href{https://my.cytron.io/}{my.cytron.io} & Itemised public prices \\
+GI Electronic & \href{https://www.gie.com.my/}{gie.com.my} & Camera price comparison \\
+Element14 & \href{https://my.element14.com/}{my.element14.com} & RFQ / alternates \\
+RS & \href{https://my.rs-online.com/web/}{my.rs-online.com} & RFQ / protected electricals \\
+DigiKey & \href{https://www.digikey.my/en}{digikey.my} & RFQ / traceable parts \\
+Autobotic, Mybotic & University-listed vendors; website/product listing not verified here & Direct RFQ \\
+Vanguard KL & \href{mailto:enquiry@vanguardelectronic.com.my}{Email procurement enquiry} & Direct RFQ \\
+\bottomrule\end{tabularx}\end{table}
+\textbf{Other registered procurement routes:} for hull manufacture and waterproof fittings, approach YLT Hardware (\href{mailto:atikah_ylthardware@outlook.com}{email}), Grandtech Engineering (\href{mailto:adnan_matsarip@yahoo.com.my}{email}), Multi Impact (\href{mailto:Yang@multiimpact.com.my}{email}) and LCG Scientific (\href{mailto:lcgscientificl@gmail.com}{email}). The provided list restricts Dynamics Industrial (\href{mailto:dynamicinds@gmail.com}{email}) to \emph{electrical only}. JL Brilliant Resources (\href{mailto:jlbresources2133@gmail.com}{email}) and TX Moon (\href{mailto:ray.txmoon@gmail.com}{email}) are the registered \emph{online-items} routes. Their product-specific prices are \textbf{RFQ}, not zero.
+
+\section{Mission requirements, operating modes and acceptance criteria}
+A $400\,\mathrm{m}^2$ water survey must yield georeferenced observations and a rendered 2D concentration or explicitly provisional particle proxy map inside 120 minutes. Track A measures aboard a moving or stopped boat; Track B collects known-volume labelled water at 16 illustrative grid locations for portable shoreline analysis. Remote operator retains positive control and a safe manual retrieval plan. The shoreline/boat route, local current, obstacle map, GNSS performance, wind and water depth are not specified and require field reconnaissance.
+
+\begin{table}[H]\centering\footnotesize
+\caption{Proposed acceptance gates; numerical criteria are design targets, not published hardware performance.}
+\begin{tabularx}{\linewidth}{@{}L{3.1cm}Y Y@{}}\toprule
+Dimension & Acceptance demonstration & Consequence if failed\\\midrule
+Geospatial output & $20\times20$ m map, original locations, timestamps, size limits, data-quality legend & Map fails stakeholder purpose\\
+Timeliness & First deployment to completed map within $\leq120$ min & Reduce stations or improve throughput\\
+Measurement credibility & Controlled known-particle trials, river interferents, measured sample volume, blanks & Label ``suspected MP-like particles'' or calibrated proxy\\
+Navigation & Confirm track spacing and positional error; manual RC override & No autonomous close-range operation\\
+Flotation & Float full wet load with reserve buoyancy and stable freeboard & Increase hull displaced volume\\
+Energy & 120 min at \emph{measured} average load, BMS/fuse adequate for transients & More battery, lower draw or mission redesign\\\bottomrule\end{tabularx}\end{table}
+
+\section{Architecture and critical component list}
+\begin{figure}[H]\centering
+\begin{tikzpicture}[>=Latex,node distance=5mm,b/.style={draw=teal,rounded corners,fill=cream,align=center,text width=0.81\linewidth,minimum height=8mm,font=\footnotesize},a/.style={-Latex,thick,teal}]
+\node[b] (bat){12.8 V LiFePO$_4$ battery + BMS, main fuse, watertight kill switch, current monitor};
+\node[b,below=of bat] (pdb){Power distribution: 12 V propulsion/pump branch + protected 5 V avionics/compute rail};
+\node[b,below=of pdb] (control){ArduPilot Rover boat autopilot (Pixhawk 6C) + active-antenna NEO-M9N GPS + RC receiver};
+\node[b,below=of control] (drivers){Differential thrust: 2 ESCs $\rightarrow$ 2 waterproof thrusters; separate pump motor driver};
+\node[b,below=of drivers] (sample){Track A: chamber + sensor + observed flow; Track B: measured-volume sample collector};
+\node[b,below=of sample] (link){RC emergency/manual link, telemetry/logging, waterproof enclosure, shore GIS processing};
+\foreach \u/\v in {bat/pdb,pdb/control,control/drivers,drivers/sample,sample/link} \draw[a] (\u)--(\v);
+\end{tikzpicture}
+\caption{Block diagram (logical, not complete wiring schematic). RC safety and boat-side logs must not depend on the data-telemetry link.}\end{figure}
+\begin{table}[H]\centering\scriptsize
+\caption{Prototype system purchase priorities; masses are budget allowances unless specified by manufacturers.}
+\begin{tabularx}{\linewidth}{@{}L{2.3cm}L{3.1cm}Y@{}}\toprule
+Critical system & Candidate hardware & Procurement/check before commitment\\\midrule
+Hull/buoyancy & 2 sealed cylindrical pontoons, $0.90$ m long $\times0.20$ m OD, rigid platform & Measure true sealed displacement, frame strength and wet load\\
+Propulsion & 2 Blue Robotics T200 + bidirectional ESCs & 12 V compatible, guards, differential steering and sufficient BMS peak current \cite{T200}\\
+Autopilot & Holybro Pixhawk 6C, ArduPilot Rover firmware & Supported hardware; boat mode uses \texttt{FRAME\_CLASS=2} \cite{Pixhawk6C,ArduBoat}\\
+RC link & RadioMaster Pocket 2.4 GHz ELRS with matched serial receiver & Manually test kill/hold/failsafe; ensure regional radio compliance \cite{RadioMaster}\\
+Telemetry & 2.4 GHz Wi-Fi for near-bank test; optional compatible SiK pair & MAVLink/logs and onboard SD backup, independent of RC \cite{SiK}\\
+GNSS & u-blox \textbf{NEO-M9N-00B} module + compatible powered active L1 antenna/compass unit & Verify receiver board has antenna bias circuitry, magnetometer and correct autopilot cable \cite{M9N,SparkM9N}\\
+Sampling & SEAFLO 21-Series 12 V diaphragm pump + calibrated flowmeter & 1.2 GPM nameplate is open flow; flow through filters may be lower \cite{Seaflo21}\\
+Power & 12.8 V 20 Ah LiFePO$_4$, integrated BMS, LiFePO$_4$ charger & Peak current and fuse coordination; avoid powering motor from flight-controller rail \cite{Bioenno,PM02D}\\
+Safety & Sealed electronics, buoyant tether/recovery aid, prop guards, water-leak detector & Safety switch, loss-of-RC configuration, emergency hand retrieval\\\bottomrule\end{tabularx}\end{table}
+
+
+\section{Price-backed critical-component comparison (approved suppliers only)}
+\subsection{MP proxy measurement, water intake and flow verification}
+\begin{longtable}{@{}L{3.8cm}L{2.15cm}L{1.25cm}L{1.25cm}L{6.45cm}@{}}\caption{Monitoring and sampling candidates. Prices are per unit unless stated; every row includes an approved-vendor product hyperlink.}\\\toprule
+Part and purpose & Supplier / link & Price RM & Selection & Engineering comparison and test gate \\\midrule\endfirsthead
+\toprule Part and purpose & Supplier / link & Price RM & Selection & Engineering comparison and test gate \\\midrule\endhead
+DFRobot SEN0189 analogue turbidity & Cytron / \href{https://my.cytron.io/c-sensor/c-others-sensor/p-gravity-analog-turbidity-sensor-for-arduino-41626}{listing} & 55.00 & Bench test & Affordable optical turbidity \emph{proxy}. Must calibrate against NTU and laboratory MP counts; not a microplastic-specific detector. Probe sealing and optical fouling need verification.\\
+Seeed S-DTS210-01 industrial RS485 turbidity & Cytron / \href{https://my.cytron.io/search?tag=Turbidity}{listing} & 1,135.00 & Field option & IP68, 12--24 V, Modbus/RS485, 0--1000 NTU; stronger environmental packaging but still turbidity rather than chemical MP identification. Price from Cytron Malaysia search page; \href{https://sg.cytron.io/c-sensors-connectivities/p-industrial-turbidity-sensor-with-sp13-connector-rs485-modbus-rtu}{specifications} are shown separately by the same supplier's regional store.\\
+R385 12 V diaphragm pump, 1.6 L/min rated & Cytron / \href{https://my.cytron.io/p-r385-dc12v-diaphragm-water-pump}{listing} & 10.90 & Bench test & Low purchase cost, 6 W stated; 1.6 L/min is not validated flow through the sampling circuit. Check intake lift, tubing compatibility and contamination blanks.\\
+Micro submersible pump, 3--5 V & Cytron / \href{https://my.cytron.io/p-micro-submersible-water-pump-dc-3v-5v}{listing} & 3.90 & Reject field & 1.2--1.6 L/min advertised; must be submerged, supplied tube is described as non-food-grade, and suitability for environmental particle sampling is unknown.\\
+24 V peristaltic pump, $>90$ mL/min & Cytron / \href{https://my.cytron.io/p-24v-peristaltic-dosing-pump}{listing} & 49.00 & Precision only & Isolates fluid path to tube, but nominal speed is inadequate for fast one-litre stations; requires 24 V or a suitable converter.\\
+YF-S201 pulse flow sensor, 1--30 L/min & Cytron / \href{https://my.cytron.io/p-g1-2-half-effect-water-flow-sensor-yf-s201}{listing} & 49.00 & Conditional & Low-cost in-line volume audit; stated lower range 1 L/min means it is \emph{not rated} for the 0.5 L/min Track A model. Verify head loss, calibration and microplastic retention.\\
+\bottomrule\end{longtable}
+\textbf{Decision:} Buy the \textbf{RM55 turbidity module and RM10.90 R385 pump for bench comparisons}, with a graduated-cylinder calibration; consider the RM1,135 IP68 sensor only after establishing a predictive relationship to laboratory MP. Do \emph{not} combine the 0.5 L/min Track A assumption with the YF-S201 and claim flow accuracy: its published operating range begins at 1 L/min. For low flows use timed gravimetric volume determination or request a certified low-flow meter via RS/Element14/DigiKey. All plastic wetted parts require field and process blanks.
+
+\subsection{Position, navigation, imaging and manual control}
+\begin{longtable}{@{}L{3.8cm}L{2.15cm}L{1.25cm}L{1.25cm}L{6.45cm}@{}}\caption{Controller and sensing comparisons. "RFQ" means no approved-vendor public price was verified.}\\\toprule
+Component & Supplier / link & Price RM & Decision & Technical fit and limitations \\\midrule\endfirsthead
+\toprule Component & Supplier / link & Price RM & Decision & Technical fit and limitations \\\midrule\endhead
+GY-NEO6MV2 / NEO-6M satellite receiver & Cytron / \href{https://my.cytron.io/c-gps/p-gy-neo6mv2-flight-control-gps-module}{listing} & 21.50 & Budget only & UART GNSS and antenna; older single-system GPS option, no advertised compass. No field proof of sub-metre mapping accuracy.\\
+Waveshare LC76G multi-GNSS (AG3352) & Cytron / \href{https://my.cytron.io/c-other-wireless/p-lc76g-multi-gnss-module-supports-gps-bds-glonass-galileo-qzss}{listing} & 69.00 & Bench pref. & Multi-constellation receiver; listing states 1.5 m CEP and max 10 Hz. No compass or verified ArduPilot plug-and-play cable; survey accuracy requires field tests.\\
+NodeMCU ESP32 stand-alone maker board & Cytron / \href{https://my.cytron.io/c-wireless-devices/c-wifi/p-nodemcu-esp32-with-expansion-board}{listing} & 29.00 & Sensor MCU & Used as an ancillary sensor/data-logging controller; \emph{not} a turnkey waypoint/return-to-home autopilot. Quoted price is for the listed NodeMCU variant; other bundles differ.\\
+Holybro Pixhawk 6C + compatible M9N/compass & Registered suppliers / RFQ; \href{https://docs.holybro.com/autopilot/pixhawk-6c/technical-specification}{maker specification} & RFQ & Boat autopilot & Safety-oriented waypoint and RC override architecture from V1. No confirmed approved-supplier public price; request an itemised local quote with correct GPS, power module and firmware compatibility.\\
+HotRC 6-channel 2.4-GHz TX/RX set & Cytron / \href{https://my.cytron.io/p-hotrc-6-channels-rc-radio-transmitter-and-receiver}{listing} & 109.00 & Manual test & Listed for model cars/boats, receiver included, PWM output. Confirm \emph{actual} Pixhawk input compatibility (e.g. receiver serial protocols or PPM converter), signal loss failsafe and region compliance.\\
+RadioMaster Pocket ELRS + compatible receiver & Registered suppliers / RFQ; \href{https://radiomasterrc.com/products/pocket-radio-controller-m2}{maker product} & RFQ & Alternative & V1 reference platform; must quote both handset and matching receiver through registered supplier, not order directly from unlisted manufacturer.\\
+ESP32-CAM with USB connectivity & Cytron / \href{https://my.cytron.io/c-camera-image-sensor/p-esp32-cam-wireless-iot-vision-development-board}{listing} & 45.00 & Bench camera & Promotional web price observed; USB-enabled variant, but limited optics and onboard compute. Recheck at ordering.\\
+ESP32-CAM with OV2640 (module only) & GI Electronic / \href{https://www.gie.com.my/shop.php?action=wireless/wifi/esp32_cam}{listing} & 37.00 & Alternative & GI product page lists RM37.00 and module/camera; its homepage displayed a different headline price, so use the \emph{product-detail price} and reconfirm by quotation. Additional programmer may be required.\\
+\bottomrule\end{longtable}
+\textbf{Decision:} Navigation needs an independent, reliable RC stop/override path. A low-cost ESP32+LC76G can log position and trial telemetry but does not automatically replace Pixhawk's mission and failsafe logic. Surface RGB imagery of brown or turbid water is \emph{not} evidence that microplastics are directly observable in such images; any image--turbidity--MP regression must be built from matched laboratory references, across water-colour and lighting conditions.
+
+\subsection{Power, propulsion and water exclusion}
+\begin{longtable}{@{}L{3.8cm}L{2.15cm}L{1.25cm}L{1.25cm}L{6.45cm}@{}}\caption{Power and hull-related candidate comparisons; no unverified marine propulsion price is inserted.}\\\toprule
+Component & Supplier / link & Price RM & Decision & Engineering fit and limitation \\\midrule\endfirsthead
+\toprule Component & Supplier / link & Price RM & Decision & Engineering fit and limitation \\\midrule\endhead
+12 V, 7.2 Ah sealed lead-acid & Cytron / \href{https://my.cytron.io/p-12v-7.0ah-lead-acid}{listing} & 59.00 & Bench only & Nominal 86.4 Wh; listed mass about 2.324 kg. Poor two-hour margin at 88 W even with ideal capacity; not interchangeable with proposed LiFePO$_4$.\\
+3S LiPo, 11.1 V, 2.2 Ah, 30C & Cytron / \href{https://my.cytron.io/p-lipo-rechargeable-battery-3s-11.1v-30c-2200mah}{listing} & 75.00 & Short test & 24.4 Wh nominal. High advertised C-rate does not provide two hours' capacity; no built-in protection per listing.\\
+3S LiPo, 11.1 V, 5.2 Ah & Cytron / \href{https://my.cytron.io/p-lipo-rechargeable-battery-11.1v-5200mah}{listing} & 155.00 & Short test & 57.7 Wh nominal; at 88 W and 80\% assumed usable gives about 0.53 h \emph{ideal} endurance, before losses. Requires compatible balance charging and voltage protections.\\
+12.8 V, 20 Ah LiFePO$_4$ + BMS & Registered suppliers / RFQ; \href{https://www.bioennopower.com/products/12v-20ah-lfp-battery}{reference model} & RFQ & Field design & 256 Wh nominal per V1 design; request exact BMS current, charger, mass and price. The maker link is a \emph{specification example}, not an authorised purchasing channel.\\
+Balance charger B6AC OEM & Cytron / \href{https://my.cytron.io/p-multi-function-lipo-balance-charger-13853}{listing} & 95.00 & Bench option & LiPo/LiFe support shown; verify plug, balance harness and pack-specific charge limits. Must not assume all packs have correct balance taps.\\
+GM25 12 V brushed geared motor & Cytron / \href{https://my.cytron.io/c-dc-geared-motor/p-12v-980rpm-2.3kgfcm-high-power-brushed-dc-geared-motor}{listing} & 49.00 & Not a marine thruster & Two would cost RM98 for motors alone; no immersion rating, sealed-shaft design or propeller performance verified. Only consider if designing a protected, shaft-sealed mechanical drive.\\
+MD10C brushed driver, one channel & Cytron / \href{https://my.cytron.io/c-robot-controller/c-dc-motor-driver/p-10amp-5v-30v-dc-motor-driver}{listing} & 64.26 & Brushed only & Two independent units cost RM128.52; suitable \emph{only} for brushed motors within actual current rating, not Blue Robotics three-phase thrusters.\\
+MDD10A brushed driver, two channels & Cytron / \href{https://my.cytron.io/c-motor-driver/c-dc-motor-driver/p-10amp-5v-30v-dc-motor-driver-2-channels}{listing} & 108.78 & Brushed only & One board controls two brushed motors; each 10 A continuous rated. Ensure motor stall current; \emph{not} a brushless ESC.\\
+Blue Robotics T200 + matching bidirectional ESC & Registered suppliers / RFQ; \href{https://bluerobotics.com/store/thrusters/t100-t200-thrusters/t200-thruster-r2-rp/}{maker specification} & RFQ & V1 field basis & 7--20 V marine thruster; maker states 17 A at full throttle 12 V \emph{per thruster}. Request \emph{two} motors, two ESCs, sealed cabling and approved-supplier quote.\\
+IP65 ABS electronics enclosure & Cytron / \href{https://my.cytron.io/p-outdoor-ip65-water-proof-enclosure-with-abs-plate}{listing} & 35--41 & Prototype & Price depends on enclosure variant; actual selected configuration and cable glands must be confirmed. IP65 is not submersible.\\
+\bottomrule\end{longtable}
+\textbf{Decision:} retain a \emph{quotation-controlled field drivetrain} instead of selecting low-cost unsealed gearmotors as drop-in substitutes. Never connect a T200 brushless motor to a Cytron MD10C/MDD10A brushed driver. A pair of T200s has approximately 34 A full-throttle current at 12 V before pumps and electronics; V1's illustrative 30 A BMS is undersized for that operating point. Set current limits or revise the battery design after bench measurements.
+
+\section{Radio transmission: RC control versus basic telemetry}
+\begin{table}[H]\centering\footnotesize
+\caption{Two distinct links; ranges depend on water-level antenna placement and site conditions.}
+\begin{tabularx}{\linewidth}{@{}L{2.7cm}L{3.1cm}Y@{}}\toprule
+Function & Example & Design consequence\\\midrule
+Manual RC override & RadioMaster Pocket, ExpressLRS 2.4 GHz receiver; CRSF serial input & Priority for emergency stop/hold/manual steering; independently test receiver loss, binding and channel assignment \cite{RadioMaster}\\
+Basic data transmission & Short-range 2.4 GHz Wi-Fi to shore, or paired SiK MAVLink radio & Send time/GPS/battery/QC/concentration updates; do not stream high-resolution raw video unless capacity verified \cite{SiK}\\
+Onboard resilience & SD logging in autopilot or companion computer & Store raw sensor files and logs even when telemetry is lost\\
+Frequency compliance & Malaysia MCMC Class Assignment No. 2 of 2025 & Confirm permitted band, module approvals and transmit power before using 433/868/915 MHz \cite{MCMC}\\\bottomrule\end{tabularx}\end{table}
+\textbf{Proposed telemetry packet (not a standard specification):} mission ID, timestamp, latitude, longitude, fix quality, battery V/A, motor duty, flow rate, sample ID, counted events, confidence and fault bits. At one compact packet per second, average data rate should be small; verify actual payload and overhead. Record all high-bandwidth images locally.
+
+\section{Autopilot versus in-house control board}
+\begin{table}[H]\centering\footnotesize
+\caption{Drone flight controller reuse is supported, but a generic drone ECU is not automatically boat-ready.}
+\begin{tabularx}{\linewidth}{@{}L{3.0cm}YY@{}}\toprule
+Criterion & Pixhawk 6C / ArduPilot Rover & In-house ESP32 / STM32 MCU\\\midrule
+Boat software & Official boat variant uses \texttt{FRAME\_CLASS=2}; Rover supports GPS waypoints, Auto, Guided, RTL and Loiter \cite{ArduBoat} & Must implement navigation, steering loops, state estimation and failsafes\\
+Hardware & STM32H743, multiple PWM, serial/CAN/GPS interfaces; supported ArduPilot releases \cite{Pixhawk6C,PixhawkFirmware} & Low-cost and flexible I/O, but architecture is student-developed\\
+Twin-motor drive & Servo-output differential thrust configuration supported with correct vehicle setup & Two ESC PWM signals; differential thrust and mixing coded manually\\
+Mission risk & Mature navigation stack; test firmware, prop guards and mode switching & More coding and test burden, higher risk under two-hour deadline\\
+Recommended division & Safety navigation, waypoint execution and RC override & Sampling scheduler, sensor data, flowmeter and CSV telemetry\\\bottomrule\end{tabularx}\end{table}
+The supplied \href{https://www.instructables.com/Building-a-Self-Driving-Boat-ArduPilot-Rover/}{self-driving boat tutorial} is a useful build example, but \emph{the governing technical confirmation is ArduPilot's official boat configuration documentation}. Parameter/firmware compatibility must be checked on the chosen board. Set motor outputs, steering and failsafes on the actual boat, not by copying an aircraft mixer.
+
+\section{GPS: active antenna, receiver model and mapping implications}
+Specify the \textbf{NEO-M9N-00B} multiconstellation receiver (or Holybro M9N GPS/compass kit with verified module revision). A breakout with \emph{active-antenna bias} is required if using a powered L1 GNSS patch; a bare antenna connector does not guarantee power to an active antenna. u-blox documents support for active antennas, and SparkFun offers NEO-M9N breakouts with external antenna connectors \cite{M9N,SparkM9N}. Representative manufacturer positioning accuracy is roughly $1.5$ m horizontal CEP under specified conditions \cite{M9N}. This is substantial relative to proposed 5 m grid spacing; repeat ground-point checks, keep GNSS well above the waterline, separate from motors, and log actual fix quality. If sub-metre mapping is essential, upgrade to an RTK-capable \emph{different} receiver and surveyed reference corrections rather than claiming the NEO-M9N provides RTK.
+
+\section{Motor comparison: thrust is not hull payload capacity}
+An electric thruster's static thrust (kgf) balances \emph{horizontal drag}, not the vertical weight that the hull must float. The allowable carried mass is governed primarily by sealed displacement and stability. Therefore the table compares \textbf{manufacturer thrust and full-throttle electrical load}; it cannot supply a legitimate ``maximum payload kg'' without hull geometry, drag and target speed.
+\begin{table}[H]\centering\scriptsize
+\caption{Manufacturer-rated propulsion comparison. Full-throttle figures must not be interpreted as average cruise consumption.}
+\begin{tabularx}{\linewidth}{@{}L{2.4cm}L{2.25cm}L{2.2cm}L{1.85cm}Y@{}}\toprule
+Motor option & Full forward thrust & Full-load electrical at stated V & Proposed load class* & Implication\\\midrule
+2 $\times$ T200 (12 V) \cite{T200} & 3.71 kgf \emph{each} & 17 A, 205 W \emph{each} & Prototype 15--25 kg & Good steering authority, \emph{requires throttle limit and peak-current validation}\\
+2 $\times$ T500 (12 V) \cite{T500} & 6.0 kgf \emph{each} & 16.9 A, 202 W \emph{each} & Heavier hulls, $>$25 kg & Larger/heavier, likely overkill for sheltered 20-m survey\\
+Minn Kota Endura C2 30 (12 V) \cite{MinnKota} & 30 lbf $\approx13.6$ kgf total & up to 30 A, $\approx360$ W & Larger slow platform & Manual tiller/steering adaptation and weight; no differential drive by default\\\bottomrule\end{tabularx}\end{table}
+{\footnotesize *The ``load class'' is a proposed \emph{prototype trial mass}, not a rated motor payload or a verified towing capacity. Select actual motors after tow/drag, current and turning tests.\par}
+\textbf{Measured-load test:} add 5-kg ballast steps to the completed hull, measure straight-line speed, DC power, steering response, stopping, and recovery. Record operating powers at e.g. 0.15, 0.25 and 0.40 m/s rather than fabricating a vendor speed--payload curve.
+
+\section{Hydrostatics and expected payload mass}
+\subsection{Twin-pontoon displacement sizing}
+For two sealed circular cylinders, $L=0.90$ m and $D=0.20$ m:
+\[V_{\max}=2\pi(D/2)^2L=0.05655\,\mathrm{m}^3\approx56.55\,\mathrm{L}.\]
+In fresh water, theoretical maximum fully submerged displaced water mass is approximately $56.55$ kg. Using no more than \textbf{60\% of that displacement as an initial working buoyancy budget} gives about \textbf{33.93 kg} supporting total vessel and payload. This is not a hull stability certification: caps, leaks, trim, loading location and waves may reduce available margin.
+\begin{table}[H]\centering\footnotesize
+\caption{Illustrative all-up wet mass budget (\texttt{data/payload\_estimate.csv}); validate every line after procurement.}
+\begin{tabularx}{\linewidth}{@{}Y r Y r@{}}\toprule
+Item & kg & Item & kg\\\midrule
+Two 0.9-m pontoons & 2.30 & Frame and enclosure & 2.30\\
+2 T200 + 2 ESCs & 1.15 & Autopilot/GPS/radios & 0.45\\
+Pump, tubing, filters & 1.27 & Camera and compute & 0.40\\
+12.8 V 20 Ah LiFePO$_4$ & 2.40 & Wiring/fuses/extra sensors & 0.90\\
+Empty bottles & 0.80 & Eight litres retained water & 8.00\\
+Build contingency & 2.00 & & \\\midrule
+\textbf{Total wet mass} & \textbf{22.0} & Working buoyancy budget & \textbf{33.93}\\\bottomrule\end{tabularx}\end{table}
+\textbf{Important:} Track B with \emph{16 litres retained} instead of 8 adds another 8 kg, raising the vessel to about \textbf{30.0 kg}. It is still under the 33.93-kg illustrative limit but with poor margin for wave, trim and modelling error. An approach with small bottles, fewer stations or progressive sample unloading is preferable to carrying 16 L simultaneously.
+
+\section{Water-pump selection and operating load}
+\begin{table}[H]\centering\scriptsize
+\caption{Published pump specifications. Quoted open-flow rates are not actual filtered flow; record true Q under backpressure, intake lift and fouling.}
+\begin{tabularx}{\linewidth}{@{}L{2.75cm}L{1.4cm}L{2.0cm}L{1.6cm}Y@{}}\toprule
+Model & Supply & Flow rating & Electrical load & Use/risk\\\midrule
+Adafruit 1150 peristaltic \cite{Adafruit1150} & 12 V & up to 0.10 L/min & 0.2--0.3 A = 2.4--3.6 W & Low contamination contact; too slow for many 1-L stations\\
+SEAFLO 21 SFDP1-012-035-21 \cite{Seaflo21} & 12 V & 1.2 GPM $\approx4.5$ L/min & 4.0 A max $\approx48$ W & Candidate collection pump; intermittent duty; measure real flow at filter\\
+SEAFLO 500 GPH bilge SFBP1-G500-01 \cite{SeafloBilge} & 12 V & 500 GPH nominal & 1.6 A nominal; 4 A max & High throughput, low head, not precision metering; needs flowmeter\\
+SEAFLO 33-Series SFWP1-030-070-33 \cite{Seaflo33} & 12 V & 3.0 GPM $\approx11.3$ L/min & 18 A max $\approx216$ W & Heavy duty, high current; unnecessary for initial small-scale sampling\\\bottomrule\end{tabularx}\end{table}
+\textbf{Chosen design basis:} SEAFLO 21 for Track B filling or a bypass-controlled Track A stream, with \emph{measured} flow $\geq1.5$ L/min for Track B in the timing example. Sensitive microchannels may need a \emph{separate low-flow metering stage}; do not force unfiltered river water through them. An inline flowmeter plus calibration against graduated water volume is compulsory. Provide coarse guard, cleanable strainers and a properly routed overflow/backflush. Some pump-contact materials are polymers: use field/process blanks and assess sample contamination.
+
+\section{Power architecture, management, charging and endurance}
+\begin{figure}[H]\centering
+\begin{tikzpicture}[>=Latex,font=\footnotesize,
+ bus/.style={draw=teal,rounded corners,fill=cream,text width=13.5cm,minimum height=10mm,align=center},
+ branch/.style={draw=teal,rounded corners,fill=cream,text width=4.1cm,minimum height=18mm,align=center},
+ arr/.style={-Latex,thick,teal}]
+\node[bus] (battery) at (0,0) {12.8 V LiFePO$_4$ pack + BMS $\rightarrow$ main fuse + accessible isolation switch + current-monitor shunt};
+\node[bus] (distribution) at (0,-1.4) {Insulated DC distribution bus with individually fused branches};
+\node[branch] (motor) at (-5.0,-3.4) {12 V motor bus\\2 ESCs + 2 thrusters\\peak-current protection};
+\node[branch] (pump) at (0,-3.4) {12 V sampling branch\\pump driver + flowmeter\\fuse + reverse polarity};
+\node[branch] (logic) at (5.0,-3.4) {Protected 5.2 / 5 V rails\\Pixhawk + GNSS + radio\\separate sensor DC--DC};
+\node[bus] (safety) at (0,-5.8) {Monitoring software: low-voltage/current alarms, leak detection, RC failsafe and safe return/stop};
+\draw[arr](battery)--(distribution);
+\foreach \x in {motor,pump,logic} \draw[arr] (distribution.south) -- ++(0,-.35) -| (\x.north);
+\draw[dashed,teal] (motor.south) -- ++(0,-.35) -| ([xshift=-4cm]safety.north);
+\draw[dashed,teal] (pump.south) -- ++(0,-.35) -| (safety.north);
+\draw[dashed,teal] (logic.south) -- ++(0,-.35) -| ([xshift=4cm]safety.north);
+\end{tikzpicture}
+\caption{Power-distribution concept with genuinely parallel fused motor, pump and logic branches. Dashed paths denote monitoring/fault signalling rather than physical series wiring.}\end{figure}
+\textbf{Controller power:} The Holybro PM02D offers regulated 5.2 V up to 3 A from a 2S--12S input, but is \emph{not} a high-current supply for servos, pump or motors \cite{PM02D}. Verify analog/digital module type against the selected Pixhawk connector. Use fused motor and pump circuits; fuses protect wires, not simply the device. \textbf{Battery charging:} A representative Bioenno 12 V 20 Ah LiFePO$_4$ pack includes a protection module with 30 A continuous discharge and specifies a suitable 14.6 V charger (manufacturer example 4 A) \cite{Bioenno}. Do not charge LiFePO$_4$ with an unmatched lead-acid or LiPo charger. Charge in a dry supervised location, disconnected from the boat loads, with supplier-approved charger and appropriate temperature constraints.
+
+\begin{table}[H]\centering\footnotesize
+\caption{Averaged survey-power allowances at the DC bus: \emph{engineering assumptions}, not manufacturer measurements.}
+\begin{tabularx}{\linewidth}{@{}Yrr@{}}\toprule
+Component / combined function & Track A W & Track B W\\\midrule
+Two thrusters at low-speed survey (combined) & 50 & 30\\
+Autopilot, GNSS, RC receiver & 6 & 6\\
+Telemetry / logging & 4 & 2\\
+Camera/computer & 9 & 0\\
+Pump, \emph{duty-averaged} & 12 & 6\\
+Conversion/misc. margin & 7 & 4\\\midrule
+\textbf{Estimated average} & \textbf{88} & \textbf{48}\\\bottomrule\end{tabularx}\end{table}
+\[E_{\mathrm{nom}}=12.8\times20=256\,\mathrm{Wh},\qquad E_{\mathrm{usable}}=0.80\times256=204.8\,\mathrm{Wh},\qquad t=E_{\mathrm{usable}}/P_{\mathrm{average}}.\]
+\begin{table}[H]\centering\footnotesize
+\caption{Illustrative 12.8 V, 20 Ah battery operating time: energy-only estimates, ignoring rate/thermal limits and unmodelled loads. Source: \texttt{data/power\_endurance.csv}.}
+\begin{tabularx}{\linewidth}{@{}Yrrrr@{}}\toprule
+Scenario & Avg W & h & Energy for 2h & 2h energy gate\\\midrule
+Track B economical & 48 & 4.27 & 96 Wh & Pass\\
+Track A planned & 88 & 2.33 & 176 Wh & Pass (narrow)\\
+Track A difficult water & 125 & 1.64 & 250 Wh & Fail\\
+High-drive manoeuvres & 180 & 1.14 & 360 Wh & Fail\\
+Full-throttle dual T200 at 12 V + loads & 430 & 0.48 & 860 Wh & Fail; BMS also inadequate\\\bottomrule\end{tabularx}\end{table}
+\textbf{Critical current warning:} Two T200 thrusters at maximum 12 V load could draw approximately $2\times17=34$ A before other components. The representative Bioenno 20 Ah pack is rated 30 A continuous; full power on both thrusters is therefore \textbf{not permissible} with this battery/BMS. Throttle-limit the ESCs or select a pack with a verified higher discharge rating, suitably rated wires and protection. The $88$ W Track A estimate requires validation with an inline wattmeter on the water, including startup and snagged-propeller cases. \cite{T200,Bioenno}
+
+\section{Time budget and survey choices}
+Track A illustrative path: five $20$-m lanes plus four $5$-m lateral moves gives $120$ m. At an assumed $0.25$ m/s the ideal transit is $8$ min. A 60-min effective sensing period plus 25 min setup, turns, recovery, QC and map generation totals $93$ min. A $0.50$-L/min fully interrogated flow yields $30$ L in the sensing period, \emph{not} $30$ L per map cell. Sensor sampling time and intake-delay calibration matter.
+
+Track B illustrative workflow: 16 stations, 1 L per site, effective pumping $1.5$ L/min, $1.2$ min/station for handling and $3$ min/station portable image processing; add 18 min survey movement/setup/mapping. The total is about $95.9$ min. Changing image time to 5 min/site raises it above 120 min. Field concentration and sampling statistics impose a stricter constraint: at around $3.12$ particles/L, a 1-L sample expects only 3.12 particles, equivalent to $57\%$ approximate Poisson standard error \emph{before} sensor losses. The first demonstration should specify a minimum reporting volume and show uncertain/insufficient-count cells rather than inventing a smooth precise heat map.
+
+\section{Risk controls, procurement order and decision}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Float test first:} assemble sealed pontoons, weigh all components, add ballast to 22 and 30 kg, check reserve freeboard, trim and wave splash under stationary and moving load.
+\item \textbf{Then drive/power test:} two T200 and ESCs (or lower-cost alternative only with measured equivalent performance), current limit and speed tests at full mass. Inspect for overheating and waterproof cable glands.
+\item \textbf{Autopilot and RC:} flash appropriate Rover firmware, configure boat class and motor layout, test manual/RTL/Loiter and safe response to link or GNSS loss while tethered.
+\item \textbf{Sample circuit:} bench-test the selected pump's \emph{actual} flow through chosen strainers/filter and tubing at target depth; verify sampled volume and cleaning blanks.
+\item \textbf{Timing and credibility:} time full 16-sample shoreline chain or Track A effective observed-volume throughput; reject any concept unable to create an auditable map within 120 min.
+\item \textbf{Procurement and local radio:} request quotations from university-registered electronics/hardware suppliers, confirm Malaysia radio approval, battery transport/charging and replacement parts.
+\end{enumerate}
+\textbf{V1 engineering reference architecture, pending V2 approved-supplier quotations:} two 0.9-m $\times$ 0.20-m sealed pontoons, two T200 thrusters with compatible reversible ESCs, Pixhawk 6C running ArduPilot Rover boat firmware, external-active-antenna NEO-M9N (GPS/compass integration), ELRS 2.4-GHz RC control, separate low-bandwidth telemetry and local logs, SEAFLO 21 pump plus flowmeter, and 12.8 V 20 Ah LiFePO$_4$ with correct charger and managed current limits. \emph{No full 16-L sample collection without revising the wet-mass, freeboard and storage plan.} The expected 22-kg wet all-up budget is an engineering starting value, not an independently confirmed built boat.
+
+
+\section{V2 procurement-ready basket and transparent cost gap}
+The prices below are \emph{a purchase-planning example}, not a full field-boat quotation. This basket supports \textbf{bench calibration, low-power position logging and a short-duration manually controlled proof-of-concept}. The selection uses one reasonably priced component from each function; it deliberately does not claim that a short-test LiPo is capable of a 120-minute field mission.
+
+\begin{table}[H]\centering\footnotesize
+\caption{One-unit price-backed bench/prototype basket. Each hyperlink leads to the approved supplier's specific item listing. All values in RM (2 November 2026).}
+\begin{tabularx}{\linewidth}{@{}Y r r r@{}}\toprule
+Component (supplier hyperlink) & Qty & Unit RM & Line RM \\\midrule
+\href{https://my.cytron.io/c-wireless-devices/c-wifi/p-nodemcu-esp32-with-expansion-board}{NodeMCU ESP32, Cytron} & 1 & 29.00 & 29.00\\
+\href{https://my.cytron.io/c-other-wireless/p-lc76g-multi-gnss-module-supports-gps-bds-glonass-galileo-qzss}{LC76G multi-GNSS, Cytron} & 1 & 69.00 & 69.00\\
+\href{https://my.cytron.io/c-sensor/c-others-sensor/p-gravity-analog-turbidity-sensor-for-arduino-41626}{SEN0189 turbidity, Cytron} & 1 & 55.00 & 55.00\\
+\href{https://my.cytron.io/p-r385-dc12v-diaphragm-water-pump}{R385 pump, Cytron} & 1 & 10.90 & 10.90\\
+\href{https://my.cytron.io/p-g1-2-half-effect-water-flow-sensor-yf-s201}{YF-S201 flowmeter, Cytron} & 1 & 49.00 & 49.00\\
+\href{https://www.gie.com.my/shop.php?action=wireless/wifi/esp32_cam}{ESP32-CAM, GI Electronic} & 1 & 37.00 & 37.00\\
+\href{https://my.cytron.io/p-outdoor-ip65-water-proof-enclosure-with-abs-plate}{IP65 box (small variant), Cytron} & 1 & 35.00 & 35.00\\
+\href{https://my.cytron.io/p-hotrc-6-channels-rc-radio-transmitter-and-receiver}{HotRC TX + RX, Cytron} & 1 & 109.00 & 109.00\\
+\href{https://my.cytron.io/p-lipo-rechargeable-battery-11.1v-5200mah}{3S 5.2 Ah LiPo, Cytron} & 1 & 155.00 & 155.00\\
+\href{https://my.cytron.io/p-multi-function-lipo-balance-charger-13853}{B6AC balance charger, Cytron} & 1 & 95.00 & 95.00\\\midrule
+\textbf{Documented listed-price subtotal} & & & \textbf{643.90}\\
+\bottomrule\end{tabularx}\end{table}
+\textbf{Cost exclusions:} delivery/tax, water-safe hoses and fittings, filter and reference-counting consumables, buffer and calibration chemicals, reference microscopy, proper waterproof cable glands, sensor ADC if needed, fuse/wire/kill switch, motor/thruster mounts, buoyant hull and frame, battery protection, sensors for leak/current, waterproof electronics mounting, field-certified power supply and, above all, \textbf{2 marine thrusters + 2 matching brushless ESCs + Pixhawk 6C / power module}. The RM643.90 is \emph{not} a full floating survey system price, and the YF-S201 would not validate the 0.5 L/min flow assumption.
+
+\subsection{Three staged purchase decisions}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Purchase now only after approval (low-risk):} turbidity module, R385, ESP32, GNSS, calibrated beaker/scale; use indoor tap-water and microplastic reference trials before installing the components on a boat.
+\item \textbf{Quote before hull freeze (high-risk):} 2 T200-compatible thrusters/ESCs \emph{or} a fully specified waterproof alternative; Pixhawk/GNSS/compass assembly, RC interface, 12.8 V 20 Ah LiFePO$_4$ with current-appropriate BMS/charger; two sealed pontoons and waterproof fittings. Solicit through Cytron, Element14, RS, DigiKey, Autobotic, Mybotic, Vanguard and the registered hardware contacts; accept only an actual supplier response as a price.
+\item \textbf{Defer until calibration evidence:} RM1,135 industrial optical turbidity probe, more expensive image acquisition, GPS accuracy upgrades and retained 16-L sample storage. These require proof that the measured variable predicts actual MP concentrations better than the cheaper prototype.
+\end{enumerate}
+
+\subsection{RFQ form and verification before raising a purchase order}
+\begin{table}[H]\centering\footnotesize
+\caption{Fields to request from registered suppliers; a missing quotation is a procurement blocker, not a zero-cost line item.}
+\begin{tabularx}{\linewidth}{@{}L{3.6cm}Y@{}}\toprule
+RFQ item & Required written evidence \\\midrule
+Marine propulsion set & Exact part model, qty 2 thrust units + qty 2 reversible ESCs, voltage, continuous/start current, guards, cable glands and water rating, unit/total MYR, warranty and lead time\\
+Navigation/RC & Pixhawk 6C revision, GNSS/compass and antenna options, PM02D or correct power module, complete RC receiver data interface and failsafe, availability and purchase total\\
+Energy subsystem & 12.8 V 20 Ah LiFePO$_4$ pack, continuous/peak BMS rating, included cell protection, charger model, connector, weight, shipping limitations and total MYR\\
+Hull + wetted parts & Watertight pontoon material, sealed displacements, frame/bulkhead fabrication, fittings, tubing, cleanable mesh, microplastic contamination controls and total MYR\\
+\bottomrule\end{tabularx}\end{table}
+
+\textbf{Order-release gate:} sign off the selected architecture, full all-up mass, two-hour energy feasibility, wet-sensor QC protocol, safe recovery and current limits \emph{before} spending on the expensive field package. Confirm any import freight and Malaysian radio compliance. Only if no registered supplier can fulfil should the team contact Procurement for a non-registered purchase exception.
+
+\section{V2 measurement validity and field-test gates}
+The uploaded project brief requires a \emph{two-dimensional MP concentration map with demonstrable links to true MP and an appropriate laboratory reference}. The talk supplied by the supervisors describes direct measurements and image-based approaches as open options, and specifically cautions that image methods require a calibration relationship. Accordingly:
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Reference protocol:} obtain duplicate, known-volume samples across clean and contaminated water conditions, filter and microscopy-count, and document blanks and recovery. Record concentration as \(C_{\rm MP}=N_{\rm confirmed}/V_{\rm sampled}\), with the reporting size window and sample volume.
+\item \textbf{Proxy protocol:} record contemporaneous turbidity/optical intensity and environmental confounders at the same sample locations and times. Test between-day and across-location generalisation instead of relying on a high in-sample correlation.
+\item \textbf{Survey protocol:} log fix quality, latitude, longitude, timestamps, transect ID, stage of processing, flow/volume and uncertainties; map blank/insufficient-data cells explicitly instead of interpolating false precision.
+\item \textbf{Time and payload:} preserve the V1 two-hour and \(20\times20\,\mathrm m\) target, but qualify any result as a measured count, calibrated estimate or \emph{uncalibrated turbidity proxy}; they are not interchangeable.
+\end{enumerate}
+\textbf{Critical V2 change relative to V1:} low-cost products are explicitly \emph{calibration and development candidates}, not automatic replacement for marine-rated navigation, propulsion, power or an MP-specific laboratory assay. All compared item prices are linked to an approved supplier, and the three high-value unresolved packages remain labelled RFQ.
+
+\printbibliography[title={References and manufacturer documentation}]
+\end{document}

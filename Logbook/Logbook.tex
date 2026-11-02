@@ -1,0 +1,286 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=21mm,headheight=15pt,headsep=7mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{xurl}
+\usepackage{booktabs,tabularx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage[colorlinks=true,urlcolor=blue!55!black,linkcolor=blue!55!black]{hyperref}
+\definecolor{ink}{HTML}{263D4E}
+\definecolor{linecolor}{HTML}{BCCAD1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.5pt}
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=1.5pt,parsep=0pt}
+\renewcommand{\arraystretch}{1.13}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Individual Project Logbook}
+\rhead{\small Microplastic Mapping}
+\cfoot{\small Page \thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\newcommand{\logentry}[3]{%
+  \Needspace{13\baselineskip}%
+  \vspace{8pt}%
+  {\large\bfseries\color{ink}#1 \quad #2}\hfill{\small\color{ink}#3}\par
+  \vspace{-3pt}{\color{linecolor}\rule{\linewidth}{.6pt}}\par\vspace{1pt}%
+}
+\newcommand{\result}[1]{\textbf{Outcome / decision:} #1\par}
+\newcommand{\evidence}[1]{\textbf{Documentary evidence:} {\small #1}\par}
+\newcommand{\nextstep}[1]{\textbf{Next action:} #1\par}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Individual Project Logbook}\\[4pt]
+{\large Mapping Microplastic Concentrations in Water Bodies}\\[4pt]
+{\small Research, methodology screening and preliminary autonomous-boat design}\\[2pt]
+{\small Record of discussions and produced documents: October--2 November 2026}
+\end{center}
+\vspace{5pt}
+\begin{tabular}{@{}ll@{}}
+Student name: & \rule{110mm}{.4pt}\\[6pt]
+Student ID: & \rule{110mm}{.4pt}\\[6pt]
+Module / group: & \rule{110mm}{.4pt}\\[6pt]
+Supervisor: & \rule{110mm}{.4pt}
+\end{tabular}
+\vspace{9pt}
+
+\textbf{Project brief.} Design a portable system that maps measured or estimated microplastic (MP) concentration over a river or lake surface. The system should support reasonably rapid spatial coverage, location-tagged measurements, and defensible validation. A later engineering target used in the design work was to produce a map of a $20\,\mathrm{m}\times20\,\mathrm{m}$ site within about 120 minutes.
+
+\textbf{How I prepared this log.} I reconstructed the following dated events from this project's discussion history and its generated literature-review, screening and design files. Where an event covered several discussions, the date is shown as a range. The record distinguishes what was \emph{researched or drafted} from what remains a \emph{proposed design or experiment}. AI-assisted review and document generation are not evidence that I personally performed physical experiments. I should check the wording against my own notes and add actual hours, contributions and supervisor sign-off before submission.
+
+\logentry{01}{Establishing the screened literature base}{Early October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I reviewed the merged Web of Science and Scopus bibliometric results: 8,923 WoS and 10,019 Scopus records, or 18,942 original records.
+\item The recorded screening removed 7,318 duplicates, leaving 11,624; after excluding 727 document types, 10,897 records remained. Keyword screening classified 10,833 as preliminary include candidates and 64 for manual review.
+\item I noted the four overlapping research tags: sources/causes (6,430), effects in water (7,575), laboratory/measurement methods (6,654), and data trends/mapping (5,320).
+\end{itemize}
+\result{The 10,833-paper pool became the starting point for more targeted sensing-method reviews. I treated these as automated screening results, not completed full-text eligibility decisions.}
+\evidence{\texttt{Bibliometrix\_Filtered.RData}; original bibliometric-screening data and background LaTeX review.}
+\nextstep{Narrow the literature to methods that could plausibly work without a full laboratory.}
+
+\logentry{02}{Reviewing camera-based AI and EIS as direct sensors}{14 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested and examined an in-depth comparison of camera + AI particle counting and electrical impedance spectroscopy (EIS) for a water-monitoring boat.
+\item The optical route considered a pump, calibrated flow, transparent chamber, controlled lighting, imaging, image segmentation and particle counting. The EIS route considered an electrode chamber, electrical frequency response and the influence of water conductivity.
+\item The resulting review used 22 DOI-matched references and compared the two principles, practical issues, sample volume and possible validation experiments.
+\end{itemize}
+\result{Camera imaging gave a potentially auditable particle count, while EIS offered a possible compact sensor but greater uncertainty about particle specificity in natural water. Neither was assumed to identify polymers automatically.}
+\evidence{\texttt{Camera\_AI\_Impedance\_EIS\_Literature\_Review\_Overleaf.zip} and its compiled 11-page review.}
+\nextstep{Explain the two methods in sufficient detail to decide what the process workflow requires.}
+
+\logentry{03}{Clarifying what the sensors actually measure}{15 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I compared image segmentation (including U-Net-style methods) with the complex EIS response $Z(f)=V(f)/I(f)$.
+\item I separated image/particle-detection accuracy from a valid concentration measurement in particles/L. I also distinguished conventional frequency-swept EIS from DC microfluidic resistance sensing.
+\item I reviewed examples including Lee et al. (2022) for image counting, Choran and \"Ormeci (2023) for micro-flow imaging, and Kim et al. (2024) for a PVC-focused electrochemical sensor.
+\end{itemize}
+\result{I concluded that a sensor's published image-segmentation score or electrical detection limit cannot be substituted for its accuracy at estimating MP concentration in untreated river water.}
+\evidence{Discussion-based comparison and the Camera + AI versus EIS report; Lee et al., DOI: \href{https://doi.org/10.1007/s00521-021-06876-w}{10.1007/s00521-021-06876-w}.}
+\nextstep{Define the overall workflows before choosing the technology.}
+
+\logentry{04}{Defining two ways to complete the stakeholder task}{16 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I reorganised the project into \textbf{Track A}, involving measurements on a moving boat, and \textbf{Track B}, involving geotagged water collection followed by portable shoreline processing.
+\item I included common requirements for both tracks: known water volume, time and GPS records, processing quality checks, and a 2D concentration map.
+\item I explicitly removed an assumption of routine FTIR/Raman laboratory access from the practical design path; occasional reference testing remained desirable if available.
+\end{itemize}
+\result{Both tracks could serve the stakeholder's map objective, but Track B would produce results after collecting and processing samples rather than continuously in the water.}
+\evidence{\texttt{Microplastic\_Dual\_Track\_Background\_Overleaf.zip}; two-track background review.}
+\nextstep{Turn the flow diagram into a criterion for selecting sensors, rather than a fixed camera-based design.}
+
+\logentry{05}{Making the process flowchart method-neutral}{16 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested that the flowchart stop specifying a camera and EIS in its process boxes.
+\item Track A was rewritten as water intake/pump $\rightarrow$ flow-through or microfluidic chamber $\rightarrow$ \emph{candidate sensing method} $\rightarrow$ wastewater/flushing/storage $\rightarrow$ GPS, data logging and transmission.
+\item Track B retained known-volume collection, sample identification, shoreline preparation, a separate \emph{candidate sensing method}, and linking the results back to the boat's GPS and time records.
+\end{itemize}
+\result{The sensing stage became the decision point for filtering literature methods by fit, portability, processing time, contamination control and mapping readiness.}
+\evidence{\texttt{Microplastic\_Dual\_Track\_Background\_Overleaf\_v2.zip}; updated TikZ process chart.}
+\nextstep{Create a more comprehensive screening and elimination process.}
+
+\logentry{06}{Expanding screening beyond the original laboratory-method tags}{19 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested a re-screen of the whole 10,833-paper candidate pool, not only the 6,654 papers tagged under laboratory methods.
+\item The expanded keyword dictionary identified 49 methodology tags. Its audit output included 6,483 overlapping method assignments associated with 3,974 unique papers.
+\item Of the 6,859 papers without these method tags, 137 were separately flagged as technical leads to inspect. I kept unmatched papers visible rather than treating them as definitively ineligible.
+\item The review separated detection technologies, sampling and preparation, laboratory reference methods, indirect water-quality proxies, and map-generation methods.
+\end{itemize}
+\result{I used track-specific selection/elimination gates and a weighted comparison only after basic process-fit checks. A common method in published papers was not necessarily a practical boat-mounted sensor.}
+\evidence{Method-selection review (Version 3); 49-tag CSV, paper-to-method index and weighted Track A/B comparison.}
+\nextstep{Check whether key retained methods have credible size and concentration coverage.}
+
+\logentry{07}{Investigating EIS particle-size coverage and electrodes}{21 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I investigated the MP size definition of approximately $1\,\mu$m to $5\,\mathrm{mm}$ and clarified that size coverage is different from the dynamic range of concentration in particles/L.
+\item I looked at Colson and Michel (2021) on a larger flow-through EIS channel, Butement et al. (2024) on smaller impedance-cytometry particles, and Aghel et al. (2024) on a three-electrode droplet device.
+\item I discussed a hypothetical four-fraction arrangement: 1--10, 10--200, 200--1,000 and 1,000--5,000 $\mu$m. These were \emph{engineering bins}, not a demonstrated or minimum four-channel solution.
+\item I noted that adding more electrodes does not by itself guarantee full size coverage; electrode geometry, channel dimensions, throughput and interference all matter.
+\end{itemize}
+\result{A single general-purpose electrode pair was not supported as a validated solution for the entire MP definition. I retained EIS as a feasibility candidate rather than a confirmed full-range instrument.}
+\evidence{Colson and Michel (2021), Butement et al. (2024), and Aghel et al. (2024); primary papers reviewed in the EIS discussion.}
+\nextstep{Find size-separation materials and assess whether they can be integrated without losing particles.}
+
+\logentry{08}{Researching size filters for the EIS concept}{21--22 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I sought available nominal cutoffs at 1,000, 200, 10 and 1 $\mu$m for the proposed particle-size fractions.
+\item The shortlist included stainless-steel woven meshes for the larger cutoffs and track-etched membranes for the smaller cutoffs (for example, Merck \texttt{TCTP04700} at 10 $\mu$m and Whatman \texttt{10418712} at 1 $\mu$m).
+\item I distinguished a sieve retaining particles from an EIS chamber actually counting them; retained fractions would require transfer, backflushing or separate analysis, with recovery losses measured.
+\end{itemize}
+\result{Coarse reusable mesh is more plausible for repeated onboard handling than fine membranes, which risk clogging in river water. The filters do not themselves solve the sensor problem.}
+\evidence{Filter-catalogue comparison and EIS fractionation discussion.}
+\nextstep{Check university-approved procurement routes and confirm product availability rather than assuming stock.}
+
+\logentry{09}{Checking the university's registered-supplier routes}{21--22 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I used the supplied registered-supplier list and compared RS Malaysia, element14, DigiKey, Cytron and the registered scientific/hardware purchasing routes.
+\item RS listings included a 125 $\mu$m stainless suction strainer, a nominal 10 $\mu$m hydraulic element and a nominal 1 $\mu$m water cartridge; none was confirmed equivalent to a precision fractionation set.
+\item I prioritised requesting exact-size mesh specifications from YLT Hardware/Grandtech/Multi Impact and precision membranes through LCG Scientific; supplier inventory and quotation status remained unconfirmed.
+\end{itemize}
+\result{I did not treat ordinary hydraulic or nominal-depth cartridges as validated analytical sieves. No purchase order or supplier confirmation is documented in the chat.}
+\evidence{University registered-supplier list supplied in discussion; RS/element14 catalogue comparison.}
+\nextstep{Request dimensions, pore/aperture tolerance, holder compatibility, quotations and lead times once the sensor architecture is chosen.}
+
+\logentry{10}{Evaluating polarised-light imaging and the polygon hypothesis}{23 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I investigated a suggested blacked-out imaging box/tube with fixed light, polarising filter(s), sample chamber and camera, followed by contour detection.
+\item I checked the assumption that MPs should have fixed regular polygon outlines unlike non-plastic material. Published examples instead included plastic fibres, films, spheres and irregular fragments, while natural sand can also be angular.
+\item I reviewed polarised scattering (Liu et al., 2021), image-shape measurements (Dacewicz et al., 2024), and polarisation-sensitive imaging/holography (Montandon and Nicolls, 2024; Lopera et al., 2026).
+\item A proposed low-cost experiment was to compare ordinary images, parallel-polariser images and crossed-polariser images, using contour, elongation, texture and brightness changes together.
+\end{itemize}
+\result{I rejected \emph{polygon shape alone} as an MP identification rule. Polarised-light contrast plus multiple image features remained a testable Track B option, not polymer confirmation.}
+\evidence{Liu et al., \href{https://doi.org/10.3389/fmars.2021.739683}{doi:10.3389/fmars.2021.739683}; literature discussed on 23 October.}
+\nextstep{Trial known plastic and non-plastic particles under controlled light before developing an automatic classifier.}
+
+\logentry{11}{Screening freshwater MP size studies}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested a size-focused screen of the 10,833 records, particularly rivers and ponds, to inform the size range that the first prototype should target.
+\item The automated title/abstract screen generated 2,085 freshwater-and-size candidates; 17 studies were curated for detailed examples. I treated these 17 as selected examples, not a comprehensive full-text systematic review.
+\item I compared reports from the Langat and Selangor systems and international rivers/ponds, noting examples of high frequencies of particles below 1 mm, with reported distributions depending on methods and detection cutoffs.
+\end{itemize}
+\result{The literature did not justify one universal ``most common'' freshwater size. A sensor's minimum measurable size must be stated and compared with the methods used in local papers.}
+\evidence{Freshwater size-literature review; 2,085-paper first-pass CSV and curated size-study table.}
+\nextstep{Separate what is actually known about Semenyih River from broader Malaysian distributions.}
+
+\logentry{12}{Checking Semenyih River concentration and size evidence}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I focused the review on Semenyih River papers rather than transferring percentages from other rivers.
+\item A Chen et al. (2023) study was recorded as reporting an average river-water concentration of $3.12\pm2.49$ particles/L and fibre dominance.
+\item The accessible study summary did not establish reliable numerical percentages by particle-size bin. I therefore avoided producing a made-up Semenyih histogram.
+\end{itemize}
+\result{Semenyih-specific concentration and shape information can guide sample-volume planning, but a local size-frequency distribution remains an evidence gap until detailed figures or underlying data are checked.}
+\evidence{Chen et al. (2023), \href{https://doi.org/10.1007/s10661-022-10856-5}{doi:10.1007/s10661-022-10856-5}; Semenyih-focused review.}
+\nextstep{Look for a full-text size histogram or obtain more local size data before fixing the EIS/microscopy target range.}
+
+\logentry{13}{Finding University of Nottingham Malaysia laboratory studies}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I searched affiliation metadata, separating University of Nottingham Malaysia from the Nottingham UK and Ningbo campuses. The broad Nottingham match set contained 33 records; strict Malaysia-affiliation matching produced nine.
+\item I reviewed reported laboratory workflows including field-water sampling, Fenton digestion, filtration on glass microfibre media, stereomicroscopy and FTIR checks. The actual combination depended on the study and sample type.
+\item One Chen et al. (2021) study reportedly checked 85 visually identified particles with FTIR, with 96\% correct visual identification in that checked subset.
+\end{itemize}
+\result{I kept the 96\% figure distinct from sample recovery, limits of detection and full-method concentration accuracy. A literature affiliation match does not establish that all laboratory equipment is available for this project.}
+\evidence{UNM nine-paper evidence table and freshwater size/UNM literature review PDF.}
+\nextstep{Use UNM's published methods as contextual reference procedures and verify equipment access separately if needed.}
+
+\logentry{14}{Making the freshwater/UNM screening reproducible}{30 October--2 November 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested that the literature package contain a dedicated \texttt{scripts/} folder and auditable decisions rather than only summary tables.
+\item The updated files included Python screening and verification scripts, an RStudio helper to export the relevant object from \texttt{Bibliometrix\_Filtered.RData}, manual curation records and an all-record screening-flags CSV.
+\item The documented rerun used the existing 10,833-record CSV export, reproducing 2,085 freshwater/size first-pass matches and nine strict Nottingham Malaysia affiliation matches. It did not claim to run R directly on the uploaded RData in that environment.
+\end{itemize}
+\result{The paper-selection trail was made more reproducible. Automated matching, manually curated examples and verified full-text evidence remain separate levels.}
+\evidence{Reproducible freshwater/UNM screening package, Python scripts and 10,833-record flags CSV.}
+\nextstep{Preserve raw records and continue full-text checking of the papers most relevant to the sensor's detectable size range.}
+
+\logentry{15}{Adding the 20 by 20 m / two-hour survey constraint}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I added a numerical mission requirement: produce a spatial map of a 400 m$^2$ region within 120 minutes, including setup, measurement, processing and rendering.
+\item Track A's model used five 20 m transects, 5 m lane spacing, 120 m nominal route distance, 0.25 m/s speed, 60 min measurement allowance and 25 min for other activities, giving a 93 min total.
+\item Track B's model used a 4-by-4 grid (16 stations), 1 L/station, 1.5 L/min actual collection rate, 1.2 min handling and 3 min processing per station, giving about 95.9 min in the assumed schedule.
+\item I noted the sensitivity to shoreline processing time: increasing processing from 3 to 5 min per station would exceed the two-hour target.
+\end{itemize}
+\result{Both tracks were only \emph{modelled} as fitting the deadline. GPS coverage, effective measured water volume and actual process time remained untested.}
+\evidence{\texttt{Method\_Rationale\_20m\_2h\_Overleaf\_v4.zip}; operational feasibility section.}
+\nextstep{Time sample collection and analysis with a real prototype; revise the station plan using measured throughput.}
+
+\logentry{16}{Adding operational method-selection gates and count uncertainty}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I introduced operational gates G6--G10 for end-to-end survey time, adequate analysed volume, navigation precision, energy/flotation, and data integrity/uncertainty.
+\item Using the published Semenyih mean of 3.12 particles/L as an illustrative input, 1 L would contain about 3.12 particles on average under perfect detection. The approximate Poisson relative counting error is $1/\sqrt{3.12}\approx57\%$.
+\item The method review concluded that a fast boat and smooth heat map alone cannot demonstrate reliable concentration measurement; sampling volume and particle specificity may be the main bottlenecks.
+\end{itemize}
+\result{Track B remained the lower-risk first prototype \emph{if} rapid processing could be demonstrated. Track A retained the advantage of denser spatial sampling but required an effective-volume and counting validation.}
+\evidence{\texttt{2h\_Method\_Operational\_Gates.csv}; revised Method Rationale V4.}
+\nextstep{Set acceptable uncertainty and the minimum sample volume before locking in the station grid or sensing rate.}
+
+\logentry{17}{Researching the survey boat and its subsystems}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested a separate critical-components LaTeX report on hull/payload, RC and telemetry links, power distribution, motor options, GPS with active antenna, controller and pump specifications, and battery runtime.
+\item The proposed architecture used two pontoons and differential thrust, with a Pixhawk 6C/ArduPilot Rover boat configuration, NEO-M9N GNSS, separate manual RC override and data telemetry, and a 12 V-class sampling pump.
+\item The report treated propulsion thrust as separate from buoyancy/payload; it did not use a motor's thrust rating as a direct maximum boat payload.
+\end{itemize}
+\result{The subsystems were organised into a provisional bill of components and design comparisons; these were research selections, not confirmed purchases or assembled hardware.}
+\evidence{\texttt{Boat\_Critical\_Components\_Overleaf\_v1.zip}; \texttt{boat\_components.tex}.}
+\nextstep{Choose a hull geometry and weigh all proposed hardware before purchasing propulsion and power components.}
+
+\logentry{18}{Checking the preliminary mass, buoyancy and battery model}{30 October 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item The model considered two pontoons each 0.9 m long and 0.2 m in diameter; an illustrative 60\%-submergence working displacement was about 33.9 kg versus an estimated 22.0 kg loaded mass including 8 L of samples.
+\item The battery example was 12.8 V, 20 Ah LiFePO$_4$: 256 Wh nominal and 204.8 Wh usable under an assumed 80\% usable-energy factor.
+\item Scenario power assumptions gave roughly 4.27 h at 48 W (Track B), 2.33 h at 88 W (Track A) and 1.64 h at 125 W (more difficult water). These are calculation outputs, not measured endurance.
+\item I noted that combined peak current from two T200-class thrusters could exceed an example 30 A continuous battery-management-system rating.
+\end{itemize}
+\result{The boat had theoretical energy and buoyancy margin in the nominal scenarios, but actual thrust/current, stability, sample-water payload and battery/BMS protection remained unverified.}
+\evidence{\texttt{design\_inputs.json}; \texttt{recalculate\_boat.py}; Boat Critical Components report.}
+\nextstep{Carry out weighed-payload flotation, motor current, pump-backpressure and two-hour loaded runtime tests.}
+
+\logentry{19}{Consolidating the initial research record}{2 November 2026}
+\textbf{Work recorded:}
+\begin{itemize}
+\item I requested a complete project logbook, then a shorter first-person individual version rather than a group research report.
+\item The first logbook package recorded a 22-page retrospective project history; the individual revision condensed it into four pages with dated entries and next actions.
+\item I reviewed the individual format and requested a further revision with specific events, values, papers and documentary outputs rather than broad statements such as ``researched sensors.''
+\end{itemize}
+\result{The logbook format is now intended to serve as an individual record of documented research and design decisions, while leaving physical build/testing entries for later.}
+\evidence{22-page retrospective research logbook and four-page first-person logbook (2 November).}
+\nextstep{Append separately dated, contemporaneous entries when parts are purchased, the prototype is assembled, or actual measurements are taken.}
+
+\section*{Current status and next recorded tests}
+The discussion and generated files document literature research, classification scripts, concept evaluations, a preliminary boat architecture and numerical feasibility models. They do \textbf{not} establish that a sensor was built, a laboratory measurement was performed, a component was purchased, or a $20\,\mathrm{m}\times20\,\mathrm{m}$ survey was completed.
+
+\textbf{Next practical tasks:}
+\begin{enumerate}[leftmargin=*,itemsep=2pt,topsep=2pt]
+\item Select the detectable particle-size band and specify whether the first output is suspected particles/L or polymer-confirmed MPs/L.
+\item Compare polarised-light imaging and/or an EIS test channel with known plastic, sediment, fibre and algae samples; log blanks, recovery and false detections.
+\item Time the full Track B sampling and portable processing workflow and measure the actual observation volume for Track A.
+\item Weigh the boat components, test buoyancy, motor current, pump performance and two-hour battery endurance under realistic loads.
+\item Generate a map from actual georeferenced observations and test interpolation at withheld locations.
+\end{enumerate}
+
+% For a new event, copy the pattern below and replace with factual details:
+% \logentry{20}{Short description}{Date}
+% \textbf{Work recorded:} ...
+% \result{...}
+% \evidence{...}
+% \nextstep{...}
+\end{document}
