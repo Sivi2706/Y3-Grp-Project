@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.9)  2 NOV 2026 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.9)  2 NOV 2026 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -47,7 +47,25 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks18
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)))
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -272,9 +290,7 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -348,15 +364,6 @@ Package: pgfrcs 2026-08-01 v3.1.12 (3.1.12)
 Package: pgf 2026-08-01 v3.1.12 (3.1.12)
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
-)
 \Gin@req@height=\dimen262
 \Gin@req@width=\dimen263
 ) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
@@ -863,33 +870,33 @@ Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2026/09/24 v3.22a expl3 case changing code for biblatex
 ))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 15.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
 \@quotelevel=\count491
 \@quotereset=\count492
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 15.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 16.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -925,30 +932,7 @@ LaTeX Font Info:    ... okay on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 15.
-Package microtype Info: Applying patch `item' on input line 15.
-Package microtype Info: Applying patch `toc' on input line 15.
-Package microtype Info: Applying patch `eqnum' on input line 15.
-Package microtype Info: Applying patch `footnote' on input line 15.
-Package microtype Info: Applying patch `verbatim' on input line 15.
-LaTeX Info: Redefining \microtypesetup on input line 15.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-Package microtype Info: Patching command `\showhyphens'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-(C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: End \AtBeginDocument code.
- (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count493
 \scratchdimen=\dimen320
@@ -966,11 +950,35 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+))
+LaTeX Info: Redefining \microtypecontext on input line 16.
+Package microtype Info: Applying patch `item' on input line 16.
+Package microtype Info: Applying patch `toc' on input line 16.
+Package microtype Info: Applying patch `eqnum' on input line 16.
+Package microtype Info: Applying patch `footnote' on input line 16.
+Package microtype Info: Applying patch `verbatim' on input line 16.
+LaTeX Info: Redefining \microtypesetup on input line 16.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 15.
-Package hyperref Info: Link coloring ON on input line 15.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 16.
+Package hyperref Info: Link coloring ON on input line 16.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -989,8 +997,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
+Package biblatex Info: Reference section=0 on input line 16.
+Package biblatex Info: Reference segment=0 on input line 16.
 (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
@@ -1025,151 +1033,158 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
+) [1
+
+{C:/Users/SIVI/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 17.
+(Font)              <9> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 17.
- [1
+(Font)              <6> on input line 18.
+ [2{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd)
 
-{C:/Users/SIVI/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [2{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd)
-
-LaTeX Warning: Citation 'T200' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'Pixhawk6C' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'Pixhawk6C' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'ArduBoat' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'ArduBoat' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'RadioMaster' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'RadioMaster' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'SiK' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'SiK' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'M9N' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'M9N' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'SparkM9N' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'SparkM9N' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'Bioenno' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'Seaflo21' on page 3 undefined on input line 76.
+LaTeX Warning: Citation 'PM02D' on page 3 undefined on input line 77.
 
+[3] [4{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [5
 
-LaTeX Warning: Citation 'Bioenno' on page 3 undefined on input line 76.
-
-
-LaTeX Warning: Citation 'PM02D' on page 3 undefined on input line 76.
-
-[3]
-Overfull \hbox (2.54532pt too wide) in paragraph at lines 82--82
-[]|\T1/lmr/m/n/10 (-20) Selection|  
+]
+Overfull \hbox (2.47551pt too wide) in alignment at lines 108--111
+ [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (2.54532pt too wide) in paragraph at lines 83--83
-[]|\T1/lmr/m/n/10 (-20) Selection|  
+Overfull \hbox (2.47551pt too wide) in alignment at lines 111--113
+ [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.3074pt too wide) in paragraph at lines 88--88
-[]|\T1/lmr/m/n/10 (-20) Precision 
+Overfull \hbox (2.47551pt too wide) in alignment at lines 113--113
+ [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (14.52258pt too wide) in paragraph at lines 89--89
-[]|\T1/lmr/m/n/10 (-20) Conditional|  
+Overfull \hbox (2.47551pt too wide) in alignment at lines 113--117
+ [] [] [] [] [] [] [] [] [] 
  []
 
-[4{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
-Overfull \hbox (12.63953pt too wide) in paragraph at lines 102--102
-[]|\T1/lmr/m/n/10 (-20) Alternative|  
+[6
+
+
+] [7
+
+
+] [8
+
+
+] [9
+
+
+] [10
+
+
+]
+Overfull \hbox (1.52136pt too wide) in paragraph at lines 193--193
+[]|\T1/lmr/bx/n/8 (-20) Accuracy/refresh/control|  
  []
 
 
-Overfull \hbox (12.63953pt too wide) in paragraph at lines 104--104
-[]|\T1/lmr/m/n/10 (-20) Alternative|  
+Overfull \hbox (1.52136pt too wide) in paragraph at lines 195--195
+[]|\T1/lmr/bx/n/8 (-20) Accuracy/refresh/control|  
  []
 
-[5]
-Overfull \hbox (7.33667pt too wide) in paragraph at lines 121--121
-[]|\T1/lmr/m/n/10 (-20) Prototype|  
+[11
+
+
+] [12
+
+
+] [13
+
+
+] [14
+
+
+] [15
+
+
+]
+Overfull \hbox (1.21745pt too wide) in paragraph at lines 283--283
+[]|\T1/lmr/bx/n/8 (-20) Electrical/thermal|  
  []
 
-[6]
 
-LaTeX Warning: Citation 'RadioMaster' on page 7 undefined on input line 133.
+Overfull \hbox (1.21745pt too wide) in paragraph at lines 285--285
+[]|\T1/lmr/bx/n/8 (-20) Electrical/thermal|  
+ []
 
-
-LaTeX Warning: Citation 'SiK' on page 7 undefined on input line 133.
-
-
-LaTeX Warning: Citation 'MCMC' on page 7 undefined on input line 133.
+[16
 
 
-LaTeX Warning: Citation 'ArduBoat' on page 7 undefined on input line 145.
+]
+
+LaTeX Warning: Citation 'RadioMaster' on page 17 undefined on input line 307.
 
 
-LaTeX Warning: Citation 'Pixhawk6C' on page 7 undefined on input line 145.
+LaTeX Warning: Citation 'SiK' on page 17 undefined on input line 307.
 
 
-LaTeX Warning: Citation 'PixhawkFirmware' on page 7 undefined on input line 145.
-
-[7]
-
-LaTeX Warning: Citation 'M9N' on page 8 undefined on input line 149.
+LaTeX Warning: Citation 'MCMC' on page 17 undefined on input line 307.
 
 
-LaTeX Warning: Citation 'SparkM9N' on page 8 undefined on input line 149.
+LaTeX Warning: Citation 'ArduBoat' on page 17 undefined on input line 319.
 
 
-LaTeX Warning: Citation 'M9N' on page 8 undefined on input line 149.
+LaTeX Warning: Citation 'Pixhawk6C' on page 17 undefined on input line 319.
 
 
-LaTeX Warning: Citation 'T200' on page 8 undefined on input line 159.
+LaTeX Warning: Citation 'PixhawkFirmware' on page 17 undefined on input line 319.
 
 
-LaTeX Warning: Citation 'T500' on page 8 undefined on input line 159.
+LaTeX Warning: Citation 'M9N' on page 17 undefined on input line 323.
 
 
-LaTeX Warning: Citation 'MinnKota' on page 8 undefined on input line 159.
-
-[8]
-
-LaTeX Warning: Citation 'Adafruit1150' on page 9 undefined on input line 189.
+LaTeX Warning: Citation 'SparkM9N' on page 17 undefined on input line 323.
 
 
-LaTeX Warning: Citation 'Seaflo21' on page 9 undefined on input line 189.
+LaTeX Warning: Citation 'M9N' on page 17 undefined on input line 323.
+
+[17
+
+] [18]
+
+LaTeX Warning: Citation 'PM02D' on page 19 undefined on input line 370.
 
 
-LaTeX Warning: Citation 'SeafloBilge' on page 9 undefined on input line 189.
+LaTeX Warning: Citation 'Bioenno' on page 19 undefined on input line 370.
 
+[19] [20] [21]
 
-LaTeX Warning: Citation 'Seaflo33' on page 9 undefined on input line 189.
+LaTeX Warning: Empty bibliography on input line 464.
 
-[9]
-
-LaTeX Warning: Citation 'PM02D' on page 10 undefined on input line 211.
-
-
-LaTeX Warning: Citation 'Bioenno' on page 10 undefined on input line 211.
-
-
-LaTeX Warning: Citation 'T200' on page 10 undefined on input line 234.
-
-
-LaTeX Warning: Citation 'Bioenno' on page 10 undefined on input line 234.
-
-[10] [11] [12]
-
-LaTeX Warning: Empty bibliography on input line 304.
-
-[13] (main.aux)
+[22] (main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
@@ -1179,7 +1194,7 @@ L3 programming layer <2026-09-09>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 782254ED7CD6B014E4EA2EFBD8B219BB;6251.
+(rerunfilecheck)             Checksum: 0C42C44E972953137B84DD023C832C66;9562.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1190,17 +1205,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37478 strings out of 467392
- 763894 string characters out of 5406125
- 1574247 words of memory out of 5000000
- 66004 multiletter control sequences out of 15000+600000
- 725292 words of font info for 220 fonts, out of 8000000 for 9000
+ 37688 strings out of 467392
+ 767630 string characters out of 5406125
+ 1579026 words of memory out of 5000000
+ 66097 multiletter control sequences out of 15000+600000
+ 729478 words of font info for 261 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,1299b,1186s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
-Output written on main.pdf (13 pages, 582375 bytes).
+ 92i,11n,95p,1408b,1182s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
+Output written on main.pdf (22 pages, 636828 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 50869 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 50941 words of extra memory for PDF output out of 51595 (max. 10000000)
 

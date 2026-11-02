@@ -19,11 +19,11 @@
 \maketitle
 
 \begin{abstract}\noindent
-This report answers two questions from the uploaded Bibliometrix dataset (\texttt{Bibliometrix\_\allowbreak Filtered.RData}): (1) what microplastic size is most commonly reported in rivers and ponds, with a focus on the Semenyih River; and (2) which papers are affiliated with the University of Nottingham Malaysia (UNM), what methods they used, and what they found. Every count below comes from a documented filter applied to the records in the file, and the filter code and output tables are included in the package. In the screened river/lake/pond abstracts that state a dominant size class (n\,=\,616), about 87.3\% report a class below 1\,mm. UNM contributes nine records, of which five are primary microplastic studies in the Langat--Semenyih catchment. \flag{Important limit:} the dataset contains titles, abstracts and metadata only, so instrument models and accuracy (recovery) rates are mostly not recoverable from it and are flagged for full-text extraction.
+This report answers two questions from the uploaded Bibliometrix dataset (\texttt{Bibliometrix\_\allowbreak Filtered.RData}): (1) what microplastic size is most commonly reported in rivers and ponds, with a focus on the Semenyih River; and (2) which papers are affiliated with the University of Nottingham Malaysia (UNM), what methods they used, and what they found. Every count below comes from a documented filter applied to the records in the file, and the filter code and output tables are included in the package. In the screened river/lake/pond abstracts that state a dominant size class (n\,=\,616), about 87.3\% report a class below 1\,mm. UNM contributes nine records, of which five are primary microplastic studies in the Langat--Semenyih catchment. \flag{Update:} the full texts of two papers (Chen et al.\ 2021 on the Langat River and the 2026 review of Malaysian rivers) are now used, which supplies UNM instruments (Leica EZ4 stereomicroscope, PerkinElmer Frontier FTIR), a 53\um{} sieve cut-off and a reported visual-identification accuracy of 96\%. The other UNM papers remain abstract-only, and no source gives a size histogram for the Semenyih River itself.
 \end{abstract}
 
 \section{Data provenance and the 10,833 vs 10,897 discrepancy}
-The uploaded file contains one data frame (\texttt{M}) with 10,897 records and 68 fields. You mentioned 10,833 papers; I could not reproduce that figure from this file (e.g.\ de-duplicating on DOI gives 10,890 and removing records without an abstract gives 10,853). All counts here therefore start from 10,897 records, and the funnel shows every step so the base can be adjusted if a different starting set is intended. Of the records, 8,800 originate from Web of Science and 2,097 from Scopus.
+The uploaded file contains one data frame (\texttt{M}) with 10,897 records and 68 fields. You mentioned 10,833 papers; I could not reproduce that figure from this file (e.g.\ de-duplicating on DOI gives 10,890 and removing records without an abstract gives 10,853). All counts here therefore start from 10,897 records, and the funnel shows every step so the base can be adjusted if a different starting set is intended. Of the records, 8,800 originate from Web of Science and 2,097 from Scopus. Two full-text PDFs were added afterwards: Chen et al.\ 2021 \cite{chen21a} and Bouida et al.\ 2026 \cite{bouida26}. Where a statement comes from them it is marked ``full text''; everything else still comes from abstracts.
 
 \section{How the papers were filtered}
 \subsection{Funnel for Question 1 (size in rivers and ponds)}
@@ -92,7 +92,7 @@ Urban ponds, Raipur 2024 \cite{raipur24} & 20 tropical ponds, India & 500--1000\
 \end{table}
 
 \section{Question 1.1 -- Focus diagram: microplastic size in the Semenyih River}
-\flag{What the dataset can and cannot say.} The only Semenyih-specific study in the file is Chen et al.\ 2023 (UNM), which sampled eight sites on the upper Semenyih River, with five replicate water and bed samples on each of three dates (160 samples), and found microplastics in every sample: $3.12\pm2.49$ particles/L in water and $6027\pm16{,}586$ particles/m$^{2}$ on the bed, with fibres dominant in both \cite{chen23}. Its abstract does \emph{not} give a size histogram. The diagram therefore places the Semenyih evidence in the context of the neighbouring Langat and Selangor basin results and the size windows of the UNM group's own methods. The Semenyih River drains to the Langat, which the UNM team also sampled \cite{chen21a}.
+\flag{What the sources can and cannot say.} The Semenyih River is one of the two similar-sized upper sub-catchments that merge to form the Langat; Chen et al.\ 2021 placed sites 1--3 on the Semenyih River (site 1 about 1\,km below the Semenyih dam, site 2 at the upstream edge of Semenyih town, site 3 just downstream) and sites 4--8 along the Langat mainstem \cite{chen21a} (full text). Sites 1--3 had significantly lower concentrations than the downstream sites, and microplastics were still found at site 1 near the dam. The Semenyih-specific study of Chen et al.\ 2023 sampled eight sites on the upper Semenyih River, five replicates of water and bed on three dates (160 samples), with $3.12\pm2.49$ particles/L in water, $6027\pm16{,}586$ particles/m$^{2}$ on the bed and fibres dominant \cite{chen23}. Neither source reports a size histogram. What they do fix is the \emph{counted range}: both pass samples through a 53\um{} sieve and count by stereomicroscope (8--35$\times$), so particles smaller than about 53\um{} are outside the data, and the review lists stereomicroscopy as typically reliable above 300\um{} \cite{bouida26}. The diagram therefore shows this counted range for the Semenyih work next to the Langat and Selangor size results and the UNM method windows.
 
 \begin{figure}[H]\centering
 \begin{tikzpicture}[font=\footnotesize]
@@ -129,23 +129,24 @@ Urban ponds, Raipur 2024 \cite{raipur24} & 20 tropical ponds, India & 500--1000\
 \rbar{4}{100}{3.5}{accent!55}{high-res (4--100\um)}{text=black}
 \rbar{100}{5000}{2.9}{accent!25}{low-res visual (0.1--5\,mm)}{text=black}
 % Semenyih unknown
-\draw[dashed,accent,thick,rounded corners=2pt] ({ln(1)/ln(10)*\sx},0.7) rectangle ({ln(5000)/ln(10)*\sx},1.5);
-\node[font=\scriptsize,align=center,text=accent!80!black] at ({ln(300)/ln(10)*\sx},1.1) {size classes not given in abstract -- fibres dominant;\\take from full text (Table~\ref{tab:fill})};
+\rbar{53}{5000}{0.7}{accent!20}{}{text=black}
+\draw[dashed,accent,thick,rounded corners=2pt] ({ln(53)/ln(10)*\sx},0.7) rectangle ({ln(5000)/ln(10)*\sx},1.12);
+\node[font=\scriptsize,text=accent!80!black] at ({ln(500)/ln(10)*\sx},0.91) {counted range $\ge$53\um\ (sieve); no histogram};
 \end{tikzpicture}
-\caption{Focus diagram. Top row: share of the 616 screened papers by dominant class. Middle: dominant classes reported for the neighbouring Langat and Selangor basins \cite{ali25,zaki24,zaki23}. Orange: size windows of the UNM group's low- and high-resolution methods \cite{ng24}. Bottom: the Semenyih River study \cite{chen23}, whose size distribution must be filled from the full paper. The shaded zone marks where the regional evidence concentrates.}\label{fig:focus}
+\caption{Focus diagram. Top row: share of the 616 screened papers by dominant class. Middle: dominant classes reported for the neighbouring Langat and Selangor basins \cite{ali25,zaki24,zaki23}. Orange: size windows of the UNM group's low- and high-resolution methods \cite{ng24}. Bottom: counted range of the UNM Langat/Semenyih work, limited below by a 53\um{} sieve \cite{chen21a,chen23}; neither gives a size histogram. The shaded zone marks where the regional evidence concentrates.}\label{fig:focus}
 \end{figure}
 
-\noindent\textbf{Reading the diagram.} All regional evidence concentrates below 1\,mm, with water samples centred around 0.3--1\,mm and sediment skewed finer ($<$300\um). Because the UNM group's own work shows that a visual method misses the finest particles \cite{ng24}, the Semenyih size distribution should be read as a lower bound on the fine fraction. Table~\ref{tab:fill} lists what to extract from the full text of the Semenyih paper to complete the diagram.
+\noindent\textbf{Reading the diagram.} All regional evidence concentrates below 1\,mm, with water samples centred around 0.3--1\,mm and sediment skewed finer ($<$300\um). Because the UNM group's own work shows that a visual method misses the finest particles \cite{ng24}, the Semenyih size distribution should be read as a lower bound on the fine fraction. Table~\ref{tab:fill} shows what the two full-text sources supply and what is still missing.
 
 \begin{table}[H]\centering\small
 \begin{tabularx}{\textwidth}{@{}lXl@{}}
 \toprule Item to extract (Chen et al.\ 2023 \cite{chen23}) & Why it is needed & Value \\\midrule
-Size-class table, water (\% per class) & Replaces the dashed box with real bars & \emph{to fill} \\
-Size-class table, bed sediment & Water vs bed comparison (fragments rose on the bed) & \emph{to fill} \\
-Smallest size counted / mesh & Sets the lower edge of the bar & \emph{to fill} \\
-Identification instrument and blank/recovery tests & Needed for Section~\ref{sec:method} accuracy column & \emph{to fill} \\
+Size-class table, water (\% per class) & Would replace the dashed range with real bars & Not reported in either source \\
+Size-class table, bed sediment & Water vs bed comparison (fragments rose on the bed) & Not reported in either source \\
+Smallest size counted & Lower edge of the bar & 53\um{} sieve; 1.2\um{} GF/C filter (full text) \\
+Identification instrument & Detection method and accuracy & Stereomicroscope, hot-needle test, FTIR check (Section~\ref{sec:method}) \\
 \bottomrule\end{tabularx}
-\caption{Items to complete the Semenyih size bars.}\label{tab:fill}
+\caption{Status of the items needed to complete the Semenyih size bars (Chen et al.\ 2021 and 2023 \cite{chen21a,chen23}).}\label{tab:fill}
 \end{table}
 
 \section{Question 2 -- Papers affiliated with University of Nottingham Malaysia}
@@ -167,13 +168,13 @@ Identification instrument and blank/recovery tests & Needed for Section~\ref{sec
 Five records are primary microplastic studies (river monitoring, source apportionment, biota and image analysis); one is the group's Southeast Asia review. The three others carry a UNM address through the Department of Chemical and Environmental Engineering (Show PL) and cover marine/health reviews, phytoplankton and a Taiwan-led aging and sorption experiment, so they are less relevant to river detection.
 
 \subsection{Methodology for detecting microplastics, UNM equipment and accuracy}\label{sec:method}
-\flag{Limitation.} Abstracts rarely name instrument models or report recovery rates. The table records only what the abstracts state; ``not stated'' means the dataset cannot answer it. No abstract reports an analytical accuracy figure (for example spike recovery, detection limit, or spectral match quality).
+\flag{Scope of evidence.} The Langat paper (Chen et al.\ 2021) is covered from its full text. For the other papers, only abstracts (and, for Chen 2022 and 2023, the review's method table) are available, so ``not stated'' means the files I have cannot answer it.
 
 \begin{table}[H]\centering\scriptsize
 \begin{tabularx}{\textwidth}{@{}p{1.6cm}XXX@{}}
 \toprule Paper & Sampling and detection stated & Instrument named? & Accuracy / performance figure in abstract \\\midrule
-Chen 2021 (Langat) \cite{chen21a} & 508 water samples, 8 sites, 12 months; particle counts, shape and origin & Not stated & None. Suggests turbidity sensors as a proxy for load \\
-Chen 2023 (Semenyih) \cite{chen23} & 160 water and bed samples, 8 sites, 3 dates, 5 replicates; concentration per L (water) and per m$^2$ (bed) & Not stated & None. Within-site variability often exceeded between-site, so single samples are inadequate \\
+Chen 2021 (Langat; \emph{full text}) \cite{chen21a} & 8 mainstem sites, Nov 2019--Oct 2020; 5\,$\times$\,2\,L depth-integrated samples per site; field sieve 53\um; H$_2$O$_2$ + Fe(II) digestion at 70$^\circ$C; GF/C 1.2\um{} filters; visual count at 8--35$\times$ & Leica EZ4 stereomicroscope; PerkinElmer Frontier FTIR (transmission, 4 scans, 4000--400\,cm$^{-1}$) on 85 picked particles & \textbf{96\%} visual-identification accuracy (FTIR check, n\,=\,85); blanks processed, no contamination found \\
+Chen 2023 (Semenyih) \cite{chen23} & 160 water and bed samples; per review table: 2\,L bulk water, bed resuspension in a rigid cylinder, 53\um{} prefilter, NOAA-type peroxide oxidation at 60$^\circ$C, ZnCl$_2$ density separation for bed \cite{bouida26} & Stereomicroscopy with hot-needle test \cite{bouida26} & Blank subtraction (water column vs cylinder) \cite{bouida26}; within-site variability often exceeded between-site \\
 Chen 2022 (sources) \cite{chen22} & Culvert/drain water, atmospheric deposition, five WWTPs; polymers identified (styrene-butadiene rubber, nylon) & Spectroscopic identification implied, not named & WWTP removal efficiency 30.95$\pm$5.51\% to 69.94$\pm$22.17\% (treatment performance, not detection accuracy) \\
 Ng 2024 (biota) \cite{ng24} & Fish and macroinvertebrates; low-resolution visual inspection (0.1--5\,mm) and a novel automated method (0.004--0.1\,mm) & ``Novel automated method'' (type not named) & High-resolution method gave substantially higher counts than visual; no \% given \\
 Lee 2022 (U-Net) \cite{lee22} & Microscope images; U-Net segmentation plus post-processing to count particles; skip-connection variants & Microscope imaging (model not named) & ``Human-level performance'' counting in cluttered images; no numeric score in abstract \\
@@ -182,13 +183,28 @@ Hanun 2023 (aging) \cite{hanun23} & PET microplastics aged in air, seawater and 
 \caption{Methods and performance as stated in the abstracts of UNM microplastic papers.}
 \end{table}
 
-\noindent\textbf{What can be said about UNM laboratory equipment.} The dataset supports only three conclusions: (i) the group moved from visual counting to an automated high-resolution method for particles down to 4\um{} \cite{ng24}; (ii) it developed a deep-learning counting tool for microscope images that reaches human-level counts \cite{lee22}; and (iii) polymer identification in the source-apportionment study implies a spectroscopic technique \cite{chen22}. Instrument make/model, filter pore size, digestion protocol and QA/QC (blanks, spiked recoveries) require the full texts. If you upload those PDFs, the table can be completed with exact accuracy rates.
+\noindent\textbf{UNM laboratory equipment and workflow (Chen et al.\ 2021, full text).}
+\begin{table}[H]\centering\small
+\begin{tabularx}{\textwidth}{@{}p{3.2cm}X@{}}
+\toprule Stage & What was used \\\midrule
+Sampling & 2\,L bottles lowered through the water column at five points across the channel (10\,L per site per date); a pilot at site 8 showed lateral variation, so full-width sampling was adopted \\
+Pre-sieving & Stainless-steel sieve, 53\um{} mesh, in the field \\
+Digestion & 20\,mL of 30\% H$_2$O$_2$ plus 20\,mL of 0.05\,M Fe(II) catalyst, heated to 70$^\circ$C for 30\,min (NOAA method of Masura et al.); re-sieved at 53\um \\
+Filtration and drying & Whatman GF/C glass-fibre filters (1.2\um), vacuum pump, oven-dried at 100$^\circ$C for 24\,h \\
+Counting & Stereomicroscope (Leica EZ4), 8$\times$ to 35$\times$, particles per litre \\
+Polymer check & PerkinElmer Frontier FTIR, transmission mode, 4 scans, 4000--400\,cm$^{-1}$, matched to reference spectra \\
+Contamination control & Cotton clothing and lab coats, nitrile gloves, covered samples, rinsed apparatus; field and lab blanks gave no contamination \\
+Suspended sediment & EPA 160.2 gravimetric method, GF/C filters dried at 100$^\circ$C \\
+\bottomrule\end{tabularx}
+\caption{Equipment and procedure reported for the UNM Langat study \cite{chen21a}.}
+\end{table}
+\noindent\textbf{Accuracy.} The only detection-accuracy figure found is the Langat study's FTIR check: 85 randomly picked particles were scanned and the visual identification was reported as 96\% accurate; the polymers were PET 43\%, HDPE 21\%, LDPE 13\%, PP 8\%, EVA 8\%, PVDC 5\% and PS 4\%, and five particles were non-synthetic (cotton, viscose, silica) \cite{chen21a}. This test validates identification, not size or recovery: no spiked-particle recovery rate or detection limit is given. The review adds that stereomicroscopy has low polymer-identification reliability unless confirmed by a hot-needle test, and that its usual size limit is about 300\um{} \cite{bouida26}; the group's later automated method reaches down to 4\um{} \cite{ng24}, and a deep-learning counter reaches human-level counts \cite{lee22}. Instrument details for the Ng, Lee and Chen 2022/2023 papers still need their own full texts.
 
 \subsection{Summary of UNM findings}
 \begin{description}[leftmargin=0pt,labelindent=0pt,style=unboxed]
-\item[Abundance.] All 508 Langat water samples contained microplastics (mean 4.39 particles/L, up to 90 in urban tributaries); the river was estimated to deliver about 5 billion particles per day to the sea in half the time \cite{chen21a}. The Semenyih River carried $3.12\pm2.49$ particles/L and $6027\pm16{,}586$ particles/m$^2$ on the bed \cite{chen23}.
-\item[Type and origin.] Fibres dominated in water and on the bed, with more fragments on the bed than in water \cite{chen23}; most particles were secondary \cite{chen21a}. Animals held a more even mix (about 35\% fibres, 43\% fragments, 22\% film) \cite{ng24}.
-\item[Drivers.] Counts rose and fell with discharge and correlated with suspended sediment \cite{chen21a}. Road culverts delivered $42.20\pm35.29$ particles/L, up to seven times residential ($8.53\pm9.91$) and industrial ($5.67\pm4.88$) drains; atmospheric deposition was $76.07\pm32.85$ particles/m$^2$/day; WWTP outflows were similar in concentration to uncontrolled drains \cite{chen22}.
+\item[Abundance.] Langat mainstem mean $4.39\pm5.11$ particles/L over 508 samples, rising more than threefold from the rural upper reach to the urban lower reach (sites 7 and 8 highest); the two industrial tributaries averaged $45.86\pm24.76$ and reached 90 particles/L \cite{chen21a} (full text). The river was estimated to convey about 5 billion particles/day half of the time and about 30 billion/day for 10\% of the time. The Semenyih River carried $3.12\pm2.49$ particles/L and $6027\pm16{,}586$ particles/m$^2$ on the bed \cite{chen23}. The review cautions that the very high Langat values of other groups (up to 2012 items/L) reflect finer detection (0.2\um{} filter, \(\mu\)FTIR) rather than a pure environmental difference \cite{bouida26}.
+\item[Type and origin.] In the Langat, fibres were 96\%, fragments 3\%, films 1\% and beads under 1\%, mostly secondary; domestic textile washing and aerial fallout are the likely sources in the near-forest upper reach, and clothing-factory drains in the tributaries \cite{chen21a}. In the Semenyih, fibres dominated water and bed with more fragments on the bed \cite{chen23}, and the review reports PE and polyester there and a ``sink danger'' risk category \cite{bouida26}. Animals held a more even mix (about 35\% fibres, 43\% fragments, 22\% film) \cite{ng24}.
+\item[Drivers.] Concentrations averaged $1.53\pm0.87$ particles/L at low flow and $17.83\pm6.73$ particles/L at elevated discharge, tripled during a June 2020 flood, and tracked suspended sediment (quantile regression pseudo-$R^2$ 0.1 for the median and 0.65 for the 90th quantile), so turbidity sensors could estimate loads \cite{chen21a}. Road culverts delivered $42.20\pm35.29$ particles/L, up to seven times residential ($8.53\pm9.91$) and industrial ($5.67\pm4.88$) drains; atmospheric deposition was $76.07\pm32.85$ particles/m$^2$/day; WWTP outflows were similar in concentration to uncontrolled drains \cite{chen22}.
 \item[Biota.] 95\% of fish and 44\% of macroinvertebrates held larger microplastics, with loads linked to feeding group and body size \cite{ng24}.
 \item[Monitoring advice.] Water-only monitoring may misrank bed contamination, and single bed samples are inadequate \cite{chen23}; high-resolution processing is needed for small organisms \cite{ng24}.
 \item[Regional context.] The group's review concludes that data in Southeast Asian fresh waters are limited, with Malaysia a focus, and lists transport, fate and effects as gaps \cite{chen21b}. Show PL's reviews cover health, socio-economic effects and phytoplankton interactions \cite{mofijur21,alowaisy26}.
@@ -196,9 +212,9 @@ Hanun 2023 (aging) \cite{hanun23} & PET microplastics aged in air, seawater and 
 
 \section{Limitations}
 \begin{itemize}
-\item Text-mining of abstracts: papers that report size only in the full text are missed, and a few off-target hits (for example soil or snow studies that mention a river) remain in the 616.
+\item Text-mining of abstracts (Question 1): papers that report size only in the full text are missed, and a few off-target hits (for example soil or snow studies that mention a river) remain in the 616.
 \item Classes are assigned by upper bound, so a 300--1000\um{} statement falls in the 0.5--1\,mm class.
-\item The two Semenyih-specific unknowns (size histogram; UNM instruments and accuracy) need full texts.
+\item The Semenyih size histogram is still unknown: the full text of Chen et al.\ 2023 itself is needed. Methods for that paper and for Chen et al.\ 2022 are second-hand, from the review's summary table \cite{bouida26}.\item The Chen et al.\ 2021 accuracy figure is quoted as stated (96\%); 5 of the 85 tested particles were non-synthetic, which is arithmetically 94.1\% correct. The review's Table~3 lists granules as the dominant Semenyih shape while its text and the Semenyih paper say fibres; the review's text also gives the Langat range as 1811--4157 items/L where the source abstract says 181--4157.
 \item Starting count is 10,897, not 10,833 (Section~1).
 \end{itemize}
 
