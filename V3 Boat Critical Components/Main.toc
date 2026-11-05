@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Requirements, design basis and procurement discipline}{2}{section.1}%
+\contentsline {section}{\numberline {2}Antenna roles and communication architecture}{2}{section.2}%
+\contentsline {section}{\numberline {3}Flight-controller comparison and SpeedyBee decision}{3}{section.3}%
+\contentsline {section}{\numberline {4}Propulsion and motor-driver technical comparison}{3}{section.4}%
+\contentsline {section}{\numberline {5}Active GNSS, RC, telemetry and battery comparison}{5}{section.5}%
+\contentsline {section}{\numberline {6}Three increasing-cost common-core configurations}{6}{section.6}%
+\contentsline {section}{\numberline {7}Source-audited itemised cost table (per configuration)}{7}{section.7}%
+\contentsline {section}{\numberline {8}Mass, energy, buoyancy and validation gates}{8}{section.8}%
+\contentsline {section}{\numberline {9}Procurement order and final recommendation}{9}{section.9}%
