@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.9)  5 NOV 2026 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.9)  5 NOV 2026 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,9 +8,9 @@ entering extended mode
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
 
-LaTeX Warning: Writing or overwriting file `sources_v3_1.bib'.
+LaTeX Warning: Writing or overwriting file `sources_v3_2.bib'.
 
-\openout15 = `sources_v3_1.bib'.
+\openout15 = `sources_v3_2.bib'.
 
 
 (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -844,40 +844,40 @@ Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2026/09/24 v3.22a expl3 case changing code for biblatex
 ))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 325.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 379.
 \@quotelevel=\count488
 \@quotereset=\count489
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 325.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 379.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Info: Redefining \microtypecontext on input line 325.
-Package microtype Info: Applying patch `item' on input line 325.
-Package microtype Info: Applying patch `toc' on input line 325.
-Package microtype Info: Applying patch `eqnum' on input line 325.
-Package microtype Info: Applying patch `footnote' on input line 325.
-Package microtype Info: Applying patch `verbatim' on input line 325.
-LaTeX Info: Redefining \microtypesetup on input line 325.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 379.
+LaTeX Font Info:    ... okay on input line 379.
+LaTeX Info: Redefining \microtypecontext on input line 379.
+Package microtype Info: Applying patch `item' on input line 379.
+Package microtype Info: Applying patch `toc' on input line 379.
+Package microtype Info: Applying patch `eqnum' on input line 379.
+Package microtype Info: Applying patch `footnote' on input line 379.
+Package microtype Info: Applying patch `verbatim' on input line 379.
+LaTeX Info: Redefining \microtypesetup on input line 379.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -946,8 +946,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 325.
-Package hyperref Info: Link coloring ON on input line 325.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 379.
+Package hyperref Info: Link coloring ON on input line 379.
  (Main.out) (Main.out)
 \@outlinefile=\write5
 \openout5 = `Main.out'.
@@ -965,65 +965,69 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' found.
  (Main.bbl)
-Package biblatex Info: Reference section=0 on input line 325.
-Package biblatex Info: Reference segment=0 on input line 325.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 327.
+Package biblatex Info: Reference section=0 on input line 379.
+Package biblatex Info: Reference segment=0 on input line 379.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 381.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 327.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 381.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 327.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 381.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 327.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 381.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 327.
+(Font)              <10> on input line 381.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 327.
+(Font)              <7> on input line 381.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 327.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 327.
+(Font)              <5> on input line 381.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 381.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 327.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 381.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (Main.toc)
+) (Main.toc [1
+
+{C:/Users/SIVI/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}])
 \tf@toc=\write6
 \openout6 = `Main.toc'.
 
- [1
-
-{C:/Users/SIVI/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+ [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 355.
+(Font)              <9> on input line 409.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 355.
- [2
+(Font)              <6> on input line 409.
+ [3
 
-{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [3{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [4
+{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [4{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [5
 
 ]
-Overfull \hbox (2.19218pt too wide) in paragraph at lines 394--394
+Overfull \hbox (2.19218pt too wide) in paragraph at lines 448--448
 []|\T1/lmr/bx/n/9 (-20) Electrical/physical|  
  []
 
-[5
+[6
 
-{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [6] [7] [8] [9]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 512.
+{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [7]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 498.
+ (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [8{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [9{C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [10] [11] [12] [13] [14] [15] [16] [17]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 704.
  (C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1031,31 +1035,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10
+ [18
 
-] [11] [12] (Main.aux)
+] [19] [20] (Main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
  ***********
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 9808FBE5D7EB8777B481F608A972F670;2673.
+(rerunfilecheck)             Checksum: D553ED3E2590D8B2FDA50E8984E0F916;8704.
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35872 strings out of 467392
- 733360 string characters out of 5406125
- 1585383 words of memory out of 5000000
- 64376 multiletter control sequences out of 15000+600000
- 730204 words of font info for 228 fonts, out of 8000000 for 9000
+ 36072 strings out of 467392
+ 737144 string characters out of 5406125
+ 1593735 words of memory out of 5000000
+ 64467 multiletter control sequences out of 15000+600000
+ 737390 words of font info for 265 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,9n,95p,1461b,2088s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Main.pdf (12 pages, 625377 bytes).
+ 92i,9n,95p,1461b,2086s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/SIVI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Main.pdf (20 pages, 722791 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 51797 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1019 PDF objects out of 1200 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 60117 words of extra memory for PDF output out of 61914 (max. 10000000)
 

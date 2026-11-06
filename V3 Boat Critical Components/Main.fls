@@ -2,9 +2,9 @@ PWD c:\Users\SIVI\Documents\Y3\Group Project\LaTex\Y3 Grp Project\V3 Boat Critic
 INPUT C:\Users\SIVI\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\SIVI\Documents\Y3\Group Project\LaTex\Y3 Grp Project\V3 Boat Critical Components\Main.tex
 OUTPUT Main.log
-INPUT .\sources_v3_1.bib
-INPUT sources_v3_1.bib
-OUTPUT sources_v3_1.bib
+INPUT .\sources_v3_2.bib
+INPUT sources_v3_2.bib
+OUTPUT sources_v3_2.bib
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
@@ -456,9 +456,9 @@ INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.
 INPUT .\Main.toc
 INPUT .\Main.toc
 INPUT Main.toc
-OUTPUT Main.toc
 INPUT C:\Users\SIVI\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+OUTPUT Main.toc
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr9.tfm
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx9.tfm
@@ -487,6 +487,15 @@ INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx7.t
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri7.tfm
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri9.tfm
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr10.tfm
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr7.tfm
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr5.tfm
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr5.tfm
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
@@ -509,8 +518,12 @@ INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx9.pf
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
+INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi9.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi9.pfb
 INPUT C:\Users\SIVI\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb

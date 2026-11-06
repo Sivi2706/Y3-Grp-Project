@@ -1,9 +1,25 @@
-\contentsline {section}{\numberline {1}Requirements, design basis and procurement discipline}{2}{section.1}%
-\contentsline {section}{\numberline {2}Antenna roles and communication architecture}{2}{section.2}%
-\contentsline {section}{\numberline {3}Flight-controller comparison and SpeedyBee decision}{3}{section.3}%
-\contentsline {section}{\numberline {4}Propulsion and motor-driver technical comparison}{3}{section.4}%
-\contentsline {section}{\numberline {5}Active GNSS, RC, telemetry and battery comparison}{5}{section.5}%
-\contentsline {section}{\numberline {6}Three increasing-cost common-core configurations}{6}{section.6}%
-\contentsline {section}{\numberline {7}Source-audited itemised cost table (per configuration)}{7}{section.7}%
-\contentsline {section}{\numberline {8}Mass, energy, buoyancy and validation gates}{8}{section.8}%
-\contentsline {section}{\numberline {9}Procurement order and final recommendation}{9}{section.9}%
+\contentsline {section}{\numberline {1}Requirements, design basis and procurement discipline}{3}{section.1}%
+\contentsline {section}{\numberline {2}Antenna roles and communication architecture}{3}{section.2}%
+\contentsline {section}{\numberline {3}Flight-controller comparison and SpeedyBee decision}{4}{section.3}%
+\contentsline {section}{\numberline {4}Propulsion and motor-driver technical comparison}{4}{section.4}%
+\contentsline {section}{\numberline {5}Active GNSS, RC, telemetry and battery comparison}{6}{section.5}%
+\contentsline {section}{\numberline {6}Selection rationale: evidence, interfaces and design priorities}{7}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Flight controller: why this board and not the more expensive stack?}{7}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Proposed port and power allocation (pinout to be checked on actual board)}{8}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Battery selection: voltage, energy and realistic endurance}{8}{section.7}%
+\contentsline {subsection}{\numberline {7.1}What the supplier actually specifies}{8}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Why capacity, C-rating and peak motor current are separate criteria}{9}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Active GPS and antenna selection: reception is not navigation accuracy}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}BN-880: reason for selecting a combined module}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Antenna options and why adding ``26 dB'' is not automatic improvement}{10}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}GNSS performance requirement for a 20 by 20 m grid}{10}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Radio modules and antennas: three independent jobs}{10}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Manual RC: why it remains mandatory even with autonomy}{10}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}RF telemetry: why SiK rather than using the RC channels for everything?}{11}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Loss-of-link behaviour: a safety case, not a checkbox}{11}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Propulsion, waterproofing and small components: justification ledger}{11}{section.10}%
+\contentsline {section}{\numberline {11}Acceptance and procurement gates by component}{12}{section.11}%
+\contentsline {section}{\numberline {12}Three conditional increasing-cost common-core configurations}{13}{section.12}%
+\contentsline {section}{\numberline {13}Source-audited itemised cost table (per configuration)}{14}{section.13}%
+\contentsline {section}{\numberline {14}Mass, energy, buoyancy and validation gates}{16}{section.14}%
+\contentsline {section}{\numberline {15}Revised procurement order and final recommendation}{16}{section.15}%

@@ -232,35 +232,34 @@
       \verb https://manuals.plus/ae/1005008660355732
       \endverb
     \endentry
-    \entry{hotrc}{online}{}{}
+    \entry{hotrcCurrent}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=a0e6225803067407c2d6689ca0f4a85f}{%
-           family={Cytron},
+        {{hash=0e3fa721628ede74876fce42620fadfa}{%
+           family={{Cytron Technologies}},
            familyi={C\bibinitperiod}}}%
       }
-      \strng{namehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{fullhash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{fullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{bibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authorbibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authornamehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
-      \field{extraname}{1}
+      \strng{namehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{fullhash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{fullhashraw}{0e3fa721628ede74876fce42620fadfa}
+      \strng{bibnamehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authorbibnamehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authornamehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authorfullhash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authorfullhashraw}{0e3fa721628ede74876fce42620fadfa}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{HotRC six-channel transmitter and receiver, 2.4GHz}
+      \field{title}{HotRC Six Channel Radio Transmitter and Receiver: Current product listing}
       \field{urlday}{5}
       \field{urlmonth}{11}
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://my.cytron.io/c-rf-module/p-hotrc-6-channels-rc-radio-transmitter-and-receiver
+      \verb https://my.cytron.io/c-radio/p-hotrc-6-channels-rc-radio-transmitter-and-receiver
       \endverb
       \verb{url}
-      \verb https://my.cytron.io/c-rf-module/p-hotrc-6-channels-rc-radio-transmitter-and-receiver
+      \verb https://my.cytron.io/c-radio/p-hotrc-6-channels-rc-radio-transmitter-and-receiver
       \endverb
     \endentry
     \entry{rcDoc}{online}{}{}
@@ -294,7 +293,7 @@
       \verb https://docs.ardupilot.org/rover/docs/common-rc-systems.html
       \endverb
     \endentry
-    \entry{radioDoc}{online}{}{}
+    \entry{coreDoc}{online}{}{}
       \name{author}{1}{}{%
         {{hash=1f79341042063f30812f2942a48d19ed}{%
            family={ArduPilot},
@@ -309,6 +308,68 @@
       \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
       \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CoreWing F405 Wing V2 / Wing Mini V2, Rover documentation}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.ardupilot.org/rover/docs/common-CoreWingF405WingV2.html
+      \endverb
+      \verb{url}
+      \verb https://docs.ardupilot.org/rover/docs/common-CoreWingF405WingV2.html
+      \endverb
+    \endentry
+    \entry{rcPWMEncoder}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f79341042063f30812f2942a48d19ed}{%
+           family={{ArduPilot}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \strng{bibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorbibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PPM encoders for legacy multichannel PWM receivers}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://software.ardupilot.org/rover/docs/common-ppm-encoders-new.html
+      \endverb
+      \verb{url}
+      \verb https://software.ardupilot.org/rover/docs/common-ppm-encoders-new.html
+      \endverb
+    \endentry
+    \entry{radioDoc}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f79341042063f30812f2942a48d19ed}{%
+           family={ArduPilot},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \strng{bibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorbibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \field{extraname}{6}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -339,7 +400,7 @@
       \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
-      \field{extraname}{5}
+      \field{extraname}{7}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -388,37 +449,6 @@
       \verb https://shopee.com.my/3DR-Radio-Telemetry-433Mhz-915Mhz-100MW-500MW-1000MW-Air-and-Ground-Data-Transmit-Module-with-OTG-for-APM-2.8-Pixhawk-2.4.8-i.756673533.22527872228
       \endverb
     \endentry
-    \entry{coreDoc}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=1f79341042063f30812f2942a48d19ed}{%
-           family={ArduPilot},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f79341042063f30812f2942a48d19ed}
-      \strng{fullhash}{1f79341042063f30812f2942a48d19ed}
-      \strng{fullhashraw}{1f79341042063f30812f2942a48d19ed}
-      \strng{bibnamehash}{1f79341042063f30812f2942a48d19ed}
-      \strng{authorbibnamehash}{1f79341042063f30812f2942a48d19ed}
-      \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
-      \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
-      \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
-      \field{extraname}{6}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{CoreWing F405 Wing V2 / Wing Mini V2, Rover documentation}
-      \field{urlday}{5}
-      \field{urlmonth}{11}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.ardupilot.org/rover/docs/common-CoreWingF405WingV2.html
-      \endverb
-      \verb{url}
-      \verb https://docs.ardupilot.org/rover/docs/common-CoreWingF405WingV2.html
-      \endverb
-    \endentry
     \entry{activeShop}{online}{}{}
       \name{author}{1}{}{%
         {{hash=86cfab20ff6e8e38f65a42b6120dd6af}{%
@@ -436,8 +466,8 @@
       \strng{authorfullhash}{86cfab20ff6e8e38f65a42b6120dd6af}
       \strng{authorfullhashraw}{86cfab20ff6e8e38f65a42b6120dd6af}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{External GPS active antenna, product code K0500001}
@@ -466,7 +496,7 @@
       \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
-      \field{extraname}{7}
+      \field{extraname}{8}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -562,8 +592,8 @@
       \strng{authornamehash}{f9b07040e12ee112a3bef05acf4afd12}
       \strng{authorfullhash}{f9b07040e12ee112a3bef05acf4afd12}
       \strng{authorfullhashraw}{f9b07040e12ee112a3bef05acf4afd12}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{SpeedyBee F405 V4 BLS 60A 30x30 FC and ESC stack technical specifications}
@@ -592,9 +622,9 @@
       \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
       \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
-      \field{extraname}{8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Speedy Bee F4 V3/V4, Rover board documentation}
@@ -784,7 +814,7 @@
       \strng{authornamehash}{a0e6225803067407c2d6689ca0f4a85f}
       \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
       \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
-      \field{extraname}{2}
+      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -815,7 +845,7 @@
       \strng{authornamehash}{a0e6225803067407c2d6689ca0f4a85f}
       \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
       \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -914,8 +944,8 @@
       \strng{authorfullhash}{d4a7a0a04d638527f69ea4f5ae798302}
       \strng{authorfullhashraw}{d4a7a0a04d638527f69ea4f5ae798302}
       \field{extraname}{5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{M10 GNSS module with external IST8310 compass, variant listing}
@@ -928,6 +958,37 @@
       \endverb
       \verb{url}
       \verb https://shopee.com.my/M10-GPS-Module-With-External-IST8310-Compass-For-Pixhawk-2.4.8-PIXRACER-R15-RC-Quadcopter-Plane-Drone-RC-Boat-RC-Upgrade-Parts-i.487084356.42854127762
+      \endverb
+    \endentry
+    \entry{hotrc}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a0e6225803067407c2d6689ca0f4a85f}{%
+           family={Cytron},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{fullhash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{fullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{bibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authorbibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authornamehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{HotRC six-channel transmitter and receiver, 2.4GHz}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://my.cytron.io/c-rf-module/p-hotrc-6-channels-rc-radio-transmitter-and-receiver
+      \endverb
+      \verb{url}
+      \verb https://my.cytron.io/c-rf-module/p-hotrc-6-channels-rc-radio-transmitter-and-receiver
       \endverb
     \endentry
     \entry{flyShop}{online}{}{}
@@ -1102,8 +1163,8 @@
       \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
       \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
       \field{extraname}{7}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Two- to three-cell LiPo balance charger}
@@ -1118,35 +1179,66 @@
       \verb https://my.cytron.io/p-2-3-cell-lipo-balance-charger
       \endverb
     \endentry
-    \entry{box}{online}{}{}
+    \entry{failsafes}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=a0e6225803067407c2d6689ca0f4a85f}{%
-           family={Cytron},
-           familyi={C\bibinitperiod}}}%
+        {{hash=1f79341042063f30812f2942a48d19ed}{%
+           family={{ArduPilot}},
+           familyi={A\bibinitperiod}}}%
       }
-      \strng{namehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{fullhash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{fullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{bibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authorbibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authornamehash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
-      \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
-      \field{extraname}{8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \strng{namehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \strng{bibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorbibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \field{extraname}{10}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{IP65 enclosure 263x182x60mm}
+      \field{title}{Rover failsafes: Radio, battery and GCS heartbeat link}
       \field{urlday}{5}
       \field{urlmonth}{11}
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://my.cytron.io/p-outdoor-ip65-water-proof-enclosure-263x182x60-mm
+      \verb https://ardupilot.org/rover/docs/rover-failsafes.html
       \endverb
       \verb{url}
-      \verb https://my.cytron.io/p-outdoor-ip65-water-proof-enclosure-263x182x60-mm
+      \verb https://ardupilot.org/rover/docs/rover-failsafes.html
+      \endverb
+    \endentry
+    \entry{bn880Series}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0c8f22c7440d696c5b94251671123dac}{%
+           family={{Manuals+}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0c8f22c7440d696c5b94251671123dac}
+      \strng{fullhash}{0c8f22c7440d696c5b94251671123dac}
+      \strng{fullhashraw}{0c8f22c7440d696c5b94251671123dac}
+      \strng{bibnamehash}{0c8f22c7440d696c5b94251671123dac}
+      \strng{authorbibnamehash}{0c8f22c7440d696c5b94251671123dac}
+      \strng{authornamehash}{0c8f22c7440d696c5b94251671123dac}
+      \strng{authorfullhash}{0c8f22c7440d696c5b94251671123dac}
+      \strng{authorfullhashraw}{0c8f22c7440d696c5b94251671123dac}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Unofficial reproduction; validate against received module and manufacturer revision}
+      \field{title}{Beitian BN-880 GPS Module Series User Manual: UART and I2C pinout}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://manuals.plus/ae/1005008660355732
+      \endverb
+      \verb{url}
+      \verb https://manuals.plus/ae/1005008660355732
       \endverb
     \endentry
     \entry{pipe}{online}{}{}
@@ -1165,8 +1257,8 @@
       \strng{authornamehash}{a553a9da1c372d5eb519d7546db12962}
       \strng{authorfullhash}{a553a9da1c372d5eb519d7546db12962}
       \strng{authorfullhashraw}{a553a9da1c372d5eb519d7546db12962}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{110mm UPVC pipe 1m}
@@ -1197,8 +1289,8 @@
       \strng{authornamehash}{dc3ee9689b896c1de2557aabf57101e1}
       \strng{authorfullhash}{dc3ee9689b896c1de2557aabf57101e1}
       \strng{authorfullhashraw}{dc3ee9689b896c1de2557aabf57101e1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{110mm UPVC end cap}
@@ -1211,70 +1303,6 @@
       \endverb
       \verb{url}
       \verb https://shopee.com.my/110mm-(-4-)-UPVC-END-CAP-UEC110-i.85266340.7131496992
-      \endverb
-    \endentry
-    \entry{glue}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=b31929c26ed61fb284f7fdcdbc60081f}{%
-           family={Onlines},
-           familyi={O\bibinitperiod},
-           given={Shopee\bibnamedelimb Malaysia:\bibnamedelima SF},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \strng{namehash}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{fullhash}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{fullhashraw}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{bibnamehash}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{authorbibnamehash}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{authornamehash}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{authorfullhash}{b31929c26ed61fb284f7fdcdbc60081f}
-      \strng{authorfullhashraw}{b31929c26ed61fb284f7fdcdbc60081f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{PRO-SPEC PVC pipe glue range}
-      \field{urlday}{5}
-      \field{urlmonth}{11}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://shopee.com.my/PVC-PIPE-GLUE-100GM-500GM-PRO-SPEC-i.281055021.22162171819
-      \endverb
-      \verb{url}
-      \verb https://shopee.com.my/PVC-PIPE-GLUE-100GM-500GM-PRO-SPEC-i.281055021.22162171819
-      \endverb
-    \endentry
-    \entry{gland}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=0bd36df953a15237057724354cfbfd12}{%
-           family={charm001.my},
-           familyi={c\bibinitperiod},
-           given={Shopee\bibnamedelima Malaysia:},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{0bd36df953a15237057724354cfbfd12}
-      \strng{fullhash}{0bd36df953a15237057724354cfbfd12}
-      \strng{fullhashraw}{0bd36df953a15237057724354cfbfd12}
-      \strng{bibnamehash}{0bd36df953a15237057724354cfbfd12}
-      \strng{authorbibnamehash}{0bd36df953a15237057724354cfbfd12}
-      \strng{authornamehash}{0bd36df953a15237057724354cfbfd12}
-      \strng{authorfullhash}{0bd36df953a15237057724354cfbfd12}
-      \strng{authorfullhashraw}{0bd36df953a15237057724354cfbfd12}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{10-piece nylon cable gland kit with PG sizes}
-      \field{urlday}{5}
-      \field{urlmonth}{11}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://shopee.com.my/10-Pieces-Nylon-Cable-Gland-Kit-Waterproof-IP68-Cable-Gland-Joints-Adjustable-Locknut-PG7-PG9-PG11-PG13.5-PG16-i.62712267.11536961420
-      \endverb
-      \verb{url}
-      \verb https://shopee.com.my/10-Pieces-Nylon-Cable-Gland-Kit-Waterproof-IP68-Cable-Gland-Joints-Adjustable-Locknut-PG7-PG9-PG11-PG13.5-PG16-i.62712267.11536961420
       \endverb
     \endentry
     \entry{fuse}{online}{}{}
@@ -1372,6 +1400,225 @@
       \endverb
       \verb{url}
       \verb https://shopee.com.my/Battery-Disconnect-Switch--12V-48V-Battery-Isolator-Power-Cut-Off-Master-Switch-Waterproof-for-RV--ATV--Car--Marine--Boat--AUTO--with-4-Mounting-Bolts--275-Amps-i.1016655955.24920020737
+      \endverb
+    \endentry
+    \entry{bn880Secondary}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=52ad545db9ce96bef539ef91c65b6216}{%
+           family={{Unmanned Tech (UPart)}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{fullhash}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{fullhashraw}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{bibnamehash}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{authorbibnamehash}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{authornamehash}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{authorfullhash}{52ad545db9ce96bef539ef91c65b6216}
+      \strng{authorfullhashraw}{52ad545db9ce96bef539ef91c65b6216}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Secondary specification; 50mA at 5V, approximately 2m open-sky precision and dimensions require SKU validation}
+      \field{title}{Beitian BN-880 GPS and compass module: Reseller technical specifications (not manufacturer's controlled datasheet)}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.upartte.com/product/detail/2255/%3Aurlname.html?source=store
+      \endverb
+      \verb{url}
+      \verb https://www.upartte.com/product/detail/2255/%3Aurlname.html?source=store
+      \endverb
+    \endentry
+    \entry{beitianOfficialBE}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6eef5ec64d7ce7ecd554304379ca5cec}{%
+           family={{Shenzhen Beitian Communication}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{fullhash}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{fullhashraw}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{bibnamehash}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{authorbibnamehash}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{authornamehash}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{authorfullhash}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \strng{authorfullhashraw}{6eef5ec64d7ce7ecd554304379ca5cec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Technical family comparator only; BE-880 specifications must not be transferred to BN-880}
+      \field{title}{BE-880 GNSS module: Manufacturer technical specifications (different model to BN-880)}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.beitian.com/en/sys-pd/515.html
+      \endverb
+      \verb{url}
+      \verb https://www.beitian.com/en/sys-pd/515.html
+      \endverb
+    \endentry
+    \entry{gpsYaw}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f79341042063f30812f2942a48d19ed}{%
+           family={{ArduPilot}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \strng{bibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorbibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \field{extraname}{11}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GPS for Yaw: Multi-antenna solutions and magnetic interference discussion}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.ardupilot.org/rover/docs/common-gps-for-yaw.html
+      \endverb
+      \verb{url}
+      \verb https://docs.ardupilot.org/rover/docs/common-gps-for-yaw.html
+      \endverb
+    \endentry
+    \entry{rcProtocols}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f79341042063f30812f2942a48d19ed}{%
+           family={{ArduPilot}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{fullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \strng{bibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorbibnamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authornamehash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhash}{1f79341042063f30812f2942a48d19ed}
+      \strng{authorfullhashraw}{1f79341042063f30812f2942a48d19ed}
+      \field{extraname}{12}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Radio Control Systems: RC receiver protocols and connections}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ardupilot.ardupilot.org/rover/docs/common-rc-systems.html
+      \endverb
+      \verb{url}
+      \verb https://ardupilot.ardupilot.org/rover/docs/common-rc-systems.html
+      \endverb
+    \endentry
+    \entry{glue}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b31929c26ed61fb284f7fdcdbc60081f}{%
+           family={Onlines},
+           familyi={O\bibinitperiod},
+           given={Shopee\bibnamedelimb Malaysia:\bibnamedelima SF},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{fullhash}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{fullhashraw}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{bibnamehash}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{authorbibnamehash}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{authornamehash}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{authorfullhash}{b31929c26ed61fb284f7fdcdbc60081f}
+      \strng{authorfullhashraw}{b31929c26ed61fb284f7fdcdbc60081f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PRO-SPEC PVC pipe glue range}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://shopee.com.my/PVC-PIPE-GLUE-100GM-500GM-PRO-SPEC-i.281055021.22162171819
+      \endverb
+      \verb{url}
+      \verb https://shopee.com.my/PVC-PIPE-GLUE-100GM-500GM-PRO-SPEC-i.281055021.22162171819
+      \endverb
+    \endentry
+    \entry{box}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a0e6225803067407c2d6689ca0f4a85f}{%
+           family={Cytron},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{fullhash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{fullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{bibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authorbibnamehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authornamehash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authorfullhash}{a0e6225803067407c2d6689ca0f4a85f}
+      \strng{authorfullhashraw}{a0e6225803067407c2d6689ca0f4a85f}
+      \field{extraname}{8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IP65 enclosure 263x182x60mm}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://my.cytron.io/p-outdoor-ip65-water-proof-enclosure-263x182x60-mm
+      \endverb
+      \verb{url}
+      \verb https://my.cytron.io/p-outdoor-ip65-water-proof-enclosure-263x182x60-mm
+      \endverb
+    \endentry
+    \entry{gland}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0bd36df953a15237057724354cfbfd12}{%
+           family={charm001.my},
+           familyi={c\bibinitperiod},
+           given={Shopee\bibnamedelima Malaysia:},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0bd36df953a15237057724354cfbfd12}
+      \strng{fullhash}{0bd36df953a15237057724354cfbfd12}
+      \strng{fullhashraw}{0bd36df953a15237057724354cfbfd12}
+      \strng{bibnamehash}{0bd36df953a15237057724354cfbfd12}
+      \strng{authorbibnamehash}{0bd36df953a15237057724354cfbfd12}
+      \strng{authornamehash}{0bd36df953a15237057724354cfbfd12}
+      \strng{authorfullhash}{0bd36df953a15237057724354cfbfd12}
+      \strng{authorfullhashraw}{0bd36df953a15237057724354cfbfd12}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{10-piece nylon cable gland kit with PG sizes}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://shopee.com.my/10-Pieces-Nylon-Cable-Gland-Kit-Waterproof-IP68-Cable-Gland-Joints-Adjustable-Locknut-PG7-PG9-PG11-PG13.5-PG16-i.62712267.11536961420
+      \endverb
+      \verb{url}
+      \verb https://shopee.com.my/10-Pieces-Nylon-Cable-Gland-Kit-Waterproof-IP68-Cable-Gland-Joints-Adjustable-Locknut-PG7-PG9-PG11-PG13.5-PG16-i.62712267.11536961420
       \endverb
     \endentry
   \enddatalist
